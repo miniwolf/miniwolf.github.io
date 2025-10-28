@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical Tai Chi - Combat-Ready Training</title>
+    <title>Practical Tai Chi Denmark - Combat-Ready Training</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,12 +12,18 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h2>Practical Tai Chi Lyngby</h2>
+                <h2>Practical Tai Chi Denmark</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="classes.html" class="nav-link">Classes</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="lyngby.html" class="dropdown-link">Lyngby</a>
+                        <a href="aarhus.html" class="dropdown-link">Aarhus</a>
+                    </div>
+                </div>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -33,11 +39,11 @@
         <div class="hero-overlay">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">COMBAT-READY TAI CHI</h1>
-                    <p class="hero-subtitle">Ancient Art. Modern Application.</p>
-                    <p class="hero-quote">"Real martial skills for real situations"</p>
+                    <h1 class="hero-title">PRACTICAL TAI CHI DENMARK</h1>
+                    <p class="hero-subtitle">Combat-Ready Training</p>
+                    <p class="hero-quote">"Ancient art, modern application - now in Lyngby and Aarhus"</p>
                     <div class="hero-buttons">
-                        <a href="classes.html" class="btn btn-primary">Start Training</a>
+                        <a href="#clubs" class="btn btn-primary">Find Your Club</a>
                         <a href="#techniques" class="btn btn-secondary">Watch Techniques</a>
                     </div>
                 </div>
@@ -74,10 +80,57 @@
         </div>
     </section>
 
+    <!-- Our Clubs Section -->
+    <section class="clubs" id="clubs">
+        <div class="container">
+            <h2 class="section-title">Our Training Locations</h2>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-image">
+                        <img src="images/studios/lyngby-studio.jpg" alt="Lyngby Training Studio" loading="lazy">
+                    </div>
+                    <div class="club-content">
+                        <h3>Lyngby Club</h3>
+                        <p>Our original location in the heart of Lyngby, offering comprehensive combat training with traditional foundations.</p>
+                        <div class="club-highlights">
+                            <span class="highlight">✓ 10+ years experience</span>
+                            <span class="highlight">✓ Advanced combat training</span>
+                            <span class="highlight">✓ Traditional lineage</span>
+                        </div>
+                        <div class="club-schedule-preview">
+                            <strong>Training Days:</strong> Mon, Wed, Fri, Sat
+                        </div>
+                        <a href="lyngby.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-image">
+                        <img src="images/studios/aarhus-studio.jpg" alt="Aarhus Training Studio" loading="lazy">
+                    </div>
+                    <div class="club-content">
+                        <h3>Aarhus Club</h3>
+                        <p>Expanding our practical Tai Chi methodology to Denmark's second largest city with the same combat-focused approach.</p>
+                        <div class="club-highlights">
+                            <span class="highlight">✓ Same proven methods</span>
+                            <span class="highlight">✓ Modern facilities</span>
+                            <span class="highlight">✓ Growing community</span>
+                        </div>
+                        <div class="club-schedule-preview">
+                            <strong>Training Days:</strong> Tue, Thu, Sat
+                        </div>
+                        <a href="aarhus.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Training Highlights Section -->
     <section class="techniques" id="techniques">
         <div class="container">
             <h2 class="section-title">Training Highlights</h2>
+            <p class="techniques-intro">See what makes our approach to Tai Chi unique - practical applications taught at both locations</p>
             <div class="techniques-grid">
                 <div class="technique-card">
                     <div class="video-placeholder">
@@ -113,52 +166,24 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Students Say</h2>
-            <div class="testimonial-card">
-                <blockquote>
-                    "I thought Tai Chi was just slow movements. This opened my eyes to real martial arts. 
-                    The combat applications are incredible and the training is intense but accessible."
-                </blockquote>
-                <cite>- Marcus, 24</cite>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Quick Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Start Your Training?</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>📍 Location:</strong>
-                        <p>123 Martial Arts Way<br>Your City, State 12345</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📞 Phone:</strong>
-                        <p>(555) 123-4567</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>✉️ Email:</strong>
-                        <p>info@practicaltaichi.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>🕐 Studio Hours:</strong>
-                        <p>Monday - Friday: 5:00 PM - 9:00 PM<br>
-                        Saturday: 9:00 AM - 2:00 PM<br>
-                        Sunday: Closed</p>
-                    </div>
+            <h2 class="section-title">Get Started Today</h2>
+            <div class="contact-locations">
+                <div class="location-card">
+                    <h3>Lyngby Club</h3>
+                    <p>📍 [Lyngby Address]</p>
+                    <p>📞 [Lyngby Phone]</p>
+                    <p>✉️ ptcc.lyngby@gmail.com</p>
+                    <a href="lyngby.html" class="btn btn-secondary">Visit Lyngby Page</a>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="location-card">
+                    <h3>Aarhus Club</h3>
+                    <p>📍 [Aarhus Address]</p>
+                    <p>📞 [Aarhus Phone]</p>
+                    <p>✉️ ptcc.aarhus@gmail.com</p>
+                    <a href="aarhus.html" class="btn btn-secondary">Visit Aarhus Page</a>
                 </div>
             </div>
         </div>
@@ -167,7 +192,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Practical Tai Chi Lyngby. All rights reserved.</p>
+            <p>&copy; 2025 Practical Tai Chi Denmark. All rights reserved.</p>
         </div>
     </footer>
 
