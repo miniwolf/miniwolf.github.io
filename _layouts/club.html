@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.club-name}} Club - Practical Tai Chi Denmark</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Practical Tai Chi Denmark</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="lyngby.html" class="dropdown-link {% if page.club-name == 'Lyngby' %} active {% endif %}">Lyngby</a>
+                        <a href="aarhus.html" class="dropdown-link {% if page.club-name == 'Aarhus' %} active {% endif %}">Aarhus</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Club Header -->
+    <section class="club-header">
+        <div class="container">
+            <div class="club-header-content">
+                <h1>{{ page.club-name}} Club</h1>
+                <!--<p>Our flagship location - Where practical Tai Chi began in Denmark</p>
+                <div class="club-badges">
+                    <span class="badge">10+ Years Experience</span>
+                    <span class="badge">Expert Instructors</span>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="club-instructor">
+        <div class="container">
+            <h2 class="section-title">Your Instructors</h2>
+{% for teacher in page.instructors %}
+            <div class="instructor-grid">
+                <div class="instructor-image">
+                    <img src="{{teacher.image}}" alt="Lyngby Instructor" loading="lazy">
+                </div>
+                <div class="instructor-content">
+                    <h3>{{ teacher.name }}</h3>
+                    <p>Started in {{ teacher.start }} dedicated to Practical Tai Chi Chuan, {{ teacher.name }} brings authentic combat training to {{page.club-name}}.</p>
+                    
+                    <div class="instructor-credentials">
+                        <h4>Training & Lineage:</h4>
+                        <ul>
+                            <li>Advanced training under <strong>Torben Rif (Denmark)</strong></li>
+                            <li>Intensive study with <strong>Paul Silvferstrale (Sweden)</strong></li>
+                            <li>10+ years specializing in martial applications</li>
+                            <li>Founder of Practical Tai Chi Denmark</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+{% endfor %}
+            
+        </div>
+    </section>
+
+    <section class="class-types">
+        <div class="container">
+            <h2 class="section-title">Class Types</h2>
+            <div class="class-cards">
+                <div class="class-card">
+                    <h3>Beginner Combat Basics</h3>
+                    <ul>
+                        <li>Foundation forms with martial applications</li>
+                        <li>Basic striking and defensive techniques</li>
+                        <li>Introduction to pad work</li>
+                        <li>Self-defense scenarios</li>
+                        <li>Q&A with instructor</li>
+                    </ul>
+                    <p class="class-perfect">Perfect for: Complete beginners wanting practical skills</p>
+                </div>
+                
+                <div class="class-card">
+                    <h3>Advanced Combat Training</h3>
+                    <ul>
+                        <li>Complex applications and combinations</li>
+                        <li>Sparring and pressure testing</li>
+                        <li>Weapons defense concepts</li>
+                        <li>Advanced joint locks and throws</li>
+                    </ul>
+                    <p class="class-perfect">Perfect for: Students with 6+ months experience</p>
+                </div>
+                
+                <div class="class-card">
+                    <h3>Open Training Sessions</h3>
+                    <ul>
+                        <li>Practice with training partners</li>
+                        <li>Technique refinement</li>
+                        <li>Sparring opportunities</li>
+                    </ul>
+                    <p class="class-perfect">Perfect for: All levels wanting extra practice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <div class="container">
+            <h2 class="section-title">{{ page.club-name }} Training Schedule</h2>
+            <div class="schedule-grid">
+                {% for class in page.classes %}
+                <div class="schedule-day">
+                    <h3>{{class.day}}</h3>
+                    <div class="class-time">
+                        <h4>{{class.description}}</h4>
+                        <p>{{class.time}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">{{page.club-name}} Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Trial Class</h3>
+                    <div class="price">200 DKK</div>
+                    <p>Drop-in rate</p>
+                    <p>No commitment</p>
+                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Monthly Unlimited</h3>
+                    <div class="price">800 DKK<span>/month</span></div>
+                    <p>All classes</p>
+                    <p>Best value</p>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Private Lessons</h3>
+                    <div class="price">500 DKK<span>/session</span></div>
+                    <p>1-on-1 instruction</p>
+                    <p>Customized training</p>
+                    <a href="#contact" class="btn btn-secondary">Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="club-contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact {{ page.club-name }} Club</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📍 Location:</strong>
+                        <p>{{ page.address }}</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <p><a href="tel:{{page.phone}}">{{page.phone}}</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <p>{{ page.email }}</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="hidden" value="{{page.club-name}}" name="club">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <select required>
+                            <option value="">Select Interest</option>
+                            <option value="">General Question</option>
+                            {% for option in page.interests %}
+                            <option value="">{{option}}</option>
+                            {% endfor %}
+                        </select>
+                        <textarea placeholder="Your Message" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Practical Tai Chi Denmark. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

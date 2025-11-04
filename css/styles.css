@@ -635,6 +635,11 @@ h3 {
     flex-wrap: wrap;
 }
 
+a {
+    color: #B8112E;
+    text-decoration:none;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -652,6 +657,7 @@ h3 {
 .btn-primary {
     background: #DC143C;
     color: #F8F8F8;
+    border: 2px solid #B8112E;
 }
 
 .btn-primary:hover {

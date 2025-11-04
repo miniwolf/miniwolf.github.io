@@ -1,203 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyngby Club - Practical Tai Chi Denmark</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h2>Practical Tai Chi Denmark</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
-                    <div class="dropdown-menu">
-                        <a href="lyngby.html" class="dropdown-link active">Lyngby</a>
-                        <a href="aarhus.html" class="dropdown-link">Aarhus</a>
-                    </div>
-                </div>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+---
+layout: club
+club-name: Lyngby
 
-    <!-- Club Header -->
-    <section class="club-header">
-        <div class="container">
-            <div class="club-header-content">
-                <h1>Lyngby Club</h1>
-                <p>Our flagship location - Where practical Tai Chi began in Denmark</p>
-                <div class="club-badges">
-                    <span class="badge">10+ Years Experience</span>
-                    <span class="badge">Original Location</span>
-                    <span class="badge">Expert Instructors</span>
-                </div>
-            </div>
-        </div>
-    </section>
+address: "[Lyngby Studio Address]<br>Lyngby, Denmark"
+phone: "+45 22123861"
+email: ptcc.lyngby@gmail.com
 
-    <!-- Instructor Section -->
-    <section class="club-instructor">
-        <div class="container">
-            <h2 class="section-title">Your Instructor</h2>
-            <div class="instructor-grid">
-                <div class="instructor-image">
-                    <img src="images/instructors/lyngby-instructor.jpg" alt="Lyngby Instructor" loading="lazy">
-                </div>
-                <div class="instructor-content">
-                    <h3>Master [Lyngby Instructor Name]</h3>
-                    <p>With over 10 years dedicated to Practical Tai Chi Chuan, [Name] brings authentic combat training to Lyngby.</p>
-                    
-                    <div class="instructor-credentials">
-                        <h4>Training & Lineage:</h4>
-                        <ul>
-                            <li>Advanced training under <strong>Torben Rif (Denmark)</strong></li>
-                            <li>Intensive study with <strong>Paul Silvferstrale (Sweden)</strong></li>
-                            <li>10+ years specializing in martial applications</li>
-                            <li>Founder of Practical Tai Chi Denmark</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+instructors:
+  - name: Casper Clausen
+    start: 2003
+    image: images/lyngby/Casper-Clausen.jpg
+  - name: Nicklas Pingel
+    start: 2013
+    image: images/lyngby/Nicklas-Pingel.jpg
 
-    <!-- Schedule Section -->
-    <section class="schedule">
-        <div class="container">
-            <h2 class="section-title">Lyngby Training Schedule</h2>
-            <div class="schedule-grid">
-                <div class="schedule-day">
-                    <h3>Monday</h3>
-                    <div class="class-time">
-                        <h4>Beginner Combat Basics</h4>
-                        <p>18:00-19:30</p>
-                    </div>
-                </div>
-                <div class="schedule-day">
-                    <h3>Wednesday</h3>
-                    <div class="class-time">
-                        <h4>Advanced Sparring</h4>
-                        <p>19:00-20:30</p>
-                    </div>
-                </div>
-                <div class="schedule-day">
-                    <h3>Friday</h3>
-                    <div class="class-time">
-                        <h4>Combat Applications</h4>
-                        <p>18:00-19:30</p>
-                    </div>
-                </div>
-                <div class="schedule-day">
-                    <h3>Saturday</h3>
-                    <div class="class-time">
-                        <h4>Open Training</h4>
-                        <p>10:00-12:00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+classes:
+  - day: Monday
+    description: Beginner Combat Basics
+    time: 18:00-19:30
+  - day: Wednesday
+    description: Advanced Sparring
+    time: 19:00-20:30
+  - day: Friday
+    description: Combat Applications
+    time: 18:00-19:30
+  - day: Saturday
+    description: Open Training
+    time: 10:00-12:00
 
-    <!-- Pricing Section -->
-    <section class="pricing">
-        <div class="container">
-            <h2 class="section-title">Lyngby Pricing</h2>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <h3>Trial Class</h3>
-                    <div class="price">200 DKK</div>
-                    <p>Drop-in rate</p>
-                    <p>No commitment</p>
-                    <a href="#lyngby-contact" class="btn btn-secondary">Book Now</a>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <h3>Monthly Unlimited</h3>
-                    <div class="price">800 DKK<span>/month</span></div>
-                    <p>All classes</p>
-                    <p>Best value</p>
-                    <a href="#lyngby-contact" class="btn btn-primary">Get Started</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <h3>Private Lessons</h3>
-                    <div class="price">500 DKK<span>/session</span></div>
-                    <p>1-on-1 instruction</p>
-                    <p>Customized training</p>
-                    <a href="#lyngby-contact" class="btn btn-secondary">Schedule</a>
-                </div>
-            </div>
-        </div>
-    </section>
+interests:
+  - Beginner Class
+---
 
-    <!-- Contact Section -->
-    <section class="club-contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Lyngby Club</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>📍 Location:</strong>
-                        <p>[Lyngby Studio Address]<br>Lyngby, Denmark</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📞 Phone:</strong>
-                        <p>[Lyngby Phone Number]</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>✉️ Email:</strong>
-                        <p>ptcc.lyngby@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>🕐 Studio Hours:</strong>
-                        <p>Monday: 17:30-20:00<br>
-                        Wednesday: 18:30-21:00<br>
-                        Friday: 17:30-20:00<br>
-                        Saturday: 9:30-12:30</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="hidden" value="lyngby" name="club">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Your Phone">
-                        <select required>
-                            <option value="">Select Interest</option>
-                            <option value="trial">Trial Class</option>
-                            <option value="monthly">Monthly Membership</option>
-                            <option value="private">Private Lessons</option>
-                            <option value="info">General Info</option>
-                        </select>
-                        <textarea placeholder="Your Message" rows="4"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Practical Tai Chi Denmark. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
