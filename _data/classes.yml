@@ -1,0 +1,40 @@
+beginner:
+  name: Beginner Combat Basics
+  descriptions: [
+    "Foundation forms with martial applications",
+    "Basic striking and defensive techniques",
+    "Introduction to pad work",
+    "Self-defense scenarios",
+    "Q&A with instructor",
+  ]
+  perfect-for: Complete beginners wanting practical skills
+
+advanced:
+  name: Advanced Combat Training
+  descriptions: [
+    "Complex applications and combinations",
+    "Sparring and pressure testing",
+    "Weapons defense concepts",
+    "Advanced joint locks and throws",
+  ]
+  perfect-for: Students with 6+ months experience
+
+open:
+  name: Open Training Sessions
+  descriptions: [
+    "Practice with training partners",
+    "Technique refinement",
+    "Sparring opportunities",
+  ]
+  perfect-for: All levels wanting extra practice
+
+qigong:
+  name: Qigong - Five Animals
+  descriptions: [
+    "Tai Chi 18 Qigong: indre ro, smidighed, kropsbevidsthed",
+    "Tai Chi 9 Qigong: øvelser baseret på den korte håndform fra tai chi",
+    "Five Animals Qigong: stærk ryg og balance",
+    "Shaolin Ba Duan Jin: en serie med mange gode strækøvelser",
+    "Xing Yi: statisk Qigong",
+  ]
+  perfect-for: All levels wanting to strengthen their mind

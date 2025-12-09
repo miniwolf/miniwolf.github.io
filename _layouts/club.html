@@ -82,38 +82,16 @@
         <div class="container">
             <h2 class="section-title">Class Types</h2>
             <div class="class-cards">
+                {% for class_type in page.classtypes %}
+                {% assign class = site.data.classes[class_type] %}
                 <div class="class-card">
-                    <h3>Beginner Combat Basics</h3>
+                    <h3>{{ class.name }}</h3>
                     <ul>
-                        <li>Foundation forms with martial applications</li>
-                        <li>Basic striking and defensive techniques</li>
-                        <li>Introduction to pad work</li>
-                        <li>Self-defense scenarios</li>
-                        <li>Q&A with instructor</li>
+                        {% for desc in class.descriptions %} <li>{{desc}}</li> {% endfor %}
                     </ul>
-                    <p class="class-perfect">Perfect for: Complete beginners wanting practical skills</p>
+                    <p class="class-perfect">Perfect for: {{ class.perfect-for }}</p>
                 </div>
-                
-                <div class="class-card">
-                    <h3>Advanced Combat Training</h3>
-                    <ul>
-                        <li>Complex applications and combinations</li>
-                        <li>Sparring and pressure testing</li>
-                        <li>Weapons defense concepts</li>
-                        <li>Advanced joint locks and throws</li>
-                    </ul>
-                    <p class="class-perfect">Perfect for: Students with 6+ months experience</p>
-                </div>
-                
-                <div class="class-card">
-                    <h3>Open Training Sessions</h3>
-                    <ul>
-                        <li>Practice with training partners</li>
-                        <li>Technique refinement</li>
-                        <li>Sparring opportunities</li>
-                    </ul>
-                    <p class="class-perfect">Perfect for: All levels wanting extra practice</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
