@@ -1,3 +1,6 @@
+---
+active: home
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,31 +12,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h2>Wu Guan Danmark</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
-                    <div class="dropdown-menu">
-                        <a href="lyngby.html" class="dropdown-link">Lyngby</a>
-                        <a href="aarhus.html" class="dropdown-link">Aarhus</a>
-                    </div>
-                </div>
-                <a href="events.html" class="nav-link">Events</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    {% include navigation.html %}
 
     <!-- Hero Section -->
     <section class="hero">
@@ -191,11 +170,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Wu Guan Danmark. All rights reserved.</p>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="js/main.js"></script>
 </body>
