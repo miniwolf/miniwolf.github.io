@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Events - Wu Guan Danmark</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Wu Guan Danmark</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="lyngby.html" class="dropdown-link">Lyngby</a>
+                        <a href="aarhus.html" class="dropdown-link">Aarhus</a>
+                    </div>
+                </div>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Special Training Events</h1>
+            <p>Intensive workshops, weekend courses, and summer training camps</p>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                <button class="filter-btn" data-filter="weekend">Weekend Courses</button>
+                <button class="filter-btn" data-filter="camp">Summer Camps</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="seminar">Seminars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Event -->
+    <section class="featured-event">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <span class="event-badge featured-badge">Featured Event</span>
+                    <h2>Summer Combat Intensive 2026</h2>
+                    <p class="event-meta">
+                        <span class="event-date">📅 July 15-21, 2026</span>
+                        <span class="event-location">📍 Lyngby Studio</span>
+                        <span class="event-level">🎯 All Levels</span>
+                    </p>
+                    <p class="event-description">
+                        A week-long intensive training camp focusing on practical combat applications. 
+                        Daily training sessions covering sparring, weapons defense, and advanced techniques. 
+                        Perfect for accelerating your martial development.
+                    </p>
+                    <div class="event-highlights">
+                        <span class="highlight">✓ 40+ hours training</span>
+                        <span class="highlight">✓ Guest instructors</span>
+                        <span class="highlight">✓ Certificate completion</span>
+                        <span class="highlight">✓ Accommodation available</span>
+                    </div>
+                    <div class="event-pricing">
+                        <span class="event-price">2,500 DKK</span>
+                        <span class="early-bird">Early Bird: 2,200 DKK (until May 1st)</span>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-large">Register Now</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="images/events/summer-camp-2026.jpg" alt="Summer Combat Intensive" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-grid">
+                
+                <!-- Weekend Course Event -->
+                <div class="event-card" data-category="upcoming weekend">
+                    <div class="event-image">
+                        <img src="images/events/weekend-defense.jpg" alt="Self-Defense Weekend" class="img-cover">
+                        <span class="event-badge badge-weekend">Weekend Course</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Practical Self-Defense Weekend</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 March 23-24, 2026</span>
+                            <span class="event-location">📍 Aarhus Studio</span>
+                        </div>
+                        <p>Learn essential self-defense techniques in just one weekend. Focus on real-world scenarios and practical applications.</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ Sat-Sun: 10:00-16:00</div>
+                            <div class="event-price">800 DKK</div>
+                            <div class="event-spots">👥 12 spots available</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">Register</button>
+                    </div>
+                </div>
+
+                <!-- Workshop Event -->
+                <div class="event-card" data-category="upcoming workshop">
+                    <div class="event-image">
+                        <img src="images/events/weapons-workshop.jpg" alt="Weapons Defense Workshop" class="img-cover">
+                        <span class="event-badge badge-workshop">Workshop</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Weapons Defense Workshop</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 April 14, 2026</span>
+                            <span class="event-location">📍 Lyngby Studio</span>
+                        </div>
+                        <p>Advanced techniques for defending against knife and stick attacks. For experienced students only.</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ 14:00-18:00</div>
+                            <div class="event-price">400 DKK</div>
+                            <div class="event-spots">👥 8 spots available</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">Register</button>
+                    </div>
+                </div>
+
+                <!-- Seminar Event -->
+                <div class="event-card" data-category="upcoming seminar">
+                    <div class="event-image">
+                        <img src="images/events/philosophy-seminar.jpg" alt="Tai Chi Philosophy" class="img-cover">
+                        <span class="event-badge badge-seminar">Seminar</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Tai Chi Philosophy & Strategy</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 May 5, 2026</span>
+                            <span class="event-location">📍 Online + Lyngby</span>
+                        </div>
+                        <p>Deep dive into the philosophical foundations and strategic principles of Tai Chi combat.</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ 10:00-13:00</div>
+                            <div class="event-price">250 DKK</div>
+                            <div class="event-spots">👥 20 spots available</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">Register</button>
+                    </div>
+                </div>
+
+                <!-- Guest Instructor Event -->
+                <div class="event-card" data-category="upcoming workshop">
+                    <div class="event-image">
+                        <img src="images/events/guest-instructor.jpg" alt="Guest Instructor Workshop" class="img-cover">
+                        <span class="event-badge badge-special">Special Guest</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Master Torben Rif Workshop</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 June 8-9, 2026</span>
+                            <span class="event-location">📍 Lyngby Studio</span>
+                        </div>
+                        <p>Rare opportunity to train directly with Master Torben Rif from Denmark. Advanced applications and corrections.</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ Sat-Sun: 10:00-17:00</div>
+                            <div class="event-price">1,200 DKK</div>
+                            <div class="event-spots">👥 Limited to 16 students</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">Register</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Explanation -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Types of Events</h2>
+            <div class="grid grid-4">
+                
+                <div class="card card-dark card-center">
+                    <span class="card-icon">📅</span>
+                    <h3>Weekend Courses</h3>
+                    <p>Intensive 2-day programs focusing on specific aspects of combat training. Perfect for accelerated learning.</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🏕️</span>
+                    <h3>Summer Camps</h3>
+                    <p>Week-long intensive training camps with daily sessions, guest instructors, and comprehensive skill development.</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🎯</span>
+                    <h3>Workshops</h3>
+                    <p>Half-day sessions on specific techniques or applications. Great for refining particular skills.</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🧠</span>
+                    <h3>Seminars</h3>
+                    <p>Theory-focused sessions covering philosophy, strategy, and the deeper principles of martial arts.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Info -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Registration Information</h2>
+            <div class="registration-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>📝 How to Register</h3>
+                        <ol>
+                            <li>Choose your event above</li>
+                            <li>Click "Register" button</li>
+                            <li>Fill out registration form</li>
+                            <li>Pay deposit to secure spot</li>
+                            <li>Receive confirmation email</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>💳 Payment Options</h3>
+                        <ul class="list-unstyled">
+                            <li>✓ Bank transfer (MobilePay)</li>
+                            <li>✓ Credit/Debit card</li>
+                            <li>✓ Cash at studio</li>
+                            <li>✓ Installment plans available</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>❓ Prerequisites</h3>
+                        <ul class="list-unstyled">
+                            <li>🟢 Beginner: No experience needed</li>
+                            <li>🟡 Intermediate: 6+ months training</li>
+                            <li>🔴 Advanced: 2+ years experience</li>
+                            <li>⭐ Special: Instructor approval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated on Events</h2>
+                <p>Get notified about new workshops, early bird pricing, and special guest instructors</p>
+                <form class="newsletter-form">
+                    <div class="form-group-inline">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wu Guan Danmark. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

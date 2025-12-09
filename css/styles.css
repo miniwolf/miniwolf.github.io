@@ -1208,3 +1208,310 @@ a {
         font-size: 0.9rem;
     }
 }
+
+/* ===== EVENTS PAGE STYLES ===== */
+
+/* Event Filters */
+.event-filters {
+    background: var(--background-white);
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Featured Event */
+.featured-event {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    padding: var(--spacing-xl) 0;
+    color: var(--text-light);
+}
+
+.featured-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.featured-content {
+    padding: var(--spacing-lg);
+}
+
+.featured-badge {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.event-meta {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin: var(--spacing-sm) 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.event-description {
+    font-size: 1.var(--font-size-sm);
+    line-height: 1.6;
+    margin: var(--spacing-sm) 0;
+}
+
+.event-highlights {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+    margin: var(--spacing-md) 0;
+}
+
+.event-highlights .highlight {
+    background: rgba(255, 255, 255, 0.2);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.event-pricing {
+    margin: var(--spacing-md) 0;
+}
+
+.event-price {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    color: var(--accent-color);
+    display: block;
+}
+
+.early-bird {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.event-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.btn-large {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1.var(--font-size-sm);
+}
+
+.featured-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.event-card {
+    background: var(--background-white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.event-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-weekend { background: #4CAF50; color: white; }
+.badge-workshop { background: #2196F3; color: white; }
+.badge-seminar { background: #FF9800; color: white; }
+.badge-special { background: var(--accent-color); color: var(--text-dark); }
+
+.event-content {
+    padding: var(--spacing-md);
+}
+
+.event-content h3 {
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.event-details {
+    background: var(--background-gray);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-sm) 0;
+    font-size: 0.9rem;
+}
+
+.event-details div {
+    margin-bottom: var(--spacing-xs);
+}
+
+.event-details div:last-child {
+    margin-bottom: 0;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+/* Registration Info */
+.registration-info {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.info-card {
+    background: var(--background-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-card ol, .info-card ul {
+    padding-left: var(--spacing-sm);
+}
+
+.info-card li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: var(--spacing-md) auto 0;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-note {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Responsive Events */
+@media (max-width: 768px) {
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .event-actions {
+        flex-direction: column;
+    }
+    
+    .form-group-inline {
+        flex-direction: column;
+    }
+    
+    .filter-buttons {
+        justify-content: center;
+    }
+}
+
+/* Event Filtering (Hidden by default) */
+.event-card.hidden {
+    display: none;
+}
