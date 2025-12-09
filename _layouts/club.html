@@ -60,15 +60,13 @@
                 </div>
                 <div class="instructor-content">
                     <h3>{{ teacher.name }}</h3>
-                    <p>Started in {{ teacher.start }} dedicated to Practical Tai Chi Chuan, {{ teacher.name }} brings authentic combat training to {{page.club-name}}.</p>
+                    <p>{{ teacher.name }} brings authentic combat training to {{page.club-name}}.</p>
                     
                     <div class="instructor-credentials">
                         <h4>Training & Lineage:</h4>
                         <ul>
-                            <li>Advanced training under <strong>Torben Rif (Denmark)</strong></li>
-                            <li>Intensive study with <strong>Paul Silvferstrale (Sweden)</strong></li>
-                            <li>10+ years specializing in martial applications</li>
-                            <li>Founder of Practical Tai Chi Denmark</li>
+                            <li>Started practicing Tai Chi in {{ teacher.start }}</li>
+                            {% for description in teacher.descriptions %} <li>{{description}}</li> {% endfor %}
                         </ul>
                     </div>
                 </div>
