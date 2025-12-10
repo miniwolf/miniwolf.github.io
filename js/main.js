@@ -31,10 +31,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
         // Add your form submission logic here
         alert('Thank you for your message! We will get back to you soon.');
-        this.reset();
     });
 }
 

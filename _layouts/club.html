@@ -120,6 +120,8 @@
         </div>
     </section>
 
+    {{content}}
+
     <!-- Contact Section -->
     <section class="club-contact" id="contact">
         <div class="container">
@@ -140,20 +142,20 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
-                        <input type="hidden" value="{{page.club-name}}" name="club">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <select required>
+                    <form name="gform" id="gform" enctype="text/plain" action="{{page.club-contact}}" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="{{page.contact-name-id}}" id="{{page.contact-name-id}}" placeholder="Your Name" required>
+                        <input type="email" name="{{page.contact-email-id}}" id="{{page.contact-email-id}}" placeholder="Your Email" required>
+                        <select name="{{page.contact-interest-id}}" id="{{page.contact-interest-id}}" form="gform" required>
                             <option value="">Select Interest</option>
-                            <option value="">General Question</option>
+                            <option value="General Question">General Question</option>
                             {% for option in page.interests %}
-                            <option value="">{{option}}</option>
+                            <option value="{{option}}">{{option}}</option>
                             {% endfor %}
                         </select>
-                        <textarea placeholder="Your Message" rows="4"></textarea>
+                        <textarea name="{{page.contact-content-id}}" id="{{page.contact-content-id}}" placeholder="Your Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
