@@ -1,0 +1,9 @@
+{% comment %}
+  Renders Chinese terminology with language-specific translation
+  Usage: {% include term.html key="ting_jin" %}
+  Output: "Ting Jin (listening energy)" in English
+          "Ting Jin (lytteenergi)" in Danish
+{% endcomment %}
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign term = site.data.terminology[include.key] %}
+{% if term %}{{ term.pinyin }} ({{ term[lang] }}){% else %}{{ include.key }}{% endif %}

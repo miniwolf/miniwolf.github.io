@@ -1,0 +1,161 @@
+---
+layout: default
+---
+
+{% assign page_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[page_lang] %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">{{ t.home.hero_title }}</h1>
+                    <p class="hero-subtitle">{{ t.home.hero_subtitle }}</p>
+                    <p class="hero-quote">"{{ t.home.hero_quote }}"</p>
+                    <div class="hero-buttons">
+                        <a href="#clubs" class="btn btn-primary">{{ t.home.find_club }}</a>
+                        <a href="#techniques" class="btn btn-secondary">{{ t.home.watch_techniques }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Wu Guan Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">{{ t.home.why_wu_guan }}</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>{{ t.home.feature1_title }}</h3>
+                    <p>{{ t.home.feature1_text }}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥊</div>
+                    <h3>{{ t.home.feature2_title }}</h3>
+                    <p>{{ t.home.feature2_text }}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>{{ t.home.feature3_title }}</h3>
+                    <p>{{ t.home.feature3_text }}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>{{ t.home.feature4_title }}</h3>
+                    <p>{{ t.home.feature4_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clubs Section -->
+    <section class="clubs" id="clubs">
+        <div class="container">
+            <h2 class="section-title">{{ t.home.our_locations }}</h2>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-image">
+                        <img src="../images/studios/lyngby-studio.jpg" alt="Lyngby Træningsstudie" loading="lazy">
+                    </div>
+                    <div class="club-content">
+                        <h3>{{ t.home.lyngby_club }}</h3>
+                        <p>{{ t.home.lyngby_description }}</p>
+                        <div class="club-highlights">
+                            <span class="highlight">{{ t.home.lyngby_highlight1 }}</span>
+                            <span class="highlight">{{ t.home.lyngby_highlight2 }}</span>
+                            <span class="highlight">{{ t.home.lyngby_highlight3 }}</span>
+                        </div>
+                        <div class="club-schedule-preview">
+                            <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
+                        </div>
+                        <a href="lyngby" class="btn btn-primary">{{ t.ui.learn_more }}</a>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-image">
+                        <img src="../images/studios/aarhus-studio.jpg" alt="Aarhus Træningsstudie" loading="lazy">
+                    </div>
+                    <div class="club-content">
+                        <h3>{{ t.home.aarhus_club }}</h3>
+                        <p>{{ t.home.aarhus_description }}</p>
+                        <div class="club-highlights">
+                            <span class="highlight">{{ t.home.aarhus_highlight1 }}</span>
+                            <span class="highlight">{{ t.home.aarhus_highlight2 }}</span>
+                            <span class="highlight">{{ t.home.aarhus_highlight3 }}</span>
+                        </div>
+                        <div class="club-schedule-preview">
+                            <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
+                        </div>
+                        <a href="aarhus/" class="btn btn-primary">{{ t.ui.learn_more }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Highlights Section -->
+    <section class="techniques" id="techniques">
+        <div class="container">
+            <h2 class="section-title">{{ t.home.training_highlights }}</h2>
+            <p class="techniques-intro">{{ t.home.training_highlights_intro }}</p>
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="{{ t.home.technique1_title }}"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>{{ t.home.technique1_title }}</h3>
+                    <p>{{ t.home.technique1_text }}</p>
+                </div>
+                <div class="technique-card">
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="{{ t.home.technique2_title }}"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>{{ t.home.technique2_title }}</h3>
+                    <p>{{ t.home.technique2_text }}</p>
+                </div>
+                <div class="technique-card">
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="{{ t.home.technique3_title }}"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>{{ t.home.technique3_title }}</h3>
+                    <p>{{ t.home.technique3_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">{{ t.home.get_started_today }}</h2>
+            <div class="contact-locations">
+                <div class="location-card">
+                    <h3>{{ t.home.lyngby_club }}</h3>
+                    <p>📍 [Lyngby Address]</p>
+                    <p>📞 [Lyngby Phone]</p>
+                    <p>✉️ ptcc.lyngby@gmail.com</p>
+                    <a href="lyngby/" class="btn btn-secondary">{{ t.home.visit_lyngby }}</a>
+                </div>
+                <div class="location-card">
+                    <h3>{{ t.home.aarhus_club }}</h3>
+                    <p>📍 [Aarhus Address]</p>
+                    <p>📞 [Aarhus Phone]</p>
+                    <p>✉️ ptcc.aarhus@gmail.com</p>
+                    <a href="aarhus/" class="btn btn-secondary">{{ t.home.visit_aarhus }}</a>
+                </div>
+            </div>
+        </div>
+    </section>

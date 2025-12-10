@@ -1,0 +1,301 @@
+# Danish translations for Wu Guan Danmark
+
+# Navigation
+nav:
+  home: "Hjem"
+  about: "Om"
+  clubs: "Klubber"
+  events: "Begivenheder"
+  contact: "Kontakt"
+
+# Common UI elements
+ui:
+  learn_more: "Læs mere"
+  register: "Tilmeld"
+  book_now: "Book nu"
+  get_started: "Kom i gang"
+  send_message: "Send besked"
+  subscribe: "Tilmeld"
+  read_more: "Læs mere"
+  schedule: "Tidsplan"
+  watch: "Se"
+  join_us: "Bliv en del"
+
+# Home page
+home:
+  title: "Wu Guan Danmark - Kampklar Træning"
+  hero_title: "Wu Guan Danmark"
+  hero_subtitle: "Kampklar Træning"
+  hero_quote: "Ældgammel kunst, moderne anvendelse - nu i Lyngby og Aarhus"
+  find_club: "Find din klub"
+  watch_techniques: "Se teknikker"
+
+  why_wu_guan: "Hvorfor Wu Guan?"
+  feature1_title: "Selvforsvarsfærdigheder"
+  feature1_text: "Lær effektive kampanvendelser der virker i virkelige situationer"
+  feature2_title: "Pudetræning & Sparring"
+  feature2_text: "Opbyg reel kampsportserfaring gennem kontrolleret kamptræning"
+  feature3_title: "Mental Styrke"
+  feature3_text: "Udvikl krigermindset og situationsbevidsthed"
+  feature4_title: "Fysisk Kondition"
+  feature4_text: "Funktionel styrke, smidighed og kampberedskab"
+
+  our_locations: "Vores Træningssteder"
+  lyngby_club: "Lyngby Klub"
+  lyngby_description: "I hjertet af Lyngby, tilbyder omfattende kamptræning med traditionelle fundamenter."
+  lyngby_highlight1: "✓ 10+ års erfaring"
+  lyngby_highlight2: "✓ Avanceret kamptræning"
+  lyngby_highlight3: "✓ Traditionel linje"
+
+  aarhus_club: "Aarhus Klub"
+  aarhus_description: "Danmarks næststørste by med kampfokuseret tilgang."
+  aarhus_highlight1: "✓ Samme dokumenterede metoder"
+  aarhus_highlight2: "✓ Moderne faciliteter"
+  aarhus_highlight3: "✓ Voksende fællesskab"
+
+  training_days: "Træningsdage"
+  training_highlights: "Træningshøjdepunkter"
+  training_highlights_intro: "Se hvad der gør vores tilgang til Tai Chi unik - praktiske anvendelser undervist på begge lokationer"
+  technique1_title: "Ledlåse & Kast"
+  technique1_text: "Lær praktiske ledmanipulationsteknikker og nedtagninger"
+  technique2_title: "Slagteknikker"
+  technique2_text: "Mestr Praktisk Tai Chi Chuans skjulte slagapplikationer og kombinationer"
+  technique3_title: "Forsvarsstrategier"
+  technique3_text: "Udvikl situationsbevidsthed og undvigelseteknikker"
+  get_started_today: "Kom i gang i dag"
+  visit_lyngby: "Besøg Lyngby Side"
+  visit_aarhus: "Besøg Aarhus Side"
+
+# Club layout
+club:
+  club_suffix: "Klub"
+  your_instructors: "Dine Instruktører"
+  brings_training: "bringer autentisk kamptræning til"
+  training_lineage: "Træning & Linje:"
+  started_practicing: "Begyndte at praktisere Tai Chi i"
+
+  class_types: "Holdtyper"
+  perfect_for: "Perfekt til"
+
+  training_schedule: "Træningsplan"
+  pricing: "Priser"
+
+  trial_class: "Prøvetime"
+  trial_price: "200 DKK"
+  trial_drop_in: "Drop-in pris"
+  trial_no_commitment: "Ingen forpligtelse"
+
+  monthly_unlimited: "Månedlig Ubegrænset"
+  monthly_price: "800 DKK"
+  monthly_suffix: "/måned"
+  monthly_all_classes: "Alle hold"
+  monthly_best_value: "Bedste værdi"
+
+  private_lessons: "Privattimer"
+  private_price: "500 DKK"
+  private_suffix: "/session"
+  private_one_on_one: "1-til-1 undervisning"
+  private_customized: "Tilpasset træning"
+
+  contact_title: "Kontakt"
+  location_label: "📍 Lokation:"
+  phone_label: "📞 Telefon:"
+  email_label: "✉️ Email:"
+
+# Forms
+forms:
+  your_name: "Dit navn"
+  your_email: "Din email"
+  your_message: "Din besked"
+  select_interest: "Vælg interesse"
+  general_question: "Generelt spørgsmål"
+
+# Footer
+footer:
+  copyright: "© 2025 Wu Guan Danmark. Alle rettigheder forbeholdes."
+
+# Days of the week
+days:
+  monday: "Mandag"
+  tuesday: "Tirsdag"
+  wednesday: "Onsdag"
+  thursday: "Torsdag"
+  friday: "Fredag"
+  saturday: "Lørdag"
+  sunday: "Søndag"
+  mon: "Man"
+  tue: "Tir"
+  wed: "Ons"
+  thu: "Tor"
+  fri: "Fre"
+  sat: "Lør"
+  sun: "Søn"
+
+# Months
+months:
+  january: "Januar"
+  february: "Februar"
+  march: "Marts"
+  april: "April"
+  may: "Maj"
+  june: "Juni"
+  july: "Juli"
+  august: "August"
+  september: "September"
+  october: "Oktober"
+  november: "November"
+  december: "December"
+
+# Classes page
+classes:
+  page_title: "Træningsplan"
+  page_subtitle: "Vælg det rigtige hold for dit færdighedsniveau"
+  weekly_schedule: "Ugentlig Tidsplan"
+  class_types_title: "Holdtyper"
+
+# About page
+about:
+  page_title: "Om Tai Chi"
+  page_subtitle: "Forståelse af denne ældgamle kunsts sande kampnatur"
+
+  what_is_title: "Hvad er Praktisk Tai Chi Chuan?"
+  what_is_intro: "Tai Chi Chuan (Den Højeste Ultimative Næve) er et komplet kampkunstsystem der er blevet forfinet over århundreder. Mens mange mennesker kun kender Tai Chi som langsomme, meditative bevægelser i parker, indeholder kunsten et sofistikeret kampsystem designet til virkelige selvforsvarssituationer."
+
+  myth_title: "Almindelig Misforståelse"
+  myth_text: "Tai Chi er kun langsom træning for afslapning og sundhed"
+  reality_title: "Virkeligheden"
+  reality_text: "Tai Chi er et komplet kampsystem med ødelæggende kampanvendelser"
+
+  combat_apps_title: "Kampanvendelser"
+  combat_apps_intro: "Hver bevægelse i Tai Chi former indeholder flere kampanvendelser. Her er hvad praktisk træning afslører:"
+
+  app1_title: "Ledlåse & Kontrol"
+  app1_text: "Subtile håndbevægelser bliver ødelæggende ledmanipulationer der kan kontrollere eller neutralisere en modstander uden slag."
+  app2_title: "Skjulte Slag"
+  app2_text: "Hvad der ser ud som blid skubben indeholder skjulte slag, albueslag og tryktpunktangreb."
+  app3_title: "Kast & Nedtagninger"
+  app3_text: "Cirkulære bevægelser omdirigerer modstanderens kraft mens de opsætter fald, fejninger og projiceringsteknikker."
+  app4_title: "Forsvarsstrategi"
+  app4_text: "Fodarbejde og kropsmekanik tillader dig at undvige angreb mens du samtidig modangriber."
+  app5_title: "100g for at overvinde 1000kg"
+  app5_text: "Brug en angribers kraft imod dem gennem gearing og timingprincipper."
+  app6_title: "Psykologisk Krigsførelse"
+  app6_text: "Udvikl ro under pres og lær at læse og forstyrre modstanderes intentioner."
+
+  history_title: "Historisk Kontekst"
+  history_battlefield_title: "Fra Slagmark til Park"
+  history_battlefield_text: "Tai Chi blev udviklet af kinesiske kampkunstnere der havde brug for at forsvare sig selv i liv-eller-død situationer. Kunsten udviklede sig i en tid hvor kampfærdigheder var essentielle for overlevelse, ikke rekreation."
+  history_transformation_title: "Transformationen"
+  history_transformation_text: "I det 20. århundrede, da Kina moderniseredes og behovet for personlige kampfærdigheder faldt, blev Tai Chi i stigende grad promoveret for sine sundhedsfordele. Mens disse fordele er reelle og værdifulde, blev kamparven ofte nedtonet eller tabt helt."
+  history_preservation_title: "Bevarelse af Den Komplette Kunst"
+  history_preservation_text: "Praktisk Tai Chi Chuan træning søger at bevare og undervise det komplette system - sundhed, meditation, filosofi, OG kampeffektivitet. Vi tror at du ikke virkelig kan forstå Tai Chi uden at forstå hvorfor hver bevægelse blev skabt."
+
+  timeline_title: "Udviklings Tidslinje"
+  timeline_1: "12.-17. århundrede:"
+  timeline_1_text: "Oprindelse i kinesiske kamptraditioner"
+  timeline_2: "17.-19. århundrede:"
+  timeline_2_text: "Forfining af Chen, Yang, Wu familier"
+  timeline_3: "Tidlig 1900-tal:"
+  timeline_3_text: "Introduktion til den brede offentlighed"
+  timeline_4: "Midt 1900-tal:"
+  timeline_4_text: "Sundhedsaspekter understreget frem for kamp"
+  timeline_5: "Moderne æra:"
+  timeline_5_text: "Genoplivning af praktiske anvendelser"
+
+  philosophy_title: "Vores Træningsfilosofi"
+  phil1_title: "Respekt for Tradition"
+  phil1_text: "Vi ærer visdommen fra ældgamle mestre mens vi tilpasser træningsmetoder til moderne studerende."
+  phil2_title: "Praktisk Anvendelse"
+  phil2_text: "Hver teknik skal virke under pres. Vi tester anvendelser gennem kontrolleret sparring og realistiske scenarier."
+  phil3_title: "Progressiv Læring"
+  phil3_text: "Byg fra basisprincipper til avancerede koncepter. Mestr fundamenter før du forsøger komplekse teknikker."
+  phil4_title: "Sind-Krop Integration"
+  phil4_text: "Ægte kampfærdigheder kræver koordination af mental intention, fysisk teknik og emotionel balance."
+
+  principles_title: "Kerneprincipper"
+  principle1_title: "1. Ting Jin (Lytteenergi)"
+  principle1_text: "Udvikl følsomhed til at mærke en modstanders intentioner gennem fysisk kontakt. Forudse og modgå før angreb fuldt udvikles."
+  principle2_title: "2. Zhong Ding (Central Balance)"
+  principle2_text: "Bevar perfekt balance og rod mens du bevæger dig. En centreret fighter kan ikke let fortrænges eller kontrolleres."
+  principle3_title: "3. Yin Yang Teori"
+  principle3_text: "Hver handling indeholder dens modsætning. Forstå hvornår du skal give efter og hvornår du skal fremadgå, hvornår du skal være blød og hvornår du skal være fast."
+
+  modern_title: "Hvorfor Lære Praktisk Tai Chi Chuan I Dag?"
+  modern1_title: "🛡️ Personlig Sikkerhed"
+  modern1_text: "Udvikl reelle selvforsvarsfærdigheder der virker uanset størrelse eller styrkeforskelle."
+  modern2_title: "🧘 Stresshåndtering"
+  modern2_text: "Lær at forblive rolig og tænke klart under pres - værdifuldt i enhver udfordrende situation."
+  modern3_title: "💪 Fysisk Fitness"
+  modern3_text: "Byg funktionel styrke, smidighed og koordination gennem naturlige bevægelsesmønstre."
+  modern4_title: "🎯 Mental Fokus"
+  modern4_text: "Udvikl koncentration og mindfulness der forbedrer præstation i alle områder af livet."
+  modern5_title: "🤝 Social Forbindelse"
+  modern5_text: "Træn med ligesindede individer i et støttende, respektfuldt miljø."
+  modern6_title: "📈 Personlig Vækst"
+  modern6_text: "Udfordre dig selv fysisk og mentalt mens du forbinder med ældgamle visdomstraditioner."
+
+  cta_title: "Klar til at Opdage Praktisk Tai Chi Chuan?"
+  cta_text: "Oplev den komplette kunst - bliv en del af os til en prøvetime på begge lokationer"
+  cta_lyngby: "Prøv Lyngby Klub"
+  cta_aarhus: "Prøv Aarhus Klub"
+
+# Events page
+events:
+  page_title: "Særlige Træningsbegivenheder"
+  page_subtitle: "Intensive workshops, weekendkurser og sommertræningslejre"
+
+  # Filters
+  filter_all: "Alle Begivenheder"
+  filter_upcoming: "Kommende"
+  filter_weekend: "Weekendkurser"
+  filter_camp: "Sommerlejre"
+  filter_workshop: "Workshops"
+  filter_seminar: "Seminarer"
+
+  # Badges
+  badge_featured: "Fremhævet Begivenhed"
+  badge_weekend: "Weekendkursus"
+  badge_workshop: "Workshop"
+  badge_seminar: "Seminar"
+  badge_special: "Særlig Gæst"
+
+  # Event types
+  event_types_title: "Typer af Begivenheder"
+  type1_title: "Weekendkurser"
+  type1_text: "Intensive 2-dages programmer med fokus på specifikke aspekter af kamptræning. Perfekt til accelereret læring."
+  type2_title: "Sommerlejre"
+  type2_text: "Ugelange intensive træningslejre med daglige sessioner, gæsteinstruktører og omfattende færdighedsudvikling."
+  type3_title: "Workshops"
+  type3_text: "Halv-dags sessioner om specifikke teknikker eller anvendelser. Fantastisk til at forfine bestemte færdigheder."
+  type4_title: "Seminarer"
+  type4_text: "Teori-fokuserede sessioner der dækker filosofi, strategi og de dybere principper i kampkunst."
+
+  # Registration
+  registration_title: "Tilmeldingsinformation"
+  how_to_register_title: "📝 Sådan Tilmelder Du Dig"
+  how_to_step1: "Vælg din begivenhed ovenfor"
+  how_to_step2: "Klik på \"Tilmeld\" knappen"
+  how_to_step3: "Udfyld tilmeldingsformularen"
+  how_to_step4: "Betal depositum for at sikre plads"
+  how_to_step5: "Modtag bekræftelsesemail"
+
+  payment_title: "💳 Betalingsmuligheder"
+  payment_option1: "✓ Bankoverførsel (MobilePay)"
+  payment_option2: "✓ Kredit/Debetkort"
+  payment_option3: "✓ Kontant i studiet"
+  payment_option4: "✓ Afdragsordninger tilgængelige"
+
+  prereq_title: "❓ Forudsætninger"
+  prereq_beginner: "🟢 Begynder: Ingen erfaring nødvendig"
+  prereq_intermediate: "🟡 Mellem: 6+ måneders træning"
+  prereq_advanced: "🔴 Avanceret: 2+ års erfaring"
+  prereq_special: "⭐ Særlig: Instruktør godkendelse"
+
+  # Newsletter
+  newsletter_title: "Hold Dig Opdateret om Begivenheder"
+  newsletter_text: "Bliv underrettet om nye workshops, tidlig tilmeldingspriser og særlige gæsteinstruktører"
+  newsletter_placeholder: "Din emailadresse"
+  newsletter_note: "Vi respekterer dit privatliv. Afmeld når som helst."
+
+  # Upcoming events section
+  upcoming_title: "Kommende Begivenheder"

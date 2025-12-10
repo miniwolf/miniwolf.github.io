@@ -1,0 +1,301 @@
+# English translations for Wu Guan Danmark
+
+# Navigation
+nav:
+  home: "Home"
+  about: "About"
+  clubs: "Clubs"
+  events: "Events"
+  contact: "Contact"
+
+# Common UI elements
+ui:
+  learn_more: "Learn More"
+  register: "Register"
+  book_now: "Book Now"
+  get_started: "Get Started"
+  send_message: "Send Message"
+  subscribe: "Subscribe"
+  read_more: "Read More"
+  schedule: "Schedule"
+  watch: "Watch"
+  join_us: "Join Us"
+
+# Home page
+home:
+  title: "Wu Guan Danmark - Combat-Ready Training"
+  hero_title: "Wu Guan Danmark"
+  hero_subtitle: "Combat-Ready Training"
+  hero_quote: "Ancient art, modern application - now in Lyngby and Aarhus"
+  find_club: "Find Your Club"
+  watch_techniques: "Watch Techniques"
+
+  why_wu_guan: "Why Wu Guan?"
+  feature1_title: "Self-Defense Skills"
+  feature1_text: "Learn effective combat applications that work in real situations"
+  feature2_title: "Pad Work & Sparring"
+  feature2_text: "Build real fighting experience through controlled combat training"
+  feature3_title: "Mental Toughness"
+  feature3_text: "Develop warrior mindset and situational awareness"
+  feature4_title: "Physical Conditioning"
+  feature4_text: "Functional strength, flexibility, and combat readiness"
+
+  our_locations: "Our Training Locations"
+  lyngby_club: "Lyngby Club"
+  lyngby_description: "In the heart of Lyngby, offering comprehensive combat training with traditional foundations."
+  lyngby_highlight1: "✓ 10+ years experience"
+  lyngby_highlight2: "✓ Advanced combat training"
+  lyngby_highlight3: "✓ Traditional lineage"
+
+  aarhus_club: "Aarhus Club"
+  aarhus_description: "Denmark's second largest city with combat-focused approach."
+  aarhus_highlight1: "✓ Same proven methods"
+  aarhus_highlight2: "✓ Modern facilities"
+  aarhus_highlight3: "✓ Growing community"
+
+  training_days: "Training Days"
+  training_highlights: "Training Highlights"
+  training_highlights_intro: "See what makes our approach to Tai Chi unique - practical applications taught at both locations"
+  technique1_title: "Joint Locks & Throws"
+  technique1_text: "Learn practical joint manipulation techniques and takedowns"
+  technique2_title: "Striking Techniques"
+  technique2_text: "Master Practical Tai Chi Chuan's hidden striking applications and combinations"
+  technique3_title: "Defensive Strategies"
+  technique3_text: "Develop situational awareness and escape techniques"
+  get_started_today: "Get Started Today"
+  visit_lyngby: "Visit Lyngby Page"
+  visit_aarhus: "Visit Aarhus Page"
+
+# Club layout
+club:
+  club_suffix: "Club"
+  your_instructors: "Your Instructors"
+  brings_training: "brings authentic combat training to"
+  training_lineage: "Training & Lineage:"
+  started_practicing: "Started practicing Tai Chi in"
+
+  class_types: "Class Types"
+  perfect_for: "Perfect for"
+
+  training_schedule: "Training Schedule"
+  pricing: "Pricing"
+
+  trial_class: "Trial Class"
+  trial_price: "200 DKK"
+  trial_drop_in: "Drop-in rate"
+  trial_no_commitment: "No commitment"
+
+  monthly_unlimited: "Monthly Unlimited"
+  monthly_price: "800 DKK"
+  monthly_suffix: "/month"
+  monthly_all_classes: "All classes"
+  monthly_best_value: "Best value"
+
+  private_lessons: "Private Lessons"
+  private_price: "500 DKK"
+  private_suffix: "/session"
+  private_one_on_one: "1-on-1 instruction"
+  private_customized: "Customized training"
+
+  contact_title: "Contact"
+  location_label: "📍 Location:"
+  phone_label: "📞 Phone:"
+  email_label: "✉️ Email:"
+
+# Forms
+forms:
+  your_name: "Your Name"
+  your_email: "Your Email"
+  your_message: "Your Message"
+  select_interest: "Select Interest"
+  general_question: "General Question"
+
+# Footer
+footer:
+  copyright: "© 2025 Wu Guan Danmark. All rights reserved."
+
+# Days of the week
+days:
+  monday: "Monday"
+  tuesday: "Tuesday"
+  wednesday: "Wednesday"
+  thursday: "Thursday"
+  friday: "Friday"
+  saturday: "Saturday"
+  sunday: "Sunday"
+  mon: "Mon"
+  tue: "Tue"
+  wed: "Wed"
+  thu: "Thu"
+  fri: "Fri"
+  sat: "Sat"
+  sun: "Sun"
+
+# Months
+months:
+  january: "January"
+  february: "February"
+  march: "March"
+  april: "April"
+  may: "May"
+  june: "June"
+  july: "July"
+  august: "August"
+  september: "September"
+  october: "October"
+  november: "November"
+  december: "December"
+
+# Classes page
+classes:
+  page_title: "Training Schedule"
+  page_subtitle: "Choose the right class for your skill level"
+  weekly_schedule: "Weekly Schedule"
+  class_types_title: "Class Types"
+
+# About page
+about:
+  page_title: "About Tai Chi"
+  page_subtitle: "Understanding the true martial nature of this ancient art"
+
+  what_is_title: "What is Practical Tai Chi Chuan?"
+  what_is_intro: "Tai Chi Chuan (Supreme Ultimate Fist) is a complete martial art system that has been refined over centuries. While many people know Tai Chi only as slow, meditative movements in parks, the art contains a sophisticated combat system designed for real-world self-defense situations."
+
+  myth_title: "Common Misconception"
+  myth_text: "Tai Chi is just slow exercise for relaxation and health"
+  reality_title: "The Reality"
+  reality_text: "Tai Chi is a complete fighting system with devastating combat applications"
+
+  combat_apps_title: "Combat Applications"
+  combat_apps_intro: "Every movement in Tai Chi forms contains multiple fighting applications. Here's what practical training reveals:"
+
+  app1_title: "Joint Locks & Control"
+  app1_text: "Subtle hand movements become devastating joint manipulations that can control or disable an opponent without striking."
+  app2_title: "Hidden Strikes"
+  app2_text: "What appears as gentle pushing contains concealed punches, elbow strikes, and pressure point attacks."
+  app3_title: "Throws & Takedowns"
+  app3_text: "Circular movements redirect opponent's force while setting up trips, sweeps, and projection techniques."
+  app4_title: "Defensive Strategy"
+  app4_text: "Footwork and body mechanics allow you to evade attacks while simultaneously counter-attacking."
+  app5_title: "100g to overcome 1000kg"
+  app5_text: "Use an attacker's force against them through leverage and timing principles."
+  app6_title: "Psychological Warfare"
+  app6_text: "Develop calm under pressure and learn to read and disrupt opponents' intentions."
+
+  history_title: "Historical Context"
+  history_battlefield_title: "From Battlefield to Park"
+  history_battlefield_text: "Tai Chi was developed by Chinese martial artists who needed to defend themselves in life-or-death situations. The art evolved in a time when martial skills were essential for survival, not recreation."
+  history_transformation_title: "The Transformation"
+  history_transformation_text: "In the 20th century, as China modernized and the need for personal combat skills diminished, Tai Chi was increasingly promoted for its health benefits. While these benefits are real and valuable, the combat heritage was often de-emphasized or lost entirely."
+  history_preservation_title: "Preserving the Complete Art"
+  history_preservation_text: "Practical Tai Chi Chuan training seeks to preserve and teach the complete system - health, meditation, philosophy, AND combat effectiveness. We believe you cannot truly understand Tai Chi without understanding why each movement was created."
+
+  timeline_title: "Development Timeline"
+  timeline_1: "12th-17th Century:"
+  timeline_1_text: "Origins in Chinese martial traditions"
+  timeline_2: "17th-19th Century:"
+  timeline_2_text: "Refinement by Chen, Yang, Wu families"
+  timeline_3: "Early 1900s:"
+  timeline_3_text: "Introduction to general public"
+  timeline_4: "Mid-1900s:"
+  timeline_4_text: "Health aspects emphasized over combat"
+  timeline_5: "Modern Era:"
+  timeline_5_text: "Revival of practical applications"
+
+  philosophy_title: "Our Training Philosophy"
+  phil1_title: "Respect for Tradition"
+  phil1_text: "We honor the wisdom of ancient masters while adapting training methods for modern students."
+  phil2_title: "Practical Application"
+  phil2_text: "Every technique must work under pressure. We test applications through controlled sparring and realistic scenarios."
+  phil3_title: "Progressive Learning"
+  phil3_text: "Build from basic principles to advanced concepts. Master fundamentals before attempting complex techniques."
+  phil4_title: "Mind-Body Integration"
+  phil4_text: "True martial skill requires coordination of mental intent, physical technique, and emotional balance."
+
+  principles_title: "Core Principles"
+  principle1_title: "1. Ting Jin (Listening Energy)"
+  principle1_text: "Develop sensitivity to feel an opponent's intentions through physical contact. Predict and counter before attacks fully develop."
+  principle2_title: "2. Zhong Ding (Central Equilibrium)"
+  principle2_text: "Maintain perfect balance and root while moving. A centered fighter cannot be easily displaced or controlled."
+  principle3_title: "3. Yin Yang Theory"
+  principle3_text: "Every action contains its opposite. Understand when to yield and when to advance, when to be soft and when to be firm."
+
+  modern_title: "Why Learn Practical Tai Chi Chuan Today?"
+  modern1_title: "🛡️ Personal Safety"
+  modern1_text: "Develop real self-defense skills that work regardless of size or strength differences."
+  modern2_title: "🧘 Stress Management"
+  modern2_text: "Learn to remain calm and think clearly under pressure - valuable in any challenging situation."
+  modern3_title: "💪 Physical Fitness"
+  modern3_text: "Build functional strength, flexibility, and coordination through natural movement patterns."
+  modern4_title: "🎯 Mental Focus"
+  modern4_text: "Develop concentration and mindfulness that enhances performance in all areas of life."
+  modern5_title: "🤝 Social Connection"
+  modern5_text: "Train with like-minded individuals in a supportive, respectful environment."
+  modern6_title: "📈 Personal Growth"
+  modern6_text: "Challenge yourself physically and mentally while connecting with ancient wisdom traditions."
+
+  cta_title: "Ready to Discover Practical Tai Chi Chuan?"
+  cta_text: "Experience the complete art - join us for a trial class at either location"
+  cta_lyngby: "Try Lyngby Club"
+  cta_aarhus: "Try Aarhus Club"
+
+# Events page
+events:
+  page_title: "Special Training Events"
+  page_subtitle: "Intensive workshops, weekend courses, and summer training camps"
+
+  # Filters
+  filter_all: "All Events"
+  filter_upcoming: "Upcoming"
+  filter_weekend: "Weekend Courses"
+  filter_camp: "Summer Camps"
+  filter_workshop: "Workshops"
+  filter_seminar: "Seminars"
+
+  # Badges
+  badge_featured: "Featured Event"
+  badge_weekend: "Weekend Course"
+  badge_workshop: "Workshop"
+  badge_seminar: "Seminar"
+  badge_special: "Special Guest"
+
+  # Event types
+  event_types_title: "Types of Events"
+  type1_title: "Weekend Courses"
+  type1_text: "Intensive 2-day programs focusing on specific aspects of combat training. Perfect for accelerated learning."
+  type2_title: "Summer Camps"
+  type2_text: "Week-long intensive training camps with daily sessions, guest instructors, and comprehensive skill development."
+  type3_title: "Workshops"
+  type3_text: "Half-day sessions on specific techniques or applications. Great for refining particular skills."
+  type4_title: "Seminars"
+  type4_text: "Theory-focused sessions covering philosophy, strategy, and the deeper principles of martial arts."
+
+  # Registration
+  registration_title: "Registration Information"
+  how_to_register_title: "📝 How to Register"
+  how_to_step1: "Choose your event above"
+  how_to_step2: "Click \"Register\" button"
+  how_to_step3: "Fill out registration form"
+  how_to_step4: "Pay deposit to secure spot"
+  how_to_step5: "Receive confirmation email"
+
+  payment_title: "💳 Payment Options"
+  payment_option1: "✓ Bank transfer (MobilePay)"
+  payment_option2: "✓ Credit/Debit card"
+  payment_option3: "✓ Cash at studio"
+  payment_option4: "✓ Installment plans available"
+
+  prereq_title: "❓ Prerequisites"
+  prereq_beginner: "🟢 Beginner: No experience needed"
+  prereq_intermediate: "🟡 Intermediate: 6+ months training"
+  prereq_advanced: "🔴 Advanced: 2+ years experience"
+  prereq_special: "⭐ Special: Instructor approval"
+
+  # Newsletter
+  newsletter_title: "Stay Updated on Events"
+  newsletter_text: "Get notified about new workshops, early bird pricing, and special guest instructors"
+  newsletter_placeholder: "Your email address"
+  newsletter_note: "We respect your privacy. Unsubscribe at any time."
+
+  # Upcoming events section
+  upcoming_title: "Upcoming Events"

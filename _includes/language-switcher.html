@@ -1,0 +1,12 @@
+{% assign lang = page.lang | default: site.default_lang %}
+<div class="language-switcher">
+    {% if lang == "da" %}
+        <span class="lang-current">DA</span>
+        <span class="lang-separator">|</span>
+        <a href="{{ page.alt_url_en | default: '/en/' }}" class="lang-link">EN</a>
+    {% else %}
+        <a href="{{ page.alt_url_da | default: '/da/' }}" class="lang-link">DA</a>
+        <span class="lang-separator">|</span>
+        <span class="lang-current">EN</span>
+    {% endif %}
+</div>

@@ -1,0 +1,233 @@
+---
+layout: default
+---
+
+{% assign page_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[page_lang] %}
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>{{ t.about.page_title }}</h1>
+            <p>{{ t.about.page_subtitle }}</p>
+        </div>
+    </section>
+
+    <!-- What is Practical Tai Chi Chuan -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>{{ t.about.what_is_title }}</h2>
+                <p class="intro-text">
+                    {{ t.about.what_is_intro }}
+                </p>
+
+                <div class="myth-vs-reality">
+                    <div class="myth-reality-grid">
+                        <div class="myth-card">
+                            <h3>{{ t.about.myth_title }}</h3>
+                            <p>"{{ t.about.myth_text }}"</p>
+                        </div>
+                        <div class="reality-card">
+                            <h3>{{ t.about.reality_title }}</h3>
+                            <p>"{{ t.about.reality_text }}"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combat Applications -->
+    <section class="combat-applications">
+        <div class="container">
+            <h2 class="section-title">{{ t.about.combat_apps_title }}</h2>
+            <p class="section-intro">{{ t.about.combat_apps_intro }}</p>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="app-icon">🤏</div>
+                    <h3>{{ t.about.app1_title }}</h3>
+                    <p>{{ t.about.app1_text }}</p>
+                </div>
+
+                <div class="application-card">
+                    <div class="app-icon">👊</div>
+                    <h3>{{ t.about.app2_title }}</h3>
+                    <p>{{ t.about.app2_text }}</p>
+                </div>
+
+                <div class="application-card">
+                    <div class="app-icon">🌪️</div>
+                    <h3>{{ t.about.app3_title }}</h3>
+                    <p>{{ t.about.app3_text }}</p>
+                </div>
+
+                <div class="application-card">
+                    <div class="app-icon">🛡️</div>
+                    <h3>{{ t.about.app4_title }}</h3>
+                    <p>{{ t.about.app4_text }}</p>
+                </div>
+
+                <div class="application-card">
+                    <div class="app-icon">⚖️</div>
+                    <h3>{{ t.about.app5_title }}</h3>
+                    <p>{{ t.about.app5_text }}</p>
+                </div>
+
+                <div class="application-card">
+                    <div class="app-icon">🧠</div>
+                    <h3>{{ t.about.app6_title }}</h3>
+                    <p>{{ t.about.app6_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Context -->
+    <section class="history">
+        <div class="container">
+            <h2 class="section-title">{{ t.about.history_title }}</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <h3>{{ t.about.history_battlefield_title }}</h3>
+                    <p>
+                        {{ t.about.history_battlefield_text }}
+                    </p>
+
+                    <h4>{{ t.about.history_transformation_title }}</h4>
+                    <p>
+                        {{ t.about.history_transformation_text }}
+                    </p>
+
+                    <h4>{{ t.about.history_preservation_title }}</h4>
+                    <p>
+                        {{ t.about.history_preservation_text }}
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <h4>{{ t.about.timeline_title }}</h4>
+                    <div class="timeline-item">
+                        <strong>{{ t.about.timeline_1 }}</strong> {{ t.about.timeline_1_text }}
+                    </div>
+                    <div class="timeline-item">
+                        <strong>{{ t.about.timeline_2 }}</strong> {{ t.about.timeline_2_text }}
+                    </div>
+                    <div class="timeline-item">
+                        <strong>{{ t.about.timeline_3 }}</strong> {{ t.about.timeline_3_text }}
+                    </div>
+                    <div class="timeline-item">
+                        <strong>{{ t.about.timeline_4 }}</strong> {{ t.about.timeline_4_text }}
+                    </div>
+                    <div class="timeline-item">
+                        <strong>{{ t.about.timeline_5 }}</strong> {{ t.about.timeline_5_text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Philosophy -->
+    <section class="philosophy">
+        <div class="container">
+            <h2 class="section-title">{{ t.about.philosophy_title }}</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <h3>{{ t.about.phil1_title }}</h3>
+                    <p>{{ t.about.phil1_text }}</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <h3>{{ t.about.phil2_title }}</h3>
+                    <p>{{ t.about.phil2_text }}</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <h3>{{ t.about.phil3_title }}</h3>
+                    <p>{{ t.about.phil3_text }}</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <h3>{{ t.about.phil4_title }}</h3>
+                    <p>{{ t.about.phil4_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="principles">
+        <div class="container">
+            <h2 class="section-title">{{ t.about.principles_title }}</h2>
+            <div class="principles-content">
+
+                <div class="principle-item">
+                    <h3>{{ t.about.principle1_title }}</h3>
+                    <p>{{ t.about.principle1_text }}</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>{{ t.about.principle2_title }}</h3>
+                    <p>{{ t.about.principle2_text }}</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>{{ t.about.principle3_title }}</h3>
+                    <p>{{ t.about.principle3_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Relevance -->
+    <section class="modern-relevance">
+        <div class="container">
+            <h2 class="section-title">{{ t.about.modern_title }}</h2>
+            <div class="relevance-grid">
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern1_title }}</h3>
+                    <p>{{ t.about.modern1_text }}</p>
+                </div>
+
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern2_title }}</h3>
+                    <p>{{ t.about.modern2_text }}</p>
+                </div>
+
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern3_title }}</h3>
+                    <p>{{ t.about.modern3_text }}</p>
+                </div>
+
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern4_title }}</h3>
+                    <p>{{ t.about.modern4_text }}</p>
+                </div>
+
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern5_title }}</h3>
+                    <p>{{ t.about.modern5_text }}</p>
+                </div>
+
+                <div class="relevance-card">
+                    <h3>{{ t.about.modern6_title }}</h3>
+                    <p>{{ t.about.modern6_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>{{ t.about.cta_title }}</h2>
+                <p>{{ t.about.cta_text }}</p>
+                <div class="cta-buttons">
+                    <a href="lyngby/" class="btn btn-primary">{{ t.about.cta_lyngby }}</a>
+                    <a href="aarhus/" class="btn btn-primary">{{ t.about.cta_aarhus }}</a>
+                </div>
+            </div>
+        </div>
+    </section>

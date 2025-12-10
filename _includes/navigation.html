@@ -1,20 +1,36 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
+{% if lang == "da" %}
+    {% assign home_url = "/da/" %}
+    {% assign about_url = "/da/om/" %}
+    {% assign lyngby_url = "/da/lyngby/" %}
+    {% assign aarhus_url = "/da/aarhus/" %}
+    {% assign events_url = "/da/begivenheder/" %}
+{% else %}
+    {% assign home_url = "/en/" %}
+    {% assign about_url = "/en/about/" %}
+    {% assign lyngby_url = "/en/lyngby/" %}
+    {% assign aarhus_url = "/en/aarhus/" %}
+    {% assign events_url = "/en/events/" %}
+{% endif %}
 <nav class="navbar">
     <div class="container">
         <div class="nav-brand">
             <h2>Wu Guan Danmark</h2>
         </div>
         <div class="nav-menu" id="nav-menu">
-            <a href="index.html" class="nav-link {% if page.active == 'home' %}active{% endif %}">Home</a>
-            <a href="about.html" class="nav-link {% if page.active == 'about' %}active{% endif %}">About</a>
+            <a href="{{ home_url }}" class="nav-link {% if page.active == 'home' %}active{% endif %}">{{ t.nav.home }}</a>
+            <a href="{{ about_url }}" class="nav-link {% if page.active == 'about' %}active{% endif %}">{{ t.nav.about }}</a>
             <div class="nav-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">Clubs ▼</a>
+                <a href="#" class="nav-link dropdown-toggle">{{ t.nav.clubs }} ▼</a>
                 <div class="dropdown-menu">
-                    <a href="lyngby.html" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
-                    <a href="aarhus.html" class="dropdown-link {% if page.club-name == 'Aarhus' %}active{% endif %}">Aarhus</a>
+                    <a href="{{ lyngby_url }}" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
+                    <a href="{{ aarhus_url }}" class="dropdown-link {% if page.club-name == 'Aarhus' %}active{% endif %}">Aarhus</a>
                 </div>
             </div>
-            <a href="events.html" class="nav-link {% if page.active == 'events' %}active{% endif %}">Events</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="{{ events_url }}" class="nav-link {% if page.active == 'events' %}active{% endif %}">{{ t.nav.events }}</a>
+            <a href="#contact" class="nav-link">{{ t.nav.contact }}</a>
+            {% include language-switcher.html %}
         </div>
         <div class="hamburger" id="hamburger">
             <span></span>

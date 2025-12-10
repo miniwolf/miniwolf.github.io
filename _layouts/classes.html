@@ -1,0 +1,135 @@
+---
+layout: default
+---
+
+{% assign page_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[page_lang] %}
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>{{ t.classes.page_title }}</h1>
+            <p>{{ t.classes.page_subtitle }}</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <div class="container">
+            <h2 class="section-title">{{ t.classes.weekly_schedule }}</h2>
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <h3>{% if page_lang == 'da' %}Mandag{% else %}Monday{% endif %}</h3>
+                    <div class="class-time">
+                        <h4>{% if page_lang == 'da' %}Avanceret Kamptræning{% else %}Advanced Combat Training{% endif %}</h4>
+                        <p>{% if page_lang == 'da' %}20:00-21:00{% else %}8:00-9:00 PM{% endif %}</p>
+                    </div>
+                </div>
+                <div class="schedule-day">
+                    <h3>{% if page_lang == 'da' %}Onsdag{% else %}Wednesday{% endif %}</h3>
+                    <div class="class-time">
+                        <h4>{% if page_lang == 'da' %}Åben Træning{% else %}Open Training Sessions{% endif %}</h4>
+                        <p>{% if page_lang == 'da' %}19:00-19:30{% else %}7:00-7:30 PM{% endif %}</p>
+                    </div>
+                    <div class="class-time">
+                        <h4>{% if page_lang == 'da' %}Begynder Kampgrundlæggende{% else %}Beginner Combat Basics{% endif %}</h4>
+                        <p>{% if page_lang == 'da' %}19:30-21:45{% else %}7:30-9:45 PM{% endif %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Types Section -->
+    <section class="class-types">
+        <div class="container">
+            <h2 class="section-title">{{ t.classes.class_types_title }}</h2>
+            <div class="class-cards">
+                <div class="class-card">
+                    <h3>{% if page_lang == 'da' %}Begynder Kampgrundlæggende{% else %}Beginner Combat Basics{% endif %}</h3>
+                    <ul>
+                        {% if page_lang == 'da' %}
+                        <li>Grundformer med kampanvendelser</li>
+                        <li>Grundlæggende slag- og forsvarsteknikker</li>
+                        <li>Introduktion til pudetræning</li>
+                        <li>Selvforsvarsscenarier</li>
+                        <li>Spørgsmål og svar med instruktør</li>
+                        {% else %}
+                        <li>Foundation forms with martial applications</li>
+                        <li>Basic striking and defensive techniques</li>
+                        <li>Introduction to pad work</li>
+                        <li>Self-defense scenarios</li>
+                        <li>Q&A with instructor</li>
+                        {% endif %}
+                    </ul>
+                    <p class="class-perfect">{% if page_lang == 'da' %}Perfekt til: Komplette begyndere der ønsker praktiske færdigheder{% else %}Perfect for: Complete beginners wanting practical skills{% endif %}</p>
+                </div>
+
+                <div class="class-card">
+                    <h3>{% if page_lang == 'da' %}Avanceret Kamptræning{% else %}Advanced Combat Training{% endif %}</h3>
+                    <ul>
+                        {% if page_lang == 'da' %}
+                        <li>Komplekse anvendelser og kombinationer</li>
+                        <li>Sparring og tryktest</li>
+                        <li>Våbenforsvarsbegreber</li>
+                        <li>Avancerede ledlåse og kast</li>
+                        {% else %}
+                        <li>Complex applications and combinations</li>
+                        <li>Sparring and pressure testing</li>
+                        <li>Weapons defense concepts</li>
+                        <li>Advanced joint locks and throws</li>
+                        {% endif %}
+                    </ul>
+                    <p class="class-perfect">{% if page_lang == 'da' %}Perfekt til: Elever med 6+ måneders erfaring{% else %}Perfect for: Students with 6+ months experience{% endif %}</p>
+                </div>
+
+                <div class="class-card">
+                    <h3>{% if page_lang == 'da' %}Åben Træning{% else %}Open Training Sessions{% endif %}</h3>
+                    <ul>
+                        {% if page_lang == 'da' %}
+                        <li>Træn med træningspartnere</li>
+                        <li>Teknikforfining</li>
+                        <li>Sparringsmuligheder</li>
+                        {% else %}
+                        <li>Practice with training partners</li>
+                        <li>Technique refinement</li>
+                        <li>Sparring opportunities</li>
+                        {% endif %}
+                    </ul>
+                    <p class="class-perfect">{% if page_lang == 'da' %}Perfekt til: Alle niveauer der ønsker ekstra træning{% else %}Perfect for: All levels wanting extra practice{% endif %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">{{ t.club.pricing }}</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>{{ t.club.trial_class }}</h3>
+                    <div class="price">{{ t.club.trial_price }}</div>
+                    <p>{{ t.club.trial_drop_in }}</p>
+                    <p>{{ t.club.trial_no_commitment }}</p>
+                    <a href="index/#contact" class="btn btn-secondary">{{ t.ui.book_now }}</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>{{ t.club.monthly_unlimited }}</h3>
+                    <div class="price">{{ t.club.monthly_price }}<span>{{ t.club.monthly_suffix }}</span></div>
+                    <p>{{ t.club.monthly_all_classes }}</p>
+                    <p>{{ t.club.monthly_best_value }}</p>
+                    <a href="index/#contact" class="btn btn-primary">{{ t.ui.get_started }}</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>{{ t.club.private_lessons }}</h3>
+                    <div class="price">{{ t.club.private_price }}<span>{{ t.club.private_suffix }}</span></div>
+                    <p>{{ t.club.private_one_on_one }}</p>
+                    <p>{{ t.club.private_customized }}</p>
+                    <a href="index/#contact" class="btn btn-secondary">{{ t.ui.schedule }}</a>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,10 +1,22 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{page.club-name}} Club - Wu Guan Danmark</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>{{page.club-name}} {{ t.club.club_suffix }} - Wu Guan Danmark</title>
+
+    <!-- SEO hreflang tags -->
+    {% if page.alt_url_en %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.alt_url_en }}" />
+    {% endif %}
+    {% if page.alt_url_da %}
+    <link rel="alternate" hreflang="da" href="{{ site.url }}{{ page.alt_url_da }}" />
+    {% endif %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/da/" />
+
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +27,7 @@
     <section class="club-header">
         <div class="container">
             <div class="club-header-content">
-                <h1>{{ page.club-name}} Club</h1>
+                <h1>{{ page.club-name}} {{ t.club.club_suffix }}</h1>
                 <!--<p>Our flagship location - Where Wu Guan began in Denmark</p>
                 <div class="club-badges">
                     <span class="badge">10+ Years Experience</span>
@@ -28,20 +40,20 @@
     <!-- Instructor Section -->
     <section class="club-instructor">
         <div class="container">
-            <h2 class="section-title">Your Instructors</h2>
+            <h2 class="section-title">{{ t.club.your_instructors }}</h2>
 {% for teacher in page.instructors %}
             <div class="instructor-grid">
                 <div class="instructor-image">
-                    <img src="{{teacher.image}}" alt="Lyngby Instructor" loading="lazy">
+                    <img src="{{teacher.image}}" alt="{{ teacher.name }}" loading="lazy">
                 </div>
                 <div class="instructor-content">
                     <h3>{{ teacher.name }}</h3>
-                    <p>{{ teacher.name }} brings authentic combat training to {{page.club-name}}.</p>
-                    
+                    <p>{{ teacher.name }} {{ t.club.brings_training }} {{page.club-name}}.</p>
+
                     <div class="instructor-credentials">
-                        <h4>Training & Lineage:</h4>
+                        <h4>{{ t.club.training_lineage }}</h4>
                         <ul>
-                            <li>Started practicing Tai Chi in {{ teacher.start }}</li>
+                            <li>{{ t.club.started_practicing }} {{ teacher.start }}</li>
                             {% for description in teacher.descriptions %} <li>{{description}}</li> {% endfor %}
                         </ul>
                     </div>
@@ -54,16 +66,16 @@
 
     <section class="class-types">
         <div class="container">
-            <h2 class="section-title">Class Types</h2>
+            <h2 class="section-title">{{ t.club.class_types }}</h2>
             <div class="class-cards">
                 {% for class_type in page.classtypes %}
-                {% assign class = site.data.classes[class_type] %}
+                {% assign class = site.data.classes[class_type][lang] %}
                 <div class="class-card">
                     <h3>{{ class.name }}</h3>
                     <ul>
                         {% for desc in class.descriptions %} <li>{{desc}}</li> {% endfor %}
                     </ul>
-                    <p class="class-perfect">Perfect for: {{ class.perfect-for }}</p>
+                    <p class="class-perfect">{{ t.club.perfect_for }}: {{ class.perfect-for }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -73,7 +85,7 @@
     <!-- Schedule Section -->
     <section class="schedule">
         <div class="container">
-            <h2 class="section-title">{{ page.club-name }} Training Schedule</h2>
+            <h2 class="section-title">{{ page.club-name }} {{ t.club.training_schedule }}</h2>
             <div class="schedule-grid">
                 {% for class in page.classes %}
                 <div class="schedule-day">
@@ -91,30 +103,30 @@
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
-            <h2 class="section-title">{{page.club-name}} Pricing</h2>
+            <h2 class="section-title">{{page.club-name}} {{ t.club.pricing }}</h2>
             <div class="pricing-cards">
                 <div class="pricing-card">
-                    <h3>Trial Class</h3>
-                    <div class="price">200 DKK</div>
-                    <p>Drop-in rate</p>
-                    <p>No commitment</p>
-                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                    <h3>{{ t.club.trial_class }}</h3>
+                    <div class="price">{{ t.club.trial_price }}</div>
+                    <p>{{ t.club.trial_drop_in }}</p>
+                    <p>{{ t.club.trial_no_commitment }}</p>
+                    <a href="#contact" class="btn btn-secondary">{{ t.ui.book_now }}</a>
                 </div>
-                
+
                 <div class="pricing-card featured">
-                    <h3>Monthly Unlimited</h3>
-                    <div class="price">800 DKK<span>/month</span></div>
-                    <p>All classes</p>
-                    <p>Best value</p>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <h3>{{ t.club.monthly_unlimited }}</h3>
+                    <div class="price">{{ t.club.monthly_price }}<span>{{ t.club.monthly_suffix }}</span></div>
+                    <p>{{ t.club.monthly_all_classes }}</p>
+                    <p>{{ t.club.monthly_best_value }}</p>
+                    <a href="#contact" class="btn btn-primary">{{ t.ui.get_started }}</a>
                 </div>
-                
+
                 <div class="pricing-card">
-                    <h3>Private Lessons</h3>
-                    <div class="price">500 DKK<span>/session</span></div>
-                    <p>1-on-1 instruction</p>
-                    <p>Customized training</p>
-                    <a href="#contact" class="btn btn-secondary">Schedule</a>
+                    <h3>{{ t.club.private_lessons }}</h3>
+                    <div class="price">{{ t.club.private_price }}<span>{{ t.club.private_suffix }}</span></div>
+                    <p>{{ t.club.private_one_on_one }}</p>
+                    <p>{{ t.club.private_customized }}</p>
+                    <a href="#contact" class="btn btn-secondary">{{ t.ui.schedule }}</a>
                 </div>
             </div>
         </div>
@@ -125,35 +137,35 @@
     <!-- Contact Section -->
     <section class="club-contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Contact {{ page.club-name }} Club</h2>
+            <h2 class="section-title">{{ t.club.contact_title }} {{ page.club-name }} {{ t.club.club_suffix }}</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <strong>📍 Location:</strong>
+                        <strong>{{ t.club.location_label }}</strong>
                         <p>{{ page.address }}</p>
                     </div>
                     <div class="contact-item">
-                        <strong>📞 Phone:</strong>
+                        <strong>{{ t.club.phone_label }}</strong>
                         <p><a href="tel:{{page.phone}}">{{page.phone}}</a></p>
                     </div>
                     <div class="contact-item">
-                        <strong>✉️ Email:</strong>
+                        <strong>{{ t.club.email_label }}</strong>
                         <p>{{ page.email }}</p>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form name="gform" id="gform" enctype="text/plain" action="{{page.club-contact}}" target="hidden_iframe" onsubmit="submitted=true;">
-                        <input type="text" name="{{page.contact-name-id}}" id="{{page.contact-name-id}}" placeholder="Your Name" required>
-                        <input type="email" name="{{page.contact-email-id}}" id="{{page.contact-email-id}}" placeholder="Your Email" required>
+                        <input type="text" name="{{page.contact-name-id}}" id="{{page.contact-name-id}}" placeholder="{{ t.forms.your_name }}" required>
+                        <input type="email" name="{{page.contact-email-id}}" id="{{page.contact-email-id}}" placeholder="{{ t.forms.your_email }}" required>
                         <select name="{{page.contact-interest-id}}" id="{{page.contact-interest-id}}" form="gform" required>
-                            <option value="">Select Interest</option>
-                            <option value="General Question">General Question</option>
+                            <option value="">{{ t.forms.select_interest }}</option>
+                            <option value="{{ t.forms.general_question }}">{{ t.forms.general_question }}</option>
                             {% for option in page.interests %}
                             <option value="{{option}}">{{option}}</option>
                             {% endfor %}
                         </select>
-                        <textarea name="{{page.contact-content-id}}" id="{{page.contact-content-id}}" placeholder="Your Message" rows="4"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <textarea name="{{page.contact-content-id}}" id="{{page.contact-content-id}}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">{{ t.ui.send_message }}</button>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
@@ -164,6 +176,6 @@
     <!-- Footer -->
     {% include footer.html %}
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

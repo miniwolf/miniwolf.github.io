@@ -1,177 +1,39 @@
 ---
-active: home
+permalink: /
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=/da/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wu Guan Danmark - Combat-Ready Training</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Wu Guan Danmark - Omdirigerer...</title>
+    <script>window.location.href = '/da/';</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .redirect-message {
+            text-align: center;
+        }
+        .redirect-message h1 {
+            color: #C8102E;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    {% include navigation.html %}
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Wu Guan Danmark</h1>
-                    <p class="hero-subtitle">Combat-Ready Training</p>
-                    <p class="hero-quote">"Ancient art, modern application - now in Lyngby and Aarhus"</p>
-                    <div class="hero-buttons">
-                        <a href="#clubs" class="btn btn-primary">Find Your Club</a>
-                        <a href="#techniques" class="btn btn-secondary">Watch Techniques</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Wu Guan Section -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Why Wu Guan?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Self-Defense Skills</h3>
-                    <p>Learn effective combat applications that work in real situations</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🥊</div>
-                    <h3>Pad Work & Sparring</h3>
-                    <p>Build real fighting experience through controlled combat training</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Mental Toughness</h3>
-                    <p>Develop warrior mindset and situational awareness</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Physical Conditioning</h3>
-                    <p>Functional strength, flexibility, and combat readiness</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Clubs Section -->
-    <section class="clubs" id="clubs">
-        <div class="container">
-            <h2 class="section-title">Our Training Locations</h2>
-            <div class="clubs-grid">
-                <div class="club-card">
-                    <div class="club-image">
-                        <img src="images/studios/lyngby-studio.jpg" alt="Lyngby Training Studio" loading="lazy">
-                    </div>
-                    <div class="club-content">
-                        <h3>Lyngby Club</h3>
-                        <p>In the heart of Lyngby, offering comprehensive combat training with traditional foundations.</p>
-                        <div class="club-highlights">
-                            <span class="highlight">✓ 10+ years experience</span>
-                            <span class="highlight">✓ Advanced combat training</span>
-                            <span class="highlight">✓ Traditional lineage</span>
-                        </div>
-                        <div class="club-schedule-preview">
-                            <strong>Training Days:</strong> Mon, Wed, Fri, Sat
-                        </div>
-                        <a href="lyngby.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="club-card">
-                    <div class="club-image">
-                        <img src="images/studios/aarhus-studio.jpg" alt="Aarhus Training Studio" loading="lazy">
-                    </div>
-                    <div class="club-content">
-                        <h3>Aarhus Club</h3>
-                        <p>Denmark's second largest city with combat-focused approach.</p>
-                        <div class="club-highlights">
-                            <span class="highlight">✓ Same proven methods</span>
-                            <span class="highlight">✓ Modern facilities</span>
-                            <span class="highlight">✓ Growing community</span>
-                        </div>
-                        <div class="club-schedule-preview">
-                            <strong>Training Days:</strong> Tue, Thu, Sat
-                        </div>
-                        <a href="aarhus.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Highlights Section -->
-    <section class="techniques" id="techniques">
-        <div class="container">
-            <h2 class="section-title">Training Highlights</h2>
-            <p class="techniques-intro">See what makes our approach to Tai Chi unique - practical applications taught at both locations</p>
-            <div class="techniques-grid">
-                <div class="technique-card">
-                    <div class="video-placeholder">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="Joint Locks & Throws" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <h3>Joint Locks & Throws</h3>
-                    <p>Learn practical joint manipulation techniques and takedowns</p>
-                </div>
-                <div class="technique-card">
-                    <div class="video-placeholder">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="Striking Techniques" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <h3>Striking Techniques</h3>
-                    <p>Master Practical Tai Chi Chuan's hidden striking applications and combinations</p>
-                </div>
-                <div class="technique-card">
-                    <div class="video-placeholder">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="Defensive Strategies" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <h3>Defensive Strategies</h3>
-                    <p>Develop situational awareness and escape techniques</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get Started Today</h2>
-            <div class="contact-locations">
-                <div class="location-card">
-                    <h3>Lyngby Club</h3>
-                    <p>📍 [Lyngby Address]</p>
-                    <p>📞 [Lyngby Phone]</p>
-                    <p>✉️ ptcc.lyngby@gmail.com</p>
-                    <a href="lyngby.html" class="btn btn-secondary">Visit Lyngby Page</a>
-                </div>
-                <div class="location-card">
-                    <h3>Aarhus Club</h3>
-                    <p>📍 [Aarhus Address]</p>
-                    <p>📞 [Aarhus Phone]</p>
-                    <p>✉️ ptcc.aarhus@gmail.com</p>
-                    <a href="aarhus.html" class="btn btn-secondary">Visit Aarhus Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    {% include footer.html %}
-
-    <script src="js/main.js"></script>
+    <div class="redirect-message">
+        <h1>Wu Guan Danmark</h1>
+        <p>Omdirigerer til dansk side...</p>
+        <p>Redirecting to Danish site...</p>
+        <p>Hvis du ikke bliver omdirigeret, <a href="/da/">klik her</a>.</p>
+        <p>If you are not redirected, <a href="/da/">click here</a>.</p>
+    </div>
 </body>
 </html>

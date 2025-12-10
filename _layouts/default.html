@@ -1,0 +1,38 @@
+{% if page.lang %}
+  {% assign page_lang = page.lang %}
+{% else %}
+  {% assign page_lang = site.default_lang %}
+{% endif %}
+{% assign t = site.data.translations[page_lang] %}
+<!DOCTYPE html>
+<html lang="{{ page_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: t.home.title }}</title>
+
+    <!-- SEO hreflang tags for multi-language support -->
+    {% if page.alt_url_en %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.alt_url_en }}" />
+    {% endif %}
+    {% if page.alt_url_da %}
+    <link rel="alternate" hreflang="da" href="{{ site.url }}/da{{ page.alt_url_da }}" />
+    {% endif %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/da/" />
+
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    {% include navigation.html %}
+
+    <!-- Main Content -->
+    {{ content }}
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <script src="{{ '/js/main.js' | relative_url }}"></script>
+</body>
+</html>

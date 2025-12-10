@@ -1,0 +1,263 @@
+---
+layout: default
+---
+
+{% assign page_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[page_lang] %}
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>{{ t.events.page_title }}</h1>
+            <p>{{ t.events.page_subtitle }}</p>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">{{ t.events.filter_all }}</button>
+                <button class="filter-btn" data-filter="upcoming">{{ t.events.filter_upcoming }}</button>
+                <button class="filter-btn" data-filter="weekend">{{ t.events.filter_weekend }}</button>
+                <button class="filter-btn" data-filter="camp">{{ t.events.filter_camp }}</button>
+                <button class="filter-btn" data-filter="workshop">{{ t.events.filter_workshop }}</button>
+                <button class="filter-btn" data-filter="seminar">{{ t.events.filter_seminar }}</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Event -->
+    <section class="featured-event">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <span class="event-badge featured-badge">{% if page_lang == 'da' %}Fremhævet Begivenhed{% else %}Featured Event{% endif %}</span>
+                    <h2>{% if page_lang == 'da' %}Sommer Kamp Intensiv 2026{% else %}Summer Combat Intensive 2026{% endif %}</h2>
+                    <p class="event-meta">
+                        <span class="event-date">📅 {% if page_lang == 'da' %}15.-21. juli 2026{% else %}July 15-21, 2026{% endif %}</span>
+                        <span class="event-location">📍 Lyngby Studio</span>
+                        <span class="event-level">🎯 {% if page_lang == 'da' %}Alle Niveauer{% else %}All Levels{% endif %}</span>
+                    </p>
+                    <p class="event-description">
+                        {% if page_lang == 'da' %}
+                        En ugelang intensiv træningslejr med fokus på praktiske kampanvendelser.
+                        Daglige træningssessioner der dækker sparring, våbenforsvar og avancerede teknikker.
+                        Perfekt til at accelerere din kampudvikling.
+                        {% else %}
+                        A week-long intensive training camp focusing on practical combat applications.
+                        Daily training sessions covering sparring, weapons defense, and advanced techniques.
+                        Perfect for accelerating your martial development.
+                        {% endif %}
+                    </p>
+                    <div class="event-highlights">
+                        <span class="highlight">✓ {% if page_lang == 'da' %}40+ timers træning{% else %}40+ hours training{% endif %}</span>
+                        <span class="highlight">✓ {% if page_lang == 'da' %}Gæsteinstruktører{% else %}Guest instructors{% endif %}</span>
+                        <span class="highlight">✓ {% if page_lang == 'da' %}Afslutningsbevis{% else %}Certificate completion{% endif %}</span>
+                        <span class="highlight">✓ {% if page_lang == 'da' %}Indkvartering tilgængelig{% else %}Accommodation available{% endif %}</span>
+                    </div>
+                    <div class="event-pricing">
+                        <span class="event-price">2.500 DKK</span>
+                        <span class="early-bird">{% if page_lang == 'da' %}Tidlig tilmelding: 2.200 DKK (indtil 1. maj){% else %}Early Bird: 2,200 DKK (until May 1st){% endif %}</span>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-large">{% if page_lang == 'da' %}Tilmeld nu{% else %}Register Now{% endif %}</button>
+                        <button class="btn btn-secondary">{% if page_lang == 'da' %}Læs mere{% else %}Learn More{% endif %}</button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="{% if page_lang == 'da' %}../images/events/summer-camp-2026.jpg{% else %}images/events/summer-camp-2026.jpg{% endif %}" alt="{% if page_lang == 'da' %}Sommer Kamp Intensiv{% else %}Summer Combat Intensive{% endif %}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">{{ t.events.upcoming_title }}</h2>
+            <div class="events-grid">
+
+                <!-- Weekend Course Event -->
+                <div class="event-card" data-category="upcoming weekend">
+                    <div class="event-image">
+                        <img src="{% if page_lang == 'da' %}../images/events/weekend-defense.jpg{% else %}images/events/weekend-defense.jpg{% endif %}" alt="{% if page_lang == 'da' %}Selvforsvars Weekend{% else %}Self-Defense Weekend{% endif %}" class="img-cover">
+                        <span class="event-badge badge-weekend">{% if page_lang == 'da' %}Weekendkursus{% else %}Weekend Course{% endif %}</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>{% if page_lang == 'da' %}Praktisk Selvforsvars Weekend{% else %}Practical Self-Defense Weekend{% endif %}</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 {% if page_lang == 'da' %}23.-24. marts 2026{% else %}March 23-24, 2026{% endif %}</span>
+                            <span class="event-location">📍 Aarhus Studio</span>
+                        </div>
+                        <p>{% if page_lang == 'da' %}Lær essentielle selvforsvarsteknikker på bare én weekend. Fokus på virkelige scenarier og praktiske anvendelser.{% else %}Learn essential self-defense techniques in just one weekend. Focus on real-world scenarios and practical applications.{% endif %}</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ {% if page_lang == 'da' %}Lør-Søn: 10:00-16:00{% else %}Sat-Sun: 10:00-16:00{% endif %}</div>
+                            <div class="event-price">800 DKK</div>
+                            <div class="event-spots">👥 {% if page_lang == 'da' %}12 pladser tilgængelige{% else %}12 spots available{% endif %}</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
+                    </div>
+                </div>
+
+                <!-- Workshop Event -->
+                <div class="event-card" data-category="upcoming workshop">
+                    <div class="event-image">
+                        <img src="{% if page_lang == 'da' %}../images/events/weapons-workshop.jpg{% else %}images/events/weapons-workshop.jpg{% endif %}" alt="{% if page_lang == 'da' %}Våbenforsvar Workshop{% else %}Weapons Defense Workshop{% endif %}" class="img-cover">
+                        <span class="event-badge badge-workshop">Workshop</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>{% if page_lang == 'da' %}Våbenforsvar Workshop{% else %}Weapons Defense Workshop{% endif %}</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 {% if page_lang == 'da' %}14. april 2026{% else %}April 14, 2026{% endif %}</span>
+                            <span class="event-location">📍 Lyngby Studio</span>
+                        </div>
+                        <p>{% if page_lang == 'da' %}Avancerede teknikker til forsvar mod kniv- og stokangreb. Kun for erfarne elever.{% else %}Advanced techniques for defending against knife and stick attacks. For experienced students only.{% endif %}</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ 14:00-18:00</div>
+                            <div class="event-price">400 DKK</div>
+                            <div class="event-spots">👥 {% if page_lang == 'da' %}8 pladser tilgængelige{% else %}8 spots available{% endif %}</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
+                    </div>
+                </div>
+
+                <!-- Seminar Event -->
+                <div class="event-card" data-category="upcoming seminar">
+                    <div class="event-image">
+                        <img src="{% if page_lang == 'da' %}../images/events/philosophy-seminar.jpg{% else %}images/events/philosophy-seminar.jpg{% endif %}" alt="{% if page_lang == 'da' %}Tai Chi Filosofi{% else %}Tai Chi Philosophy{% endif %}" class="img-cover">
+                        <span class="event-badge badge-seminar">Seminar</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>{% if page_lang == 'da' %}Tai Chi Filosofi & Strategi{% else %}Tai Chi Philosophy & Strategy{% endif %}</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 {% if page_lang == 'da' %}5. maj 2026{% else %}May 5, 2026{% endif %}</span>
+                            <span class="event-location">📍 Online + Lyngby</span>
+                        </div>
+                        <p>{% if page_lang == 'da' %}Dybt dyk i de filosofiske fundamenter og strategiske principper for Tai Chi kamp.{% else %}Deep dive into the philosophical foundations and strategic principles of Tai Chi combat.{% endif %}</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ 10:00-13:00</div>
+                            <div class="event-price">250 DKK</div>
+                            <div class="event-spots">👥 {% if page_lang == 'da' %}20 pladser tilgængelige{% else %}20 spots available{% endif %}</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
+                    </div>
+                </div>
+
+                <!-- Guest Instructor Event -->
+                <div class="event-card" data-category="upcoming workshop">
+                    <div class="event-image">
+                        <img src="{% if page_lang == 'da' %}../images/events/guest-instructor.jpg{% else %}images/events/guest-instructor.jpg{% endif %}" alt="{% if page_lang == 'da' %}Gæsteinstruktør Workshop{% else %}Guest Instructor Workshop{% endif %}" class="img-cover">
+                        <span class="event-badge badge-special">{% if page_lang == 'da' %}Særlig Gæst{% else %}Special Guest{% endif %}</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>{% if page_lang == 'da' %}Mester Torben Rif Workshop{% else %}Master Torben Rif Workshop{% endif %}</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 {% if page_lang == 'da' %}8.-9. juni 2026{% else %}June 8-9, 2026{% endif %}</span>
+                            <span class="event-location">📍 Lyngby Studio</span>
+                        </div>
+                        <p>{% if page_lang == 'da' %}Sjælden mulighed for at træne direkte med Mester Torben Rif fra Danmark. Avancerede anvendelser og korrektioner.{% else %}Rare opportunity to train directly with Master Torben Rif from Denmark. Advanced applications and corrections.{% endif %}</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ {% if page_lang == 'da' %}Lør-Søn: 10:00-17:00{% else %}Sat-Sun: 10:00-17:00{% endif %}</div>
+                            <div class="event-price">1.200 DKK</div>
+                            <div class="event-spots">👥 {% if page_lang == 'da' %}Begrænset til 16 elever{% else %}Limited to 16 students{% endif %}</div>
+                        </div>
+                        <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Explanation -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">{{ t.events.event_types_title }}</h2>
+            <div class="grid grid-4">
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">📅</span>
+                    <h3>{{ t.events.type1_title }}</h3>
+                    <p>{{ t.events.type1_text }}</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🏕️</span>
+                    <h3>{{ t.events.type2_title }}</h3>
+                    <p>{{ t.events.type2_text }}</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🎯</span>
+                    <h3>{{ t.events.type3_title }}</h3>
+                    <p>{{ t.events.type3_text }}</p>
+                </div>
+
+                <div class="card card-dark card-center">
+                    <span class="card-icon">🧠</span>
+                    <h3>{{ t.events.type4_title }}</h3>
+                    <p>{{ t.events.type4_text }}</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Info -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">{{ t.events.registration_title }}</h2>
+            <div class="registration-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>{{ t.events.how_to_register_title }}</h3>
+                        <ol>
+                            <li>{{ t.events.how_to_step1 }}</li>
+                            <li>{{ t.events.how_to_step2 }}</li>
+                            <li>{{ t.events.how_to_step3 }}</li>
+                            <li>{{ t.events.how_to_step4 }}</li>
+                            <li>{{ t.events.how_to_step5 }}</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>{{ t.events.payment_title }}</h3>
+                        <ul class="list-unstyled">
+                            <li>{{ t.events.payment_option1 }}</li>
+                            <li>{{ t.events.payment_option2 }}</li>
+                            <li>{{ t.events.payment_option3 }}</li>
+                            <li>{{ t.events.payment_option4 }}</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>{{ t.events.prereq_title }}</h3>
+                        <ul class="list-unstyled">
+                            <li>{{ t.events.prereq_beginner }}</li>
+                            <li>{{ t.events.prereq_intermediate }}</li>
+                            <li>{{ t.events.prereq_advanced }}</li>
+                            <li>{{ t.events.prereq_special }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>{{ t.events.newsletter_title }}</h2>
+                <p>{{ t.events.newsletter_text }}</p>
+                <form class="newsletter-form">
+                    <div class="form-group-inline">
+                        <input type="email" placeholder="{{ t.events.newsletter_placeholder }}" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">{{ t.ui.subscribe }}</button>
+                    </div>
+                    <p class="newsletter-note">{{ t.events.newsletter_note }}</p>
+                </form>
+            </div>
+        </div>
+    </section>

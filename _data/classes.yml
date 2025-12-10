@@ -1,40 +1,73 @@
 beginner:
-  name: Beginner Combat Basics
-  descriptions: [
-    "Foundation forms with martial applications",
-    "Basic striking and defensive techniques",
-    "Introduction to pad work",
-    "Self-defense scenarios",
-    "Q&A with instructor",
-  ]
-  perfect-for: Complete beginners wanting practical skills
+  en:
+    name: Beginner Combat Basics
+    descriptions:
+      - "Foundation forms with martial applications"
+      - "Basic striking and defensive techniques"
+      - "Introduction to pad work"
+      - "Self-defense scenarios"
+      - "Q&A with instructor"
+    perfect-for: Complete beginners wanting practical skills
+  da:
+    name: Begynder Kampgrundlæggende
+    descriptions:
+      - "Grundformer med kampanvendelser"
+      - "Grundlæggende slag- og forsvarsteknikker"
+      - "Introduktion til pudetræning"
+      - "Selvforsvarsscenarier"
+      - "Spørgsmål og svar med instruktør"
+    perfect-for: Komplette begyndere der ønsker praktiske færdigheder
 
 advanced:
-  name: Advanced Combat Training
-  descriptions: [
-    "Complex applications and combinations",
-    "Sparring and pressure testing",
-    "Weapons defense concepts",
-    "Advanced joint locks and throws",
-  ]
-  perfect-for: Students with 6+ months experience
+  en:
+    name: Advanced Combat Training
+    descriptions:
+      - "Complex applications and combinations"
+      - "Sparring and pressure testing"
+      - "Weapons defense concepts"
+      - "Advanced joint locks and throws"
+    perfect-for: Students with 6+ months experience
+  da:
+    name: Avanceret Kamptræning
+    descriptions:
+      - "Komplekse anvendelser og kombinationer"
+      - "Sparring og tryktest"
+      - "Våbenforsvarsbegreber"
+      - "Avancerede ledlåse og kast"
+    perfect-for: Elever med 6+ måneders erfaring
 
 open:
-  name: Open Training Sessions
-  descriptions: [
-    "Practice with training partners",
-    "Technique refinement",
-    "Sparring opportunities",
-  ]
-  perfect-for: All levels wanting extra practice
+  en:
+    name: Open Training Sessions
+    descriptions:
+      - "Practice with training partners"
+      - "Technique refinement"
+      - "Sparring opportunities"
+    perfect-for: All levels wanting extra practice
+  da:
+    name: Åben Træning
+    descriptions:
+      - "Træn med træningspartnere"
+      - "Teknikforfining"
+      - "Sparringsmuligheder"
+    perfect-for: Alle niveauer der ønsker ekstra træning
 
 qigong:
-  name: Qigong - Five Animals
-  descriptions: [
-    "Tai Chi 18 Qigong: indre ro, smidighed, kropsbevidsthed",
-    "Tai Chi 9 Qigong: øvelser baseret på den korte håndform fra tai chi",
-    "Five Animals Qigong: stærk ryg og balance",
-    "Shaolin Ba Duan Jin: en serie med mange gode strækøvelser",
-    "Xing Yi: statisk Qigong",
-  ]
-  perfect-for: All levels wanting to strengthen their mind
+  en:
+    name: Qigong - Five Animals
+    descriptions:
+      - "Tai Chi 18 Qigong: inner peace, flexibility, body awareness"
+      - "Tai Chi 9 Qigong: exercises based on the short hand form from tai chi"
+      - "Five Animals Qigong: strong back and balance"
+      - "Shaolin Ba Duan Jin: a series with many good stretching exercises"
+      - "Xing Yi: static Qigong"
+    perfect-for: All levels wanting to strengthen their mind
+  da:
+    name: Qigong - Fem Dyr
+    descriptions:
+      - "Tai Chi 18 Qigong: indre ro, smidighed, kropsbevidsthed"
+      - "Tai Chi 9 Qigong: øvelser baseret på den korte håndform fra tai chi"
+      - "Five Animals Qigong: stærk ryg og balance"
+      - "Shaolin Ba Duan Jin: en serie med mange gode strækøvelser"
+      - "Xing Yi: statisk Qigong"
+    perfect-for: Alle niveauer der ønsker at styrke deres sind

@@ -1,0 +1,97 @@
+# Chinese Tai Chi terminology with translations
+# Format: pinyin (Chinese romanization) with English/Danish translations
+
+ting_jin:
+  pinyin: "Ting Jin"
+  en: "listening energy"
+  da: "lytteenergi"
+
+zhong_ding:
+  pinyin: "Zhong Ding"
+  en: "central equilibrium"
+  da: "central balance"
+
+yin_yang:
+  pinyin: "Yin Yang"
+  en: "complementary opposites"
+  da: "komplementære modsætninger"
+
+fa_jin:
+  pinyin: "Fa Jin"
+  en: "explosive power"
+  da: "eksplosiv kraft"
+
+peng:
+  pinyin: "Peng"
+  en: "ward off energy"
+  da: "afværgeenergi"
+
+lu:
+  pinyin: "Lu"
+  en: "sideverse diversion"
+  da: "afledning til siden"
+
+ji:
+  pinyin: "Ji"
+  en: "force in forward direction"
+  da: "fremadrettet kræft"
+
+an:
+  pinyin: "An"
+  en: "press"
+  da: "pres nedad"
+
+cai:
+  pinyin: "Cai"
+  en: "uprooting"
+  da: "træk rødderne op"
+
+lie:
+  pinyin: "Lie"
+  en: "spiral"
+  da: "spiral"
+
+zhou:
+  pinyin: "Zhou"
+  en: "elbow"
+  da: "albue"
+
+kao:
+  pinyin: "Kao"
+  en: "shoulder"
+  da: "skulder"
+
+tui_shou:
+  pinyin: "Tui Shou"
+  en: "pushing hands"
+  da: "skubbende hænder"
+
+san_shou:
+  pinyin: "San Shou"
+  en: "free hands / sparring"
+  da: "frie hænder / sparring"
+
+qigong:
+  pinyin: "Qigong"
+  en: "energy cultivation"
+  da: "energikultivering"
+
+dao_chuan:
+  pinyin: "Dao Chuan"
+  en: "short form"
+  da: "kort form"
+
+jian:
+  pinyin: "Jian"
+  en: "straight sword"
+  da: "lige sværd"
+
+dao:
+  pinyin: "Dao"
+  en: "saber / broadsword"
+  da: "sabel"
+
+qiang:
+  pinyin: "Qiang"
+  en: "spear"
+  da: "spyd"

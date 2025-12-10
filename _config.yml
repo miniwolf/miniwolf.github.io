@@ -1,0 +1,18 @@
+# Jekyll Configuration for Wu Guan Danmark
+# Multi-language support
+
+# Language settings
+languages: ["da", "en"]
+default_lang: "da"
+
+# Build settings
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+
+# Keep HTML files clean
+permalink: pretty

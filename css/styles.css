@@ -1515,3 +1515,45 @@ a {
 .event-card.hidden {
     display: none;
 }
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+
+.lang-current {
+    font-weight: bold;
+    color: var(--primary-color, #C8102E);
+}
+
+.lang-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.lang-link:hover {
+    color: var(--primary-color, #C8102E);
+}
+
+.lang-separator {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar .language-switcher .lang-link {
+    color: var(--text-light, #fff);
+}
+
+.navbar .language-switcher .lang-separator {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
