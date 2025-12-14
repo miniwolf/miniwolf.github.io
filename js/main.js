@@ -78,3 +78,72 @@ window.addEventListener('scroll', () => {
         navbar.style.background = '#2C2C2C';
     }
 });
+
+// Get Started Popup Logic with Cookie Management
+(function() {
+    const popup = document.getElementById('get-started-popup');
+    const closeBtn = document.getElementById('popup-close');
+    const cookieName = 'wu_guan_popup_dismissed';
+    const cookieExpireDays = 30;
+
+    // Cookie helper functions
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function showPopup() {
+        if (popup) {
+            popup.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+    }
+
+    function hidePopup() {
+        if (popup) {
+            popup.classList.remove('show');
+            document.body.style.overflow = ''; // Restore scrolling
+            setCookie(cookieName, 'true', cookieExpireDays);
+        }
+    }
+
+    // Show popup on first visit (if not dismissed before)
+    if (popup && !getCookie(cookieName)) {
+        // Delay popup slightly for better UX
+        setTimeout(showPopup, 1000);
+    }
+
+    // Close popup when clicking close button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', hidePopup);
+    }
+
+    // Close popup when clicking outside the content
+    if (popup) {
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                hidePopup();
+            }
+        });
+    }
+
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && popup && popup.classList.contains('show')) {
+            hidePopup();
+        }
+    });
+})();

@@ -161,8 +161,17 @@ h3 {
 @media (min-width: 769px) {
     .nav-dropdown:hover .dropdown-menu,
     .nav-dropdown.active .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Mobile: active class shows dropdown */
+@media (max-width: 768px) {
+    .nav-dropdown.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .dropdown-link {
@@ -823,16 +832,6 @@ a {
 }
 
 /* Contact Section */
-.contact {
-    padding: 5rem 0;
-    background: var(--secondary-color);
-    color: var(--text-light);
-}
-
-.contact .section-title {
-    color: var(--text-light);
-}
-
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1558,5 +1557,164 @@ a {
     .language-switcher {
         margin-top: 1rem;
         justify-content: center;
+        margin-right: 20px;
+    }
+}
+
+/* ===== POPUP OVERLAY ===== */
+.contact {
+    padding: 5rem 0;
+    background: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.contact .section-title {
+    color: var(--text-light);
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity var(--transition-medium);
+    overflow-y: auto;
+    padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.popup-overlay.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.popup-content {
+    background: var(--background-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: slideUp 0.4s ease;
+    margin: auto;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all var(--transition-fast);
+}
+
+.popup-close:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transform: rotate(90deg);
+}
+
+.popup-overlay .section-title {
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+}
+
+.popup-overlay .contact-locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.popup-overlay .location-card {
+    color: var(--text-dark);
+    background: var(--background-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.popup-overlay .location-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.popup-overlay .location-card p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+.popup-overlay .btn {
+    margin-top: var(--spacing-sm);
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+.popup-overlay .btn-secondary:hover {
+    background: var(--text-dark);
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        padding: var(--spacing-md);
+        margin: var(--spacing-sm);
+    }
+
+    .popup-overlay .contact-locations {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-close {
+        font-size: 2rem;
+        width: 35px;
+        height: 35px;
+    }
+
+    .phone-number {
+        display: none;
+    }
+    .email {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .address {
+        display: none;
     }
 }

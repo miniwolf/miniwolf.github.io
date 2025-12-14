@@ -137,25 +137,26 @@ layout: default
         </div>
     </section>
 
-    <!-- Quick Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
+    <!-- Get Started Popup Overlay -->
+    <div id="get-started-popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
             <h2 class="section-title">{{ t.home.get_started_today }}</h2>
             <div class="contact-locations">
                 <div class="location-card">
                     <h3>{{ t.home.lyngby_club }}</h3>
-                    <p>📍 [Lyngby Address]</p>
-                    <p>📞 [Lyngby Phone]</p>
-                    <p>✉️ ptcc.lyngby@gmail.com</p>
+                    <p class="address">📍 Trongårdsskolen - Pigernes Gymnastikssal<br>Trongårdsvej 50, 2800 Kgs. Lyngby</p>
+                    <p class="phone-number">📞 +45 22123861</p>
+                    <p class="email">✉️ ptcc.lyngby@gmail.com</p>
                     <a href="lyngby/" class="btn btn-secondary">{{ t.home.visit_lyngby }}</a>
                 </div>
                 <div class="location-card">
                     <h3>{{ t.home.aarhus_club }}</h3>
-                    <p>📍 [Aarhus Address]</p>
-                    <p>📞 [Aarhus Phone]</p>
-                    <p>✉️ ptcc.aarhus@gmail.com</p>
+                    <p class="address">📍 Gymnastikssalen på Center 10, <br> Høgevej 27F, 8210 Aarhus V</p>
+                    <p class="phone-number">📞 +45 60162154</p>
+                    <p class="email">✉️ ptcc.aarhus@gmail.com</p>
                     <a href="aarhus/" class="btn btn-secondary">{{ t.home.visit_aarhus }}</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
