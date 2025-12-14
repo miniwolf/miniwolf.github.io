@@ -157,7 +157,10 @@ h3 {
     margin-top: 10px;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+/* Desktop: hover OR active class shows dropdown */
+@media (min-width: 769px) {
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown.active .dropdown-menu {
     opacity: 1;
     visibility: visible;
 }
@@ -1121,7 +1124,7 @@ a {
         align-items: center;
     }
     
-    .nav-dropdown:hover .dropdown-menu {
+    .nav-dropdown.active .dropdown-menu {
         position: static;
         opacity: 1;
         visibility: visible;

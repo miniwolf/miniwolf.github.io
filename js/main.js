@@ -13,12 +13,45 @@ hamburger.addEventListener('click', () => {
 //     navMenu.classList.remove('active');
 // }));
 
+// Dropdown Toggle for Clubs Menu
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const navDropdown = document.querySelector('.nav-dropdown');
+
+if (dropdownToggle && navDropdown) {
+    dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Toggle active class for mobile
+        navDropdown.classList.toggle('active');
+    });
+
+    // Close dropdown when clicking anywhere else
+    document.addEventListener('click', (e) => {
+        if (!navDropdown.contains(e.target)) {
+            navDropdown.classList.remove('active');
+        }
+    });
+
+    // Remove active class when mouse leaves (for desktop hover to work cleanly)
+    navDropdown.addEventListener('mouseleave', () => {
+        navDropdown.classList.remove('active');
+    });
+}
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+
+        // Skip if href is just '#' (dropdown toggles, etc.)
+        if (href === '#' || href.length <= 1) {
+            return;
+        }
+
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
