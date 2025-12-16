@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jekyll SEO Tag -->
+    {% seo title=false %}
     <title>{{page.club-name}} {{ t.club.club_suffix }} - Wu Guan Danmark</title>
 
     <!-- SEO hreflang tags -->
@@ -16,8 +19,15 @@
     {% endif %}
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}/da/" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/images/logo.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/logo.png' | relative_url }}">
+
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for Club -->
+    {% include schema-club.html %}
 </head>
 <body>
     <!-- Navigation -->

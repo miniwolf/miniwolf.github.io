@@ -1,9 +1,29 @@
 # Jekyll Configuration for Wu Guan Danmark
 # Multi-language support
 
+# Site settings
+title: "Wu Guan Danmark"
+description: "Traditional Tai Chi Chuan training with a focus on practical combat applications. Join our clubs in Lyngby and Aarhus for authentic martial arts training."
+url: "https://wuguan.dk"
+baseurl: "" # Leave empty if site is at root domain
+
+# SEO settings
+author: "Wu Guan Danmark"
+logo: "/images/logo.png"
+social:
+  name: "Wu Guan Danmark"
+  links:
+    - https://www.facebook.com/groups/237878203054272
+    - https://www.instagram.com/wuguanlyngby
+
 # Language settings
 languages: ["da", "en"]
 default_lang: "da"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Build settings
 exclude:
@@ -16,3 +36,10 @@ exclude:
 
 # Keep HTML files clean
 permalink: pretty
+
+# Sitemap settings
+sitemap:
+  include:
+    - "*.html"
+  exclude:
+    - "/404.html"

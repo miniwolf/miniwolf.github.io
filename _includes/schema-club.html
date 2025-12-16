@@ -1,0 +1,55 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Wu Guan {{ page.club-name }}",
+  "description": "{{ page.description }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "telephone": "{{ page.phone }}",
+  "email": "{{ page.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ page.address | strip_html }}",
+    "addressCountry": "DK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates"
+    {% if page.club-name == "Lyngby" %}
+    ,"latitude": "55.7704",
+    "longitude": "12.5038"
+    {% elsif page.club-name == "Aarhus" %}
+    ,"latitude": "56.1572",
+    "longitude": "10.2107"
+    {% endif %}
+  },
+  "openingHoursSpecification": [
+    {% for class in page.classes %}
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "{{ class.day }}",
+      "opens": "{{ class.time | split: '-' | first | strip }}",
+      "closes": "{{ class.time | split: '-' | last | strip }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "priceRange": "Free - 1300 DKK/year",
+  "sport": "Tai Chi Chuan",
+  {% if page.instructors.size > 0 %}
+  "employee": [
+    {% for instructor in page.instructors %}
+    {
+      "@type": "Person",
+      "name": "{{ instructor.name }}",
+      "jobTitle": "Tai Chi Instructor",
+      "image": "{{ site.url }}{{ instructor.image }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Wu Guan Danmark",
+    "url": "{{ site.url }}"
+  }
+}
+</script>

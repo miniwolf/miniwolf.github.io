@@ -9,19 +9,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: t.home.title }}</title>
+
+    <!-- Jekyll SEO Tag -->
+    {% seo %}
 
     <!-- SEO hreflang tags for multi-language support -->
     {% if page.alt_url_en %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.alt_url_en }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.alt_url_en }}" />
     {% endif %}
     {% if page.alt_url_da %}
-    <link rel="alternate" hreflang="da" href="{{ site.url }}/da{{ page.alt_url_da }}" />
+    <link rel="alternate" hreflang="da" href="{{ site.url }}{{ page.alt_url_da }}" />
     {% endif %}
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}/da/" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/images/logo.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/logo.png' | relative_url }}">
+
     <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    {% if page.layout == "home" %}
+    {% include schema-organization.html %}
+    {% endif %}
 </head>
 <body>
     <!-- Navigation -->
