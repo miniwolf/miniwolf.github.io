@@ -1,0 +1,37 @@
+/* Self-hosted fonts for better performance */
+
+/* Cinzel - 600 weight for headings */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/cinzel-600.woff2') format('woff2');
+}
+
+/* Open Sans - 400 weight (regular) */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/opensans-400.woff2') format('woff2');
+}
+
+/* Open Sans - 500 weight (medium) */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/opensans-500.woff2') format('woff2');
+}
+
+/* Open Sans - 600 weight (semibold) */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/opensans-600.woff2') format('woff2');
+}

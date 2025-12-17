@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Resource Hints for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.youtube.com">
     <link rel="dns-prefetch" href="https://i.ytimg.com">
 
-    <!-- Optimized Font Loading -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <!-- Self-hosted Fonts -->
+    <link rel="preload" href="{{ '/fonts/opensans-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/fonts/cinzel-600.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | relative_url }}">
 
     <!-- Jekyll SEO Tag -->
     {% seo %}
