@@ -79,6 +79,50 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Lazy Load YouTube Videos
+(function() {
+    const initYoutubeLite = () => {
+        document.querySelectorAll('.yt-lite').forEach(el => {
+            const videoId = el.dataset.id;
+            const posterUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+            // Set thumbnail as background
+            el.style.backgroundImage = `url(${posterUrl})`;
+
+            // Create play button
+            const playBtn = document.createElement('div');
+            playBtn.classList.add('lty-playbtn');
+            el.appendChild(playBtn);
+
+            // Load iframe on click
+            el.addEventListener('click', function() {
+                if (!this.classList.contains('lyt-activated')) {
+                    const iframe = document.createElement('iframe');
+                    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', '');
+                    iframe.style.position = 'absolute';
+                    iframe.style.top = '0';
+                    iframe.style.left = '0';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+
+                    this.classList.add('lyt-activated');
+                    this.appendChild(iframe);
+                }
+            });
+        });
+    };
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initYoutubeLite);
+    } else {
+        initYoutubeLite();
+    }
+})();
+
 // Get Started Popup Logic with Cookie Management
 (function() {
     const popup = document.getElementById('get-started-popup');
