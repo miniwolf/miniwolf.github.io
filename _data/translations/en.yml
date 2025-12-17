@@ -12,7 +12,7 @@ nav:
 ui:
   learn_more: "Learn More"
   register: "Register"
-  book_now: "Book Now"
+  join_now: "Join Now"
   get_started: "Get Started"
   send_message: "Send Message"
   subscribe: "Subscribe"
@@ -81,15 +81,14 @@ club:
   pricing: "Pricing"
 
   trial_class: "Trial Class"
-  trial_price: "200 DKK"
+  trial_price: "0 DKK"
   trial_drop_in: "Drop-in rate"
   trial_no_commitment: "No commitment"
 
-  monthly_unlimited: "Monthly Unlimited"
-  monthly_price: "800 DKK"
-  monthly_suffix: "/month"
-  monthly_all_classes: "All classes"
-  monthly_best_value: "Best value"
+  halfyear_subscription: "Halfyear Subscription"
+  halfyear_price: "650 DKK"
+  halfyear_suffix: "/half year"
+  halfyear_all_classes: "All classes"
 
   private_lessons: "Private Lessons"
   private_price: "500 DKK"

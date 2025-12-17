@@ -12,7 +12,7 @@ nav:
 ui:
   learn_more: "Læs mere"
   register: "Tilmeld"
-  book_now: "Book nu"
+  join_now: "Tilmeld dig nu"
   get_started: "Kom i gang"
   send_message: "Send besked"
   subscribe: "Tilmeld"
@@ -80,22 +80,15 @@ club:
   training_schedule: "Træningsplan"
   pricing: "Priser"
 
-  trial_class: "Prøvetime"
-  trial_price: "200 DKK"
+  trial_class: "Prøvetime i Januar"
+  trial_price: "0 DKK"
   trial_drop_in: "Drop-in pris"
   trial_no_commitment: "Ingen forpligtelse"
 
-  monthly_unlimited: "Månedlig Ubegrænset"
-  monthly_price: "800 DKK"
-  monthly_suffix: "/måned"
-  monthly_all_classes: "Alle hold"
-  monthly_best_value: "Bedste værdi"
-
-  private_lessons: "Privattimer"
-  private_price: "500 DKK"
-  private_suffix: "/session"
-  private_one_on_one: "1-til-1 undervisning"
-  private_customized: "Tilpasset træning"
+  halfyear_subscription: "Halvårlig Kontingent"
+  halfyear_price: "650 DKK"
+  halfyear_suffix: "/halve år"
+  halfyear_all_classes: "Alle hold"
 
   contact_title: "Kontakt"
   location_label: "📍 Lokation:"
