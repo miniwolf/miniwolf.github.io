@@ -169,12 +169,13 @@
                         <p>{{ page.email }}</p>
                     </div>
                 </div>
+                <script type="text/javascript"> var submitted = false;</script>
                 <div class="contact-form">
                     <form name="gform" id="gform" enctype="text/plain" action="{{page.club-contact}}" target="hidden_iframe" onsubmit="submitted=true;">
                         <input type="text" name="{{page.contact-name-id}}" id="{{page.contact-name-id}}" placeholder="{{ t.forms.your_name }}" required>
                         <input type="email" name="{{page.contact-email-id}}" id="{{page.contact-email-id}}" placeholder="{{ t.forms.your_email }}" required>
                         <select name="{{page.contact-interest-id}}" id="{{page.contact-interest-id}}" form="gform" required>
-                            <option value="">{{ t.forms.select_interest }}</option>
+                            <option value="">{{ t.forms.select_topic }}</option>
                             <option value="{{ t.forms.general_question }}">{{ t.forms.general_question }}</option>
                             {% for option in page.interests %}
                             <option value="{{option}}">{{option}}</option>
@@ -183,8 +184,17 @@
                         <textarea name="{{page.contact-content-id}}" id="{{page.contact-content-id}}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">{{ t.ui.send_message }}</button>
                     </form>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if (submitted) {}"></iframe>
                 </div>
+
+                <!-- Form submission handler -->
+                <script type="text/javascript">
+                    const contactForm = document.querySelector('.contact-form form');
+                    contactForm.addEventListener('submit', function(e) {
+                        fadeOut(contactForm, 1000);
+                        contactForm.parentElement.prepend("{{ t.forms.thank_you }}");
+                    });
+                </script>
             </div>
         </div>
     </section>

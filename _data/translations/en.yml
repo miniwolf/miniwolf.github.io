@@ -1,4 +1,4 @@
-# English translations for Wu Guan Danmark
+# English translations
 
 # Navigation
 nav:
@@ -106,8 +106,9 @@ forms:
   your_name: "Your Name"
   your_email: "Your Email"
   your_message: "Your Message"
-  select_interest: "Select Interest"
-  general_question: "General Question"
+  select_topic: "Select Topic"
+  general_question: "General Questions"
+  thank_you: "Your message is now received."
 
 # Footer
 footer:

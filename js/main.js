@@ -60,15 +60,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Add your form submission logic here
-        alert('Thank you for your message! We will get back to you soon.');
-    });
-}
-
 // Add scroll effect to navbar
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
@@ -191,3 +182,27 @@ window.addEventListener('scroll', () => {
         }
     });
 })();
+
+function fadeOut(elem, ms) {
+  if (!elem) { return; }
+
+  if (ms) {
+    var opacity = 1;
+    var timer = setInterval(function() {
+      opacity -= 50 / ms;
+      if (opacity <= 0) {
+        clearInterval(timer);
+        opacity = 0;
+        elem.style.display = "none";
+        elem.style.visibility = "hidden";
+      }
+      elem.style.opacity = opacity;
+      elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+    }, 50 );
+  } else {
+    elem.style.opacity = 0;
+    elem.style.filter = "alpha(opacity=0)";
+    elem.style.display = "none";
+    elem.style.visibility = "hidden";
+  }
+}

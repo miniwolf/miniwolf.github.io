@@ -1,4 +1,4 @@
-# Danish translations for Wu Guan Danmark
+# Dansk oversættelse
 
 # Navigation
 nav:
@@ -100,8 +100,9 @@ forms:
   your_name: "Dit navn"
   your_email: "Din email"
   your_message: "Din besked"
-  select_interest: "Vælg interesse"
-  general_question: "Generelt spørgsmål"
+  select_topic: "Vælg emne"
+  general_question: "Generelle spørgsmål"
+  thank_you: "Din besked er nu modtaget."
 
 # Footer
 footer:
