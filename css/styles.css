@@ -646,7 +646,7 @@ h3 {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(44, 44, 44, 0.7), rgba(220, 20, 60, 0.3)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23333" width="1200" height="800"/><text x="600" y="400" text-anchor="middle" fill="%23666" font-size="24">Hero Background Image</text></svg>');
+                url('/images/wuguan.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

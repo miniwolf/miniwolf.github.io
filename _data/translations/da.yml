@@ -24,8 +24,7 @@ ui:
 # Home page
 home:
   title: "Wu Guan Danmark - Kampklar Træning"
-  hero_title: "Wu Guan Danmark"
-  hero_subtitle: "Kampklar Træning"
+  hero_title: "Kampklar Træning"
   hero_quote: "Ældgammel kunst, moderne anvendelse - nu i Lyngby og Aarhus"
   find_club: "Find din klub"
   watch_techniques: "Se teknikker"

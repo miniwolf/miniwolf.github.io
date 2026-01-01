@@ -24,8 +24,7 @@ ui:
 # Home page
 home:
   title: "Wu Guan Danmark - Combat-Ready Training"
-  hero_title: "Wu Guan Danmark"
-  hero_subtitle: "Combat-Ready Training"
+  hero_title: "Combat-Ready Training"
   hero_quote: "Ancient art, modern application - now in Lyngby and Aarhus"
   find_club: "Find Your Club"
   watch_techniques: "Watch Techniques"
