@@ -28,7 +28,7 @@ layout: default
     </section>
 
     <!-- Featured Event -->
-    <section class="featured-event">
+    <!-- <section class="featured-event">
         <div class="container">
             <div class="featured-card">
                 <div class="featured-content">
@@ -70,13 +70,60 @@ layout: default
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Upcoming Events -->
     <section class="section section-light">
         <div class="container">
             <h2 class="section-title">{{ t.events.upcoming_title }}</h2>
             <div class="events-grid">
+
+                <!-- <div class="event-card" data-category="seminar">
+                    <script>(function (m,o,t,i,v,u,dk) {m['motivu-widget']=i;m[i] = m[i] || function () { (m[i].q = m[i].q || []).push(arguments) };u = o.createElement(t), dk = o.getElementsByTagName(t)[0];u.id = i; u.src = v; u.async = 1; dk.parentNode.insertBefore(u, dk);}(window, document, 'script', 'mw', 'https://assets.motivu.dk/js/widget.js')); mw('init', 'MW-AWCpm6fU');</script><div id="motivu"></div>
+                </div>
+
+                <script>
+                    setTimeout(function() {
+                        var childNodes = document.querySelector('#motivu').childNodes;
+                        console.log(childNodes.length);
+                        childNodes.item(0).remove();
+                    }, 1000);
+                </script> -->
+
+
+                <div class="event-card" data-category="upcoming seminar">
+                    <a href="https://motivu.dk/klubber/10189/practical-tai-chi-chuan-lyngby/traeninger/14660/begynder-kampsport?token=MW-AWCpm6fU&utm_source=begynder-kampsport&utm_medium=integration&utm_campaign=leads">
+                    <div class="event-image">
+                        <img src="https://motivu-uploads.s3.eu-west-1.amazonaws.com/tryouts/images/60255/conversions/1765965962-thumb.jpg" alt="{% if page_lang == 'da' %}Tai Chi Filosofi{% else %}Tai Chi Philosophy{% endif %}" class="img-cover">
+                        <span class="event-badge badge-seminar">{% if page_lang == 'da' %}Prøvetime{% else %}Trial class{% endif %}</span>
+                    </div>
+                    </a>
+                    <div class="event-content">
+                        <h3>{% if page_lang == 'da' %}Gratis prøvetime{% else %}Free trial class{% endif %}</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 {% if page_lang == 'da' %}Onsdage{% else %}Wednesdays{% endif %}</span>
+                            <span class="event-location">📍 Lyngby</span>
+                        </div>
+                        <p>
+                        {% if page_lang == 'da' %}
+                            👊 Gratis Kampsport i Januar 👊</br>
+                            Lær selvforsvar, forbedr din fitness og bliv stærkere fysisk og mentalt!🥋💪</br>
+                            🗡Kickstart din kampsports rejse og sikr din plads nu
+                        {% else %}
+                            👊 Free Martial Arts in January! 👊</br>
+                            Learn self-defense, improve your fitness, and get physically and mentally stronger!🥋💪</br>
+                            🗡Kickstart your martial arts journey and secure your spot now
+                        {% endif %}</p>
+                        <div class="event-details">
+                            <div class="event-time">⏰ Ons: 19:30-21:45</div>
+                            <div class="event-price">{% if page_lang == 'da' %}Gratis{% else %}Free{% endif %}</div>
+                            <div class="event-spots">👥 {% if page_lang == 'da' %}10 pladser tilgængelige{% else %}10 spots available{% endif %}</div>
+                        </div>
+                        <form action="https://motivu.dk/klubber/10189/practical-tai-chi-chuan-lyngby/traeninger/14660/begynder-kampsport?token=MW-AWCpm6fU&utm_source=begynder-kampsport&utm_medium=integration&utm_campaign=leads">
+                        <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
+                        </form>
+                    </div>
+                </div>
 
                 <!-- Weekend Course Event -->
                 <div class="event-card" data-category="upcoming weekend">
@@ -101,7 +148,7 @@ layout: default
                 </div>
 
                 <!-- Workshop Event -->
-                <div class="event-card" data-category="upcoming workshop">
+                <!-- <div class="event-card" data-category="upcoming workshop">
                     <div class="event-image">
                         <img src="{% if page_lang == 'da' %}../images/events/weapons-workshop.jpg{% else %}images/events/weapons-workshop.jpg{% endif %}" alt="{% if page_lang == 'da' %}Våbenforsvar Workshop{% else %}Weapons Defense Workshop{% endif %}" class="img-cover">
                         <span class="event-badge badge-workshop">Workshop</span>
@@ -120,10 +167,10 @@ layout: default
                         </div>
                         <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Seminar Event -->
-                <div class="event-card" data-category="upcoming seminar">
+                <!-- <div class="event-card" data-category="upcoming seminar">
                     <div class="event-image">
                         <img src="{% if page_lang == 'da' %}../images/events/philosophy-seminar.jpg{% else %}images/events/philosophy-seminar.jpg{% endif %}" alt="{% if page_lang == 'da' %}Tai Chi Filosofi{% else %}Tai Chi Philosophy{% endif %}" class="img-cover">
                         <span class="event-badge badge-seminar">Seminar</span>
@@ -142,10 +189,10 @@ layout: default
                         </div>
                         <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Guest Instructor Event -->
-                <div class="event-card" data-category="upcoming workshop">
+                <!-- <div class="event-card" data-category="upcoming workshop">
                     <div class="event-image">
                         <img src="{% if page_lang == 'da' %}../images/events/guest-instructor.jpg{% else %}images/events/guest-instructor.jpg{% endif %}" alt="{% if page_lang == 'da' %}Gæsteinstruktør Workshop{% else %}Guest Instructor Workshop{% endif %}" class="img-cover">
                         <span class="event-badge badge-special">{% if page_lang == 'da' %}Særlig Gæst{% else %}Special Guest{% endif %}</span>
@@ -164,7 +211,7 @@ layout: default
                         </div>
                         <button class="btn btn-primary btn-full">{% if page_lang == 'da' %}Tilmeld{% else %}Register{% endif %}</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
