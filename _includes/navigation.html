@@ -5,12 +5,14 @@
     {% assign about_url = "/da/om/" %}
     {% assign lyngby_url = "/da/lyngby/" %}
     {% assign aarhus_url = "/da/aarhus/" %}
+    {% assign aarhusqi_url = "/da/aarhus-qi/" %}
     {% assign events_url = "/da/begivenheder/" %}
 {% else %}
     {% assign home_url = "/en/" %}
     {% assign about_url = "/en/about/" %}
     {% assign lyngby_url = "/en/lyngby/" %}
     {% assign aarhus_url = "/en/aarhus/" %}
+    {% assign aarhusqi_url = "/en/aarhus-qi/" %}
     {% assign events_url = "/en/events/" %}
 {% endif %}
 <nav class="navbar">
@@ -25,7 +27,8 @@
                 <a href="#" class="nav-link dropdown-toggle">{{ t.nav.clubs }} ▼</a>
                 <div class="dropdown-menu">
                     <a href="{{ lyngby_url }}" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
-                    <a href="{{ aarhus_url }}" class="dropdown-link {% if page.club-name == 'Aarhus' %}active{% endif %}">Aarhus</a>
+                    <a href="{{ aarhus_url }}" class="dropdown-link {% if page.club-name == 'Aarhus Tai Chi' %}active{% endif %}">Aarhus Tai Chi</a>
+                    <a href="{{ aarhusqi_url }}" class="dropdown-link {% if page.club-name == 'Aarhus Qigong' %}active{% endif %}">Aarhus Qigong</a>
                 </div>
             </div>
             <a href="{{ events_url }}" class="nav-link {% if page.active == 'events' %}active{% endif %}">{{ t.nav.events }}</a>
