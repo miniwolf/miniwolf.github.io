@@ -5,11 +5,11 @@
   "name": "Wu Guan {{ page.club-name }}",
   "description": "{{ page.description }}",
   "url": "{{ site.url }}{{ page.url }}",
-  "telephone": "{{ page.phone }}",
-  "email": "{{ page.email }}",
+  "telephone": "{{ phone }}",
+  "email": "{{ email }}",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "{{ page.address | strip_html }}",
+    "streetAddress": "{{ address | strip_html }}",
     "addressCountry": "DK"
   },
   "geo": {

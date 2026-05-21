@@ -1,5 +1,14 @@
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang] %}
+{% assign loc = site.data.locations[page.location] %}
+{% assign address = page.address | default: loc.address %}
+{% assign phone = page.phone | default: loc.phone %}
+{% assign email = page.email | default: loc.email %}
+{% assign club_contact = page.club-contact | default: loc.club-contact %}
+{% assign contact_name_id = page.contact-name-id | default: loc.contact-name-id %}
+{% assign contact_email_id = page.contact-email-id | default: loc.contact-email-id %}
+{% assign contact_interest_id = page.contact-interest-id | default: loc.contact-interest-id %}
+{% assign contact_content_id = page.contact-content-id | default: loc.contact-content-id %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -158,30 +167,30 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>{{ t.club.location_label }}</strong>
-                        <p>{{ page.address }}</p>
+                        <p>{{ address }}</p>
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.phone_label }}</strong>
-                        <p><a href="tel:{{page.phone}}">{{page.phone}}</a></p>
+                        <p><a href="tel:{{phone}}">{{phone}}</a></p>
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.email_label }}</strong>
-                        <p>{{ page.email }}</p>
+                        <p>{{ email }}</p>
                     </div>
                 </div>
                 <script type="text/javascript"> var submitted = false;</script>
                 <div class="contact-form">
-                    <form name="gform" id="gform" enctype="text/plain" action="{{page.club-contact}}" target="hidden_iframe" onsubmit="submitted=true;">
-                        <input type="text" name="{{page.contact-name-id}}" id="{{page.contact-name-id}}" placeholder="{{ t.forms.your_name }}" required>
-                        <input type="email" name="{{page.contact-email-id}}" id="{{page.contact-email-id}}" placeholder="{{ t.forms.your_email }}" required>
-                        <select name="{{page.contact-interest-id}}" id="{{page.contact-interest-id}}" form="gform" required>
+                    <form name="gform" id="gform" enctype="text/plain" action="{{club_contact}}" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="{{contact_name_id}}" id="{{contact_name_id}}" placeholder="{{ t.forms.your_name }}" required>
+                        <input type="email" name="{{contact_email_id}}" id="{{contact_email_id}}" placeholder="{{ t.forms.your_email }}" required>
+                        <select name="{{contact_interest_id}}" id="{{contact_interest_id}}" form="gform" required>
                             <option value="">{{ t.forms.select_topic }}</option>
                             <option value="{{ t.forms.general_question }}">{{ t.forms.general_question }}</option>
                             {% for option in page.interests %}
                             <option value="{{option}}">{{option}}</option>
                             {% endfor %}
                         </select>
-                        <textarea name="{{page.contact-content-id}}" id="{{page.contact-content-id}}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
+                        <textarea name="{{contact_content_id}}" id="{{contact_content_id}}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">{{ t.ui.send_message }}</button>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if (submitted) {}"></iframe>
