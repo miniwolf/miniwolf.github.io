@@ -9,3 +9,4 @@ Sitemap: https://wuguan.dk/sitemap.xml
 
 # Disallow crawling of built site directory (should not be deployed)
 Disallow: /_site/
+Disallow: /TODO/

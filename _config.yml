@@ -33,6 +33,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - .gitignore
+  - TODO/
+  - run.bat
 
 # Keep HTML files clean
 permalink: pretty
