@@ -235,7 +235,7 @@ h3 {
 
 .highlight {
     background: #f0f0f0;
-    padding: 0.var(--spacing-lg) 0.8rem;
+    padding: var(--spacing-lg) 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
     color: var(--primary-color);
@@ -418,7 +418,7 @@ h3 {
 
 .section-intro {
     text-align: center;
-    font-size: 1.var(--font-size-sm);
+    font-size: var(--font-size-sm);
     max-width: 700px;
     margin: 0 auto var(--spacing-lg);
     color: #666;
@@ -604,7 +604,7 @@ h3 {
 .relevance-card h3 {
     color: var(--text-dark);
     margin-bottom: var(--spacing-sm);
-    font-size: 1.var(--font-size-sm);
+    font-size: var(--font-size-sm);
 }
 
 /* CTA Section */
@@ -1160,7 +1160,7 @@ a {
     }
     
     .intro-text {
-        font-size: 1.var(--font-size-sm);
+        font-size: var(--font-size-sm);
         padding: 0 var(--spacing-sm);
     }
     
@@ -1314,11 +1314,15 @@ a {
     color: var(--text-light);
 }
 
-.featured-card {
+.featured-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--spacing-lg);
-    align-items: center;
+}
+
+.featured-card {
+    display: flex;
+    flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius-lg);
     overflow: hidden;
@@ -1350,7 +1354,7 @@ a {
 }
 
 .event-description {
-    font-size: 1.var(--font-size-sm);
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     margin: var(--spacing-sm) 0;
 }
@@ -1364,6 +1368,7 @@ a {
 
 .event-highlights .highlight {
     background: rgba(255, 255, 255, 0.2);
+    color: #FFFACD;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: 15px;
     font-size: 0.85rem;
@@ -1385,6 +1390,10 @@ a {
     opacity: 0.8;
 }
 
+.section-light {
+    padding-bottom: 20px;
+}
+
 .event-actions {
     display: flex;
     gap: var(--spacing-sm);
@@ -1393,12 +1402,15 @@ a {
 
 .btn-large {
     padding: var(--spacing-sm) var(--spacing-lg);
-    font-size: 1.var(--font-size-sm);
+    font-size: var(--font-size-sm);
 }
 
 .featured-image {
     height: 400px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Events Grid */
@@ -1446,6 +1458,7 @@ a {
 }
 
 .badge-weekend { background: #4CAF50; color: white; }
+.badge-camp { background: #8BC34A; color: white; }
 .badge-workshop { background: #2196F3; color: white; }
 .badge-seminar { background: #FF9800; color: white; }
 .badge-special { background: var(--accent-color); color: var(--text-dark); }
@@ -1557,7 +1570,7 @@ a {
 
 /* Responsive Events */
 @media (max-width: 768px) {
-    .featured-card {
+    .featured-grid {
         grid-template-columns: 1fr;
     }
     
@@ -1584,7 +1597,9 @@ a {
 }
 
 /* Event Filtering (Hidden by default) */
-.event-card.hidden {
+.event-card.hidden,
+.featured-card.hidden,
+.featured-event.hidden {
     display: none;
 }
 /* Language Switcher */
