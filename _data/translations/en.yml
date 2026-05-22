@@ -81,7 +81,6 @@ club:
 
   trial_class: "Trial Class"
   trial_price: "0 DKK"
-  trial_drop_in: "Drop-in rate"
   trial_no_commitment: "No commitment"
 
   halfyear_subscription: "Halfyear Subscription"
@@ -275,8 +274,7 @@ events:
   how_to_step1: "Choose your event above"
   how_to_step2: "Click \"Register\" button"
   how_to_step3: "Fill out registration form"
-  how_to_step4: "Pay deposit to secure spot"
-  how_to_step5: "Receive confirmation email"
+  how_to_step5: "We will get back to you"
 
   payment_title: "💳 Payment Options"
   payment_option1: "✓ Bank transfer (MobilePay)"

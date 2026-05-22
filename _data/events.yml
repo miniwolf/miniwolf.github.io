@@ -1,0 +1,258 @@
+# Events data file
+# Each event is a list item. Order here = order on the page.
+# Set active: false to hide an event without deleting it.
+# Set featured: true to show in the featured section at the top.
+#
+# Fields:
+#   id            - unique identifier (for reference only)
+#   active        - true/false, controls visibility
+#   featured      - true/false, renders in featured section vs regular grid
+#   type          - badge CSS class: weekend, workshop, seminar, special, camp
+#   categories    - list of filter values: upcoming, weekend, camp, workshop, seminar
+#   image         - local path (/images/events/...) or external URL (https://...)
+#   location      - venue name
+#   price         - price string (fallback if no price_label in language)
+#   spots         - number of spots
+#   time          - language-independent time (used if no language-specific time)
+#   registration_url - optional external registration link
+#   da:/en:       - language-specific fields:
+#     badge         - badge label text
+#     title         - event title
+#     date          - date display text
+#     description   - event description (HTML allowed)
+#     time          - language-specific time override (optional)
+#     price_label   - translated price text (optional, falls back to top-level price)
+#     spots_label   - translated spots text
+#     alt           - image alt text (optional, falls back to title)
+
+- id: trial-class-lyngby
+  active: true
+  featured: false
+  type: seminar
+  categories: [upcoming, seminar]
+  image: "https://motivu-uploads.s3.eu-west-1.amazonaws.com/tryouts/images/60255/conversions/1765965962-thumb.jpg"
+  location: "Lyngby"
+  price: "0 DKK"
+  spots: 10
+  time: "Ons: 19:30-21:45"
+  registration_url: "https://motivu.dk/klubber/10189/practical-tai-chi-chuan-lyngby/traeninger/14660/begynder-kampsport?token=MW-AWCpm6fU&utm_source=begynder-kampsport&utm_medium=integration&utm_campaign=leads"
+  da:
+    badge: "Prøvetime"
+    title: "Gratis prøvetime"
+    date: "Onsdage"
+    description: "👊 Gratis Kampsport i September 👊<br>Lær selvforsvar, forbedr din fitness og bliv stærkere fysisk og mentalt!🥋💪<br>🗡Kickstart din kampsports rejse og sikr din plads nu"
+    price_label: "Gratis"
+    spots_label: "10 pladser tilgængelige"
+    alt: "Gratis prøvetime"
+  en:
+    badge: "Trial class"
+    title: "Free trial class"
+    date: "Wednesdays"
+    description: "👊 Free Martial Arts in September! 👊<br>Learn self-defense, improve your fitness, and get physically and mentally stronger!🥋💪<br>🗡Kickstart your martial arts journey and secure your spot now"
+    price_label: "Free"
+    spots_label: "10 spots available"
+    alt: "Free trial class"
+
+- id: trial-class-aarhus
+  active: true
+  featured: false
+  type: seminar
+  categories: [upcoming, seminar]
+  image: "/images/aarhus/google-maps.png"
+  location: "Aarhus"
+  price: "0 DKK"
+  spots: 10
+  time: "Ons: 19:30-21:45"
+  da:
+    badge: "Prøvetime"
+    title: "Gratis prøvetime"
+    date: "Onsdage"
+    description: "👊 Gratis Kampsport i September 👊<br>Lær selvforsvar, forbedr din fitness og bliv stærkere fysisk og mentalt!🥋💪<br>🗡Kickstart din kampsports rejse og sikr din plads nu"
+    price_label: "Gratis"
+    spots_label: "10 pladser tilgængelige"
+    alt: "Gratis prøvetime"
+    registration_url: "/da/aarhus/#contact"
+  en:
+    badge: "Trial class"
+    title: "Free trial class"
+    date: "Wednesdays"
+    description: "👊 Free Martial Arts in September! 👊<br>Learn self-defense, improve your fitness, and get physically and mentally stronger!🥋💪<br>🗡Kickstart your martial arts journey and secure your spot now"
+    price_label: "Free"
+    spots_label: "10 spots available"
+    alt: "Free trial class"
+    registration_url: "/en/aarhus/#contact"
+
+- id: self-defense-weekend
+  active: false
+  featured: false
+  type: weekend
+  categories: [upcoming, weekend]
+  image: "/images/events/weekend-defense.jpg"
+  location: "Aarhus Studio"
+  price: "800 DKK"
+  spots: 12
+  registration_url: "https://google.com"
+  da:
+    badge: "Weekendkursus"
+    title: "Praktisk Selvforsvars Weekend"
+    date: "23.-24. marts 2026"
+    description: "Lær essentielle selvforsvarsteknikker på bare én weekend. Fokus på virkelige scenarier og praktiske anvendelser."
+    time: "Lør-Søn: 10:00-16:00"
+    price_label: "800 DKK"
+    spots_label: "12 pladser tilgængelige"
+    alt: "Selvforsvars Weekend"
+  en:
+    badge: "Weekend Course"
+    title: "Practical Self-Defense Weekend"
+    date: "March 23-24, 2026"
+    description: "Learn essential self-defense techniques in just one weekend. Focus on real-world scenarios and practical applications."
+    time: "Sat-Sun: 10:00-16:00"
+    price_label: "800 DKK"
+    spots_label: "12 spots available"
+    alt: "Self-Defense Weekend"
+
+- id: danish-summer-camp-2026
+  active: true
+  featured: true
+  type: camp
+  categories: [upcoming, camp]
+  image: "https://us.simplerousercontent.net/uploads/public/417316/Sommerlejr_13.jpg"
+  image-adjust: "max-height:100%; max-width:100%;"
+  location: "Vejle, Jelling"
+  registration_url: "https://google.com"
+  da:
+    badge: "Fremhævet Begivenhed"
+    title: "Dansk Sommerlejr 2026"
+    date: "1.-5. juli 2026"
+    level: "Alle Niveauer"
+    description: "5 fantastisk dage med fuld fokus på Tai Chi & Qigong, balance, harmoni, meditation og meget mere..."
+    highlights:
+      - "Fordybelse i Tai Chi og Qigong"
+      - "Forbedre praktiske og teoretiske færdigheder"
+      - "Undervisning af nogle af de bedste instruktører i Europa"
+      - "Træne med nogle af de allerbedste elever og instruktører i Europa"
+    alt: "Sommer Kamp Intensiv"
+  en:
+    badge: "Featured Event"
+    title: "Danish Summer Camp 2026"
+    date: "July 1-5, 2026"
+    level: "All Levels"
+    description: "5 amazing days with full focus on Tai Chi & Qigong, balance, harmony, meditation and much more..."
+    highlights:
+      - "Immersion in Tai Chi and Qigong"
+      - "Improving practical and theoretical skills"
+      - "Teaching by some of the best instructors in Europe"
+      - "Training with some of the very best students and instructors in Europe"
+    alt: "Danish Summer Camp 2026"
+
+- id: sweden-summer-camp-2026
+  active: true
+  featured: true
+  type: camp
+  categories: [upcoming, camp]
+  image: "/images/events/sweden-summercamp-2026.jpg"
+  image-adjust: "max-height:100%; max-width:100%;"
+  location: "Vårdnäs, Sweden"
+  registration_url: "https://tinyurl.com/2wy8tzju"
+  da:
+    badge: "Fremhævet Begivenhed"
+    title: "Svensk Sommerlejr 2026"
+    date: "21.-26. juli 2026"
+    level: "Alle Niveauer"
+    description: "Det er på høje tid at reservere din plads på Wudang TCC Summer Camp i år. Som sædvanlig i det naturskønne område Vårdnäs med deltagere fra hele Europa. Uanset om du er nybegynder eller mester, er der noget for dig her."
+    highlights:
+      - "Neigong, Håndform, Våben, Applikationer, Kamp aspekt"
+      - "Sundheds- og velvære samt teori"
+      - "Nyd en sauna og tag et dyk i søen"
+      - "Sitrende barbecue"
+    alt: "Sommer Kamp Intensiv"
+  en:
+    badge: "Featured Event"
+    title: "Swedish Summer Camp 2026"
+    date: "July 21-26, 2026"
+    level: "All Levels"
+    alt: "Danish Summer Camp 2026"
+    description: "It is high time to reserve your spot at the Wudang TCC Summer Camp his year. As usual in the scenic area of Vårdnäs with participants from all over Europe. No matter if you are beginner or master, there is something for you here."
+    highlights:
+      - "Nei Kung, Handforms, Weapons, Applications, Martial aspects"
+      - "Health- and Wealth-aspects as well as theory"
+      - "Enjoy a sauna and a plunge into the lake"
+      - "Simmering barbecue"
+
+# Example inactive events (set active: true to show)
+
+- id: weapons-workshop
+  active: false
+  featured: false
+  type: workshop
+  categories: [upcoming, workshop]
+  image: "/images/events/weapons-workshop.jpg"
+  location: "Lyngby Studio"
+  price: "400 DKK"
+  spots: 8
+  time: "14:00-18:00"
+  da:
+    badge: "Workshop"
+    title: "Våbenforsvar Workshop"
+    date: "14. april 2026"
+    description: "Avancerede teknikker til forsvar mod kniv- og stokangreb. Kun for erfarne elever."
+    spots_label: "8 pladser tilgængelige"
+    alt: "Våbenforsvar Workshop"
+  en:
+    badge: "Workshop"
+    title: "Weapons Defense Workshop"
+    date: "April 14, 2026"
+    description: "Advanced techniques for defending against knife and stick attacks. For experienced students only."
+    spots_label: "8 spots available"
+    alt: "Weapons Defense Workshop"
+
+- id: philosophy-seminar
+  active: false
+  featured: false
+  type: seminar
+  categories: [upcoming, seminar]
+  image: "/images/events/philosophy-seminar.jpg"
+  location: "Online + Lyngby"
+  price: "250 DKK"
+  spots: 20
+  time: "10:00-13:00"
+  da:
+    badge: "Seminar"
+    title: "Tai Chi Filosofi & Strategi"
+    date: "5. maj 2026"
+    description: "Dybt dyk i de filosofiske fundamenter og strategiske principper for Tai Chi kamp."
+    spots_label: "20 pladser tilgængelige"
+    alt: "Tai Chi Filosofi"
+  en:
+    badge: "Seminar"
+    title: "Tai Chi Philosophy & Strategy"
+    date: "May 5, 2026"
+    description: "Deep dive into the philosophical foundations and strategic principles of Tai Chi combat."
+    spots_label: "20 spots available"
+    alt: "Tai Chi Philosophy"
+
+- id: guest-instructor
+  active: false
+  featured: false
+  type: special
+  categories: [upcoming, workshop]
+  image: "/images/events/guest-instructor.jpg"
+  location: "Lyngby Studio"
+  price: "1.200 DKK"
+  spots: 16
+  da:
+    badge: "Særlig Gæst"
+    title: "Mester Torben Rif Workshop"
+    date: "8.-9. juni 2026"
+    description: "Sjælden mulighed for at træne direkte med Mester Torben Rif fra Danmark. Avancerede anvendelser og korrektioner."
+    time: "Lør-Søn: 10:00-17:00"
+    spots_label: "Begrænset til 16 elever"
+    alt: "Gæsteinstruktør Workshop"
+  en:
+    badge: "Special Guest"
+    title: "Master Torben Rif Workshop"
+    date: "June 8-9, 2026"
+    description: "Rare opportunity to train directly with Master Torben Rif from Denmark. Advanced applications and corrections."
+    time: "Sat-Sun: 10:00-17:00"
+    spots_label: "Limited to 16 students"
+    alt: "Guest Instructor Workshop"

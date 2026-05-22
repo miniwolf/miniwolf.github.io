@@ -1,18 +1,17 @@
 // Event Filtering
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const eventCards = document.querySelectorAll('.event-card');
-    
+    const allCards = document.querySelectorAll('.event-card, .featured-card');
+    const featuredSection = document.querySelector('.featured-event');
+
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
-            
+
             const filterValue = this.getAttribute('data-filter');
-            
-            eventCards.forEach(card => {
+
+            allCards.forEach(card => {
                 if (filterValue === 'all') {
                     card.classList.remove('hidden');
                 } else {
@@ -24,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             });
+
+            // Hide featured section if all its cards are filtered out
+            if (featuredSection) {
+                const visibleFeatured = featuredSection.querySelectorAll('.featured-card:not(.hidden)');
+                featuredSection.classList.toggle('hidden', visibleFeatured.length === 0);
+            }
         });
     });
     
@@ -39,12 +44,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Event registration buttons
-    const registerButtons = document.querySelectorAll('.event-card .btn-primary');
-    registerButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Add your registration logic here
-            alert('Registration form will open here. Contact us for now!');
-        });
-    });
 });

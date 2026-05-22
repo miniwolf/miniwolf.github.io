@@ -81,7 +81,6 @@ club:
 
   trial_class: "Prøvetime i Januar"
   trial_price: "0 DKK"
-  trial_drop_in: "Drop-in pris"
   trial_no_commitment: "Ingen forpligtelse"
 
   halfyear_subscription: "Halvårlig Kontingent"
@@ -235,7 +234,7 @@ about:
 # Events page
 events:
   page_title: "Særlige Træningsbegivenheder"
-  page_subtitle: "Intensive workshops, weekendkurser og sommertræningslejre"
+  page_subtitle: "Intensive workshops, weekendkurser og sommerlejre"
 
   # Filters
   filter_all: "Alle Begivenheder"
@@ -269,8 +268,7 @@ events:
   how_to_step1: "Vælg din begivenhed ovenfor"
   how_to_step2: "Klik på \"Tilmeld\" knappen"
   how_to_step3: "Udfyld tilmeldingsformularen"
-  how_to_step4: "Betal depositum for at sikre plads"
-  how_to_step5: "Modtag bekræftelsesemail"
+  how_to_step4: "Vi vender tilbage til dig"
 
   payment_title: "💳 Betalingsmuligheder"
   payment_option1: "✓ Bankoverførsel (MobilePay)"
