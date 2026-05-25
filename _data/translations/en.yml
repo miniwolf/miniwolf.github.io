@@ -79,21 +79,6 @@ club:
   training_schedule: "Training Schedule"
   pricing: "Pricing"
 
-  trial_class: "Trial Class"
-  trial_price: "0 DKK"
-  trial_no_commitment: "No commitment"
-
-  halfyear_subscription: "Halfyear Subscription"
-  halfyear_price: "650 DKK"
-  halfyear_suffix: "/half year"
-  halfyear_all_classes: "All classes"
-
-  private_lessons: "Private Lessons"
-  private_price: "500 DKK"
-  private_suffix: "/session"
-  private_one_on_one: "1-on-1 instruction"
-  private_customized: "Customized training"
-
   contact_title: "Contact"
   location_label: "📍 Location:"
   phone_label: "📞 Phone:"
