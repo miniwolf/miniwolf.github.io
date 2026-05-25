@@ -79,15 +79,6 @@ club:
   training_schedule: "Træningsplan"
   pricing: "Priser"
 
-  trial_class: "Prøvetime i Januar"
-  trial_price: "0 DKK"
-  trial_no_commitment: "Ingen forpligtelse"
-
-  halfyear_subscription: "Halvårlig Kontingent"
-  halfyear_price: "650 DKK"
-  halfyear_suffix: "/halve år"
-  halfyear_all_classes: "Alle hold"
-
   contact_title: "Kontakt"
   location_label: "📍 Lokation:"
   phone_label: "📞 Telefon:"

@@ -130,28 +130,14 @@
         <div class="container">
             <h2 class="section-title">{{page.club-name}} {{ t.club.pricing }}</h2>
             <div class="pricing-cards">
-                <div class="pricing-card featured">
-                    <h3>{{ t.club.trial_class }}</h3>
-                    <div class="price">{{ t.club.trial_price }}</div>
-                    <p>{{ t.club.trial_no_commitment }}</p>
-                    <a href="#contact" class="btn btn-primary">{{ t.ui.join_now }}</a>
+                {% for card in page.pricing %}
+                <div class="pricing-card{% if card.featured %} featured{% endif %}">
+                    <h3>{{ card.name }}</h3>
+                    <div class="price">{{ card.price }}{% if card.suffix %}<span>{{ card.suffix }}</span>{% endif %}</div>
+                    {% for desc in card.descriptions %}<p>{{ desc }}</p>{% endfor %}
+                    <a href="{{ card.cta_link | default: '#contact' }}" class="btn {% if card.featured %}btn-primary{% else %}btn-secondary{% endif %}">{{ card.cta }}</a>
                 </div>
-
-                <div class="pricing-card">
-                    <h3>{{ t.club.halfyear_subscription }}</h3>
-                    <div class="price">{{ t.club.halfyear_price }}<span>{{ t.club.halfyear_suffix }}</span></div>
-                    <p>{{ t.club.halfyear_all_classes }}</p>
-                    <p>{{ t.club.halfyear_best_value }}</p>
-                    <a href="#contact" class="btn btn-secondary">{{ t.ui.get_started }}</a>
-                </div>
-
-                <!-- <div class="pricing-card">
-                    <h3>{{ t.club.private_lessons }}</h3>
-                    <div class="price">{{ t.club.private_price }}<span>{{ t.club.private_suffix }}</span></div>
-                    <p>{{ t.club.private_one_on_one }}</p>
-                    <p>{{ t.club.private_customized }}</p>
-                    <a href="#contact" class="btn btn-secondary">{{ t.ui.schedule }}</a>
-                </div> -->
+                {% endfor %}
             </div>
         </div>
     </section>
