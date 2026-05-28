@@ -43,6 +43,29 @@
 
     <!-- Structured Data for Club -->
     {% include schema-club.html %}
+
+    {% if page.faq %}
+    <!-- FAQPage Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for item in page.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.q | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item.a | jsonify }}
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+    </script>
+    {% endif %}
+
     {% if page.mailerlite-form %}
     <!-- MailerLite Universal -->
     <script>
@@ -72,6 +95,15 @@
             </div>
         </div>
     </section>
+
+    {% if page.intro %}
+    <!-- Club Introduction -->
+    <section class="club-intro">
+        <div class="container">
+            <p>{{ page.intro }}</p>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- Instructor Section -->
     <section class="club-instructor">
@@ -154,6 +186,23 @@
     </section>
 
     {{content}}
+
+    {% if page.faq %}
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">{{ t.club.faq_title }}</h2>
+            <div class="faq-list">
+                {% for item in page.faq %}
+                <details class="faq-item">
+                    <summary>{{ item.q }}</summary>
+                    <p>{{ item.a }}</p>
+                </details>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- Contact Section -->
     <section class="club-contact" id="contact">
