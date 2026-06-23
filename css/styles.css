@@ -274,6 +274,72 @@ h3 {
     border: 1px solid rgba(248, 248, 248, 0.3);
 }
 
+/* Club Introduction */
+.club-intro {
+    padding: 3rem 0;
+    background: var(--background-light);
+}
+
+.club-intro p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 5rem 0;
+    background: var(--background-light);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item summary {
+    padding: 1.25rem 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-dark);
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: var(--spacing-sm);
+}
+
+.faq-item[open] summary::after {
+    content: "\2212";
+}
+
+.faq-item p {
+    padding: 0 0 1.25rem;
+    line-height: 1.7;
+    color: #555;
+}
+
 /* Club Instructor */
 .club-instructor {
     padding: 5rem 0;
