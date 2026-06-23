@@ -927,6 +927,119 @@ a {
     color: #ccc;
 }
 
+/* MailerLite Form Overrides */
+.mailerlite-form .ml-form-embedBody img,
+.mailerlite-form .ml-form-embedPhoto,
+.mailerlite-form .ml-form-embedContent img,
+.mailerlite-form .ml-form-align-center img {
+    display: none !important;
+}
+
+.mailerlite-form .ml-form-embedWrapper {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.mailerlite-form .ml-form-embedBody {
+    padding: 0 !important;
+    background: transparent !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.mailerlite-form .ml-form-formContent {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.mailerlite-form .ml-form-embedSubmit .loading {
+    display: none !important;
+}
+
+.mailerlite-form .ml-form-embedBody .ml-form-embedContent {
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-embedBody .ml-form-embedContent h4,
+.mailerlite-form .ml-form-embedBody .ml-form-embedContent p {
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow input {
+    width: 100% !important;
+    padding: var(--spacing-sm) !important;
+    margin-bottom: var(--spacing-sm) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background: rgba(248, 248, 248, 0.1) !important;
+    color: var(--text-light) !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow input::placeholder {
+    color: #ccc !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow .ml-form-checkboxRow label {
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow select {
+    width: 100% !important;
+    padding: var(--spacing-sm) !important;
+    margin-bottom: var(--spacing-sm) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background: rgba(248, 248, 248, 0.1) !important;
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow textarea {
+    width: 100% !important;
+    padding: var(--spacing-sm) !important;
+    margin-bottom: var(--spacing-sm) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background: rgba(248, 248, 248, 0.1) !important;
+    color: var(--text-light) !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.mailerlite-form .ml-form-formContent .ml-form-fieldRow label {
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-embedSubmit button {
+    display: inline-block !important;
+    padding: var(--spacing-sm) var(--spacing-md) !important;
+    background: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    border: 2px solid #B8112E !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+}
+
+.mailerlite-form .ml-form-embedSubmit button:hover {
+    background: #B8112E !important;
+    transform: translateY(-2px) !important;
+}
+
+.mailerlite-form .ml-form-successBody {
+    color: var(--text-light) !important;
+}
+
+.mailerlite-form .ml-form-successBody h4,
+.mailerlite-form .ml-form-successBody p {
+    color: var(--text-light) !important;
+}
+
 /* Page Header */
 .page-header {
     background: var(--secondary-color);
