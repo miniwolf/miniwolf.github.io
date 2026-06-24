@@ -35,6 +35,7 @@ exclude:
   - .gitignore
   - TODO/
   - run.bat
+  - scripts/
 
 # Keep HTML files clean
 permalink: pretty
