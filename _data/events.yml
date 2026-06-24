@@ -161,32 +161,6 @@
     - Enjoy a sauna and a plunge into the lake
     - Simmering barbecue
     alt: Danish Summer Camp 2026
-- id: weapons-defense-workshop
-  active: false
-  featured: false
-  type: workshop
-  categories:
-  - upcoming
-  - workshop
-  image: "/images/events/weapons-workshop.jpg"
-  location: Lyngby Studio
-  price: 400 DKK
-  spots: 8
-  time: 14:00-18:00
-  da:
-    badge: Workshop
-    title: Våbenforsvar Workshop
-    date: 14. April 2026
-    description: Avancerede teknikker til forsvar mod kniv- og stokangreb. Kun for erfarne elever.
-    spots_label: 8 pladser tilgængelige
-    alt: Våbenforsvar Workshop
-  en:
-    badge: Workshop
-    title: Weapons Defense Workshop
-    date: April 14, 2026
-    description: Advanced techniques for defending against knife and stick attacks. For experienced students only.
-    spots_label: 8 spots available
-    alt: Weapons Defense Workshop
 - id: tai-chi-philosophy-strategy
   active: false
   featured: false
