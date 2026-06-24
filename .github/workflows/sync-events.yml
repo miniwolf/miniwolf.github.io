@@ -4,8 +4,19 @@ name: Sync events
 # changes. The commit to main triggers the normal GitHub Pages branch build,
 # so the live site picks up the new events.
 #
-# Requires repo secret EVENTS_SHEET_CSV_URL — the "Publish to web" CSV URL of
-# the events sheet tab (Settings -> Secrets and variables -> Actions).
+# Required repo secrets (Settings -> Secrets and variables -> Actions):
+#   EVENTS_SHEET_CSV_URL - the "Publish to web" CSV URL of the events sheet tab.
+#   EVENTS_SYNC_TOKEN    - a fine-grained Personal Access Token (Contents:
+#                          Read and write on this repo) owned by a repo admin.
+#                          `main` has a ruleset requiring PRs, so the default
+#                          GITHUB_TOKEN is blocked; this token's owner must be
+#                          added to the ruleset's *Bypass list* so the push is
+#                          allowed. See the "Bypass setup" note below.
+#
+# Bypass setup (one time):
+#   Settings -> Rules -> Rulesets -> (your main ruleset) -> Bypass list ->
+#   Add bypass -> add "Repository admin" (or your account). The PAT owner must
+#   match an entry here, otherwise the push is rejected with GH013.
 
 on:
   schedule:
@@ -26,6 +37,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Persisted credentials use this token, so the later `git push` is
+          # authenticated as the PAT owner (who is on the ruleset bypass list).
+          token: ${{ secrets.EVENTS_SYNC_TOKEN }}
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
