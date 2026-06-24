@@ -1,0 +1,51 @@
+name: Sync events
+
+# Regenerates _data/events.yml from the Google Sheet and commits it when it
+# changes. The commit to main triggers the normal GitHub Pages branch build,
+# so the live site picks up the new events.
+#
+# Requires repo secret EVENTS_SHEET_CSV_URL — the "Publish to web" CSV URL of
+# the events sheet tab (Settings -> Secrets and variables -> Actions).
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly, off-peak minute
+  workflow_dispatch: {} # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+# Avoid overlapping runs racing on the same commit.
+concurrency:
+  group: sync-events
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Regenerate events.yml from the sheet
+        env:
+          EVENTS_SHEET_CSV_URL: ${{ secrets.EVENTS_SHEET_CSV_URL }}
+        run: ruby scripts/sheet_to_events.rb
+
+      - name: Commit if changed
+        run: |
+          # Stages _data/events.yml plus any newly downloaded images/events/* files.
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync events from Google Sheet"
+          git push
