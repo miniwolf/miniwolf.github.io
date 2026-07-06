@@ -177,6 +177,7 @@
                 <div class="pricing-card{% if card.featured %} featured{% endif %}">
                     <h3>{{ card.name }}</h3>
                     <div class="price">{{ card.price }}{% if card.suffix %}<span>{{ card.suffix }}</span>{% endif %}</div>
+                    {% if card.detail %}<small>{{ card.detail }}</small>{% endif %}
                     {% for desc in card.descriptions %}<p>{{ desc }}</p>{% endfor %}
                     <a href="{{ card.cta_link | default: '#contact' }}" class="btn {% if card.featured %}btn-primary{% else %}btn-secondary{% endif %}">{{ card.cta }}</a>
                 </div>
