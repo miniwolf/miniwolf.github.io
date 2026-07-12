@@ -1,5 +1,6 @@
 aarhus:
   address: "Gymnastikssalen, Frydenlundhuset,<br> Høgevej 27A, 8210 Aarhus V"
+  address-link: https://maps.app.goo.gl/E5NnkykrGCyB6PD69
   phone: "+45 60162154"
   email: ptcc.aarhus@gmail.com
   club-contact: https://docs.google.com/forms/d/e/1FAIpQLSf1wWiTIji7VVrYLDWJ3ucPtS_4LWXjG1IvnWqcFKD20tbVrw/formResponse?
@@ -9,7 +10,8 @@ aarhus:
   contact-content-id: entry.732101789
 
 lyngby:
-  address: "Trongårdsskolen Pigernes Gymnastikssal<br>Lyngby, Danmark"
+  address: "Trongårdsskolen Pigernes Gymnastikssal<br>Trongårdsvej 50, 2800 Kgs. Lyngby"
+  address-link: https://maps.app.goo.gl/xH18qzqpfKX796LP8
   phone: "+45 22123861"
   email: ptcc.lyngby@gmail.com
   club-contact: https://docs.google.com/forms/d/e/1FAIpQLSeY3OwEAumWTJoItBEG8sv-JmW4-GdjRzwrbF4EXZ79a8n0Zw/formResponse?

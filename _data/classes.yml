@@ -9,7 +9,7 @@ beginner:
       - "Q&A with instructor"
     perfect-for: Complete beginners wanting practical skills
   da:
-    name: Begynder Kampgrundlæggende
+    name: Grundlæggende kamptræning
     descriptions:
       - "Grundformer med kampanvendelser"
       - "Grundlæggende slag- og forsvarsteknikker"
@@ -22,18 +22,18 @@ advanced:
   en:
     name: Advanced Combat Training
     descriptions:
-      - "Complex applications and combinations"
-      - "Sparring and pressure testing"
-      - "Weapons defense concepts"
-      - "Advanced joint locks and throws"
+      - "Applications and combinations"
+      - "Sparring"
+      - "Weapons concepts"
+      - "Joint locks and throws"
     perfect-for: Students with 6+ months experience
   da:
-    name: Avanceret Kamptræning
+    name: Avanceret Sparring
     descriptions:
-      - "Komplekse anvendelser og kombinationer"
-      - "Sparring og tryktest"
-      - "Våbenforsvarsbegreber"
-      - "Avancerede ledlåse og kast"
+      - "Anvendelse og kombinationer"
+      - "Sparring"
+      - "Våben koncepter"
+      - "Ledlåse og kast"
     perfect-for: Elever med 6+ måneders erfaring
 
 open:
@@ -42,14 +42,12 @@ open:
     descriptions:
       - "Practice with training partners"
       - "Technique refinement"
-      - "Sparring opportunities"
     perfect-for: All levels wanting extra practice
   da:
     name: Åben Træning
     descriptions:
       - "Træn med træningspartnere"
       - "Teknikforfining"
-      - "Sparringsmuligheder"
     perfect-for: Alle niveauer der ønsker ekstra træning
 
 qigong:

@@ -24,7 +24,7 @@ layout: default
     <!-- Why Wu Guan Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">{{ t.home.why_wu_guan }}</h2>
+            <h2 class="section-title">{{ t.home.why_train_with_us }}</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
@@ -133,20 +133,17 @@ layout: default
             <button class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
             <h2 class="section-title">{{ t.home.get_started_today }}</h2>
             <div class="contact-locations">
+                {% for loc in site.data.locations %}
+                {% assign name = loc[0] %}
+                {% assign data = loc[1] %}
                 <div class="location-card">
-                    <h3>{{ t.home.lyngby_club }}</h3>
-                    <p class="address">📍 Trongårdsskolen - Pigernes Gymnastikssal<br>Trongårdsvej 50, 2800 Kgs. Lyngby</p>
-                    <p class="phone-number">📞 +45 22123861</p>
-                    <p class="email">✉️ ptcc.lyngby@gmail.com</p>
-                    <a href="lyngby/" class="btn btn-secondary">{{ t.home.visit_lyngby }}</a>
+                    <h3>{{ name | capitalize }}</h3>
+                    <p class="address">📍 <a href="{{ data.address-link }}">{{ data.address }}</a></p>
+                    <p class="phone-number">📞 <a href="tel:{{ data.phone }}">{{ data.phone }}</a></p>
+                    <p class="email">✉️ <a href="mailto:{{ data.email }}">{{ data.email }}</a></p>
+                    <a href="{{ name | downcase }}/" class="btn btn-secondary">{{ t.home.visit }}</a>
                 </div>
-                <div class="location-card">
-                    <h3>{{ t.home.aarhus_club }}</h3>
-                    <p class="address">📍 Gymnastiksalen, Frydenlundhuset, <br> Høgevej 27A, 8210 Aarhus V</p>
-                    <p class="phone-number">📞 +45 60162154</p>
-                    <p class="email">✉️ ptcc.aarhus@gmail.com</p>
-                    <a href="aarhus/" class="btn btn-secondary">{{ t.home.visit_aarhus }}</a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

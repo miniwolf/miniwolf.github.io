@@ -25,28 +25,28 @@ ui:
 home:
   title: "Wu Guan Danmark - Combat-Ready Training"
   hero_title: "Combat-Ready Training"
-  hero_quote: "Ancient art, modern application - now in Lyngby and Aarhus"
+  hero_quote: "Ancient art, modern application"
   find_club: "Find Your Club"
   watch_techniques: "Watch Techniques"
 
-  why_wu_guan: "Why Wu Guan?"
+  why_train_with_us: "Why train with us?"
   feature1_title: "Self-Defense Skills"
   feature1_text: "Learn effective combat applications that work in real situations"
-  feature2_title: "Pad Work & Sparring"
+  feature2_title: "Fighting Practice & Sparring"
   feature2_text: "Build real fighting experience through controlled combat training"
-  feature3_title: "Mental Toughness"
-  feature3_text: "Develop warrior mindset and situational awareness"
+  feature3_title: "Warrior Centality"
+  feature3_text: "Develop your mental strength. Achieve warrior-mindset and situational awareness"
   feature4_title: "Physical Conditioning"
   feature4_text: "Functional strength, flexibility, and combat readiness"
 
-  our_locations: "Our Training Locations"
-  lyngby_club: "Lyngby Club"
-  lyngby_description: "In the heart of Lyngby, offering comprehensive combat training with traditional foundations."
-  lyngby_highlight1: "✓ 10+ years experience"
-  lyngby_highlight2: "✓ Advanced combat training"
-  lyngby_highlight3: "✓ Traditional lineage"
+  our_locations: "Where can you find us?"
+  lyngby_club: "Lyngby"
+  lyngby_description: "Near DTU, offering comprehensive combat training with traditional foundations."
+  lyngby_highlight1: "✓ Room for everyone"
+  lyngby_highlight2: "✓ Focus on combat training"
+  lyngby_highlight3: "✓ +10 years experience"
 
-  aarhus_club: "Aarhus Club"
+  aarhus_club: "Aarhus"
   aarhus_description: "Denmark's second largest city with combat-focused approach."
   aarhus_highlight1: "✓ Same proven methods"
   aarhus_highlight2: "✓ Modern facilities"
@@ -54,7 +54,7 @@ home:
 
   training_days: "Training Days"
   training_highlights: "What do we train?"
-  training_highlights_intro: "See what makes our approach to Tai Chi unique - practical applications taught at both locations"
+  training_highlights_intro: "See what makes our approach to Tai Chi unique"
   technique1_title: "Joint Locks & Throws"
   technique1_text: "Learn practical joint manipulation techniques and takedowns"
   technique2_title: "Striking Techniques"
@@ -68,10 +68,9 @@ home:
 # Club layout
 club:
   club_suffix: "Club"
-  your_instructors: "Your Instructors"
-  brings_training: "brings authentic combat training to"
+  our_instructors: "Our Instructors"
   training_lineage: "Training & Lineage:"
-  started_practicing: "Started practicing Tai Chi in"
+  started_practicing: "Started practicing Tai Chi Chuan in"
 
   class_types: "Class Types"
   perfect_for: "Perfect for"
@@ -129,13 +128,6 @@ months:
   october: "October"
   november: "November"
   december: "December"
-
-# Classes page
-classes:
-  page_title: "Training Schedule"
-  page_subtitle: "Choose the right class for your skill level"
-  weekly_schedule: "Weekly Schedule"
-  class_types_title: "Class Types"
 
 # About page
 about:
