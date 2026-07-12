@@ -62,8 +62,7 @@ home:
   technique3_title: "Defensive Strategies"
   technique3_text: "Develop situational awareness and escape techniques"
   get_started_today: "Get Started Today"
-  visit_lyngby: "Visit Lyngby Page"
-  visit_aarhus: "Visit Aarhus Page"
+  visit: "Visit"
 
 # Club layout
 club:
@@ -211,9 +210,8 @@ about:
   modern6_text: "Challenge yourself physically and mentally while connecting with ancient wisdom traditions."
 
   cta_title: "Ready to Discover Practical Tai Chi Chuan?"
-  cta_text: "Experience the complete art - join us for a trial class at either location"
-  cta_lyngby: "Try Lyngby Club"
-  cta_aarhus: "Try Aarhus Club"
+  cta_text: "Experience the complete art - join us for a trial class"
+  cta_try: "Try"
 
 # Events page
 events:

@@ -225,8 +225,10 @@ layout: default
                 <h2>{{ t.about.cta_title }}</h2>
                 <p>{{ t.about.cta_text }}</p>
                 <div class="cta-buttons">
-                    <a href="lyngby/" class="btn btn-primary">{{ t.about.cta_lyngby }}</a>
-                    <a href="aarhus/" class="btn btn-primary">{{ t.about.cta_aarhus }}</a>
+                    {% for loc in site.data.locations %}
+                    {% assign name = loc[0] | downcase %}
+                    <a href="/{{ page.lang }}/{{ name }}/" aria-label="{{ t.about.cta_try }} {{ name }} {{ t.club.club_suffix }}" class="btn btn-primary">{{ t.about.cta_try }} {{ name }} {{ t.club.club_suffix }}</a>
+                    {% endfor %}
                 </div>
             </div>
         </div>

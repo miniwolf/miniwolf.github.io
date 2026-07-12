@@ -16,6 +16,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Security headers (see _includes/security-headers.html) -->
+    {% include security-headers.html %}
+
     <!-- Jekyll SEO Tag -->
     {% seo title=false %}
     <title>{{page.club-name}} {{ t.club.club_suffix }} - Wu Guan Danmark</title>
@@ -179,7 +182,7 @@
                     <div class="price">{{ card.price }}{% if card.suffix %}<span>{{ card.suffix }}</span>{% endif %}</div>
                     {% if card.detail %}<small>{{ card.detail }}</small>{% endif %}
                     {% for desc in card.descriptions %}<p>{{ desc }}</p>{% endfor %}
-                    <a href="{{ card.cta_link | default: '#contact' }}" class="btn {% if card.featured %}btn-primary{% else %}btn-secondary{% endif %}">{{ card.cta }}</a>
+                    <a href="{{ card.cta_link | default: '#contact' }}" aria-label="{{ card.cta }}" class="btn {% if card.featured %}btn-primary{% else %}btn-secondary{% endif %}">{{ card.cta }}</a>
                 </div>
                 {% endfor %}
             </div>
@@ -213,15 +216,15 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>{{ t.club.location_label }}</strong>
-                        <p><a href="{{address-link}}">{{ address }}</a></p>
+                        <p><a aria-label="{{ address }}" href="{{address-link}}">{{ address }}</a></p>
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.phone_label }}</strong>
-                        <p><a href="tel:{{phone}}">{{phone}}</a></p>
+                        <p><a aria-label="{{ phone }}" href="tel:{{phone}}">{{phone}}</a></p>
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.email_label }}</strong>
-                        <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+                        <p><a aria-label="{{ email }}" href="mailto:{{ email }}">{{ email }}</a></p>
                     </div>
                 </div>
                 {% if page.mailerlite-form %}
@@ -231,17 +234,17 @@
                 {% else %}
                 <script type="text/javascript"> var submitted = false;</script>
                 <div class="contact-form">
-                    <form name="gform" id="gform" enctype="text/plain" action="{{club_contact}}" target="hidden_iframe" onsubmit="submitted=true;">
-                        <input type="text" name="{{contact_name_id}}" id="{{contact_name_id}}" placeholder="{{ t.forms.your_name }}" required>
-                        <input type="email" name="{{contact_email_id}}" id="{{contact_email_id}}" placeholder="{{ t.forms.your_email }}" required>
-                        <select name="{{contact_interest_id}}" id="{{contact_interest_id}}" form="gform" required>
+                    <form aria-label="{{ t.club.contact_title }} {{ page.club-name }} {{ t.club.club_suffix }}" name="gform" id="gform" enctype="text/plain" action="{{club_contact}}" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="{{contact_name_id}}" id="{{contact_name_id}}" aria-label="{{ t.forms.your_name }}" placeholder="{{ t.forms.your_name }}" required>
+                        <input type="email" name="{{contact_email_id}}" id="{{contact_email_id}}" aria-label="{{ t.forms.your_email }}" placeholder="{{ t.forms.your_email }}" required>
+                        <select name="{{contact_interest_id}}" id="{{contact_interest_id}}" aria-label="{{ t.forms.select_topic }}" form="gform" required>
                             <option value="">{{ t.forms.select_topic }}</option>
                             <option value="{{ t.forms.general_question }}">{{ t.forms.general_question }}</option>
                             {% for option in page.interests %}
                             <option value="{{option}}">{{option}}</option>
                             {% endfor %}
                         </select>
-                        <textarea name="{{contact_content_id}}" id="{{contact_content_id}}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
+                        <textarea name="{{contact_content_id}}" id="{{contact_content_id}}" aria-label="{{ t.forms.your_message }}" placeholder="{{ t.forms.your_message }}" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">{{ t.ui.send_message }}</button>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if (submitted) {}"></iframe>

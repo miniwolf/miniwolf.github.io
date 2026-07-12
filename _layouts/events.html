@@ -28,7 +28,7 @@ layout: default
     <section class="event-filters">
         <div class="container">
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">{{ t.events.filter_all }}</button>
+                <button aria-label="{{ t.events.filter_all }}" class="filter-btn active" data-filter="all">{{ t.events.filter_all }}</button>
                 {% if active_categories contains ",upcoming," %}<button class="filter-btn" data-filter="upcoming">{{ t.events.filter_upcoming }}</button>{% endif %}
                 {% if active_categories contains ",weekend," %}<button class="filter-btn" data-filter="weekend">{{ t.events.filter_weekend }}</button>{% endif %}
                 {% if active_categories contains ",camp," %}<button class="filter-btn" data-filter="camp">{{ t.events.filter_camp }}</button>{% endif %}
@@ -82,9 +82,9 @@ layout: default
                         {% endif %}
                         <div class="event-actions">
                             {% if event.registration_url %}
-                            <a href="{{ event.registration_url }}" class="btn btn-primary btn-large">{{ t.ui.register }}</a>
+                            <a aria-label="{{ t.ui.register }}" href="{{ event.registration_url }}" class="btn btn-primary btn-large">{{ t.ui.register }}</a>
                             {% elsif e.registration_url %}
-                            <a href="{{ e.registration_url }}" class="btn btn-primary btn-large">{{ t.ui.register }}</a>
+                            <a aria-label="{{ t.ui.register }}" href="{{ e.registration_url }}" class="btn btn-primary btn-large">{{ t.ui.register }}</a>
                             {% else %}
                             <button class="btn btn-primary btn-large">{{ t.ui.register }}</button>
                             {% endif %}
@@ -112,9 +112,9 @@ layout: default
                 {% assign categories = event.categories | join: " " %}
                 <div class="event-card" data-category="{{ categories }}">
                     {% if event.registration_url %}
-                    <a href="{{ event.registration_url }}">
+                    <a aria-label="{{ event.registration_url }}" href="{{ event.registration_url }}">
                     {% elsif e.registration_url %}
-                    <a href="{{ e.registration_url }}">
+                    <a aria-label="{{ e.registration_url }}" href="{{ e.registration_url }}">
                     {% endif %}
                     <div class="event-image">
                         {% if event.image contains 'http' %}
@@ -225,7 +225,7 @@ layout: default
     </section> -->
 
     <!-- Newsletter Signup -->
-    <section class="newsletter-signup">
+    <!-- <section class="newsletter-signup">
         <div class="container">
             <div class="newsletter-content">
                 <h2>{{ t.events.newsletter_title }}</h2>
@@ -239,4 +239,4 @@ layout: default
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->

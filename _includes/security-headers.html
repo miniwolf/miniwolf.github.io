@@ -1,0 +1,32 @@
+<!--
+  Security headers delivered via <meta> tags.
+
+  The site is hosted on GitHub Pages, which cannot set custom HTTP response
+  headers. Browsers honour Content-Security-Policy and Referrer-Policy when
+  delivered as <meta> tags, so those two are set here. Headers that browsers
+  ONLY accept as real HTTP headers (X-Content-Type-Options, Permissions-Policy,
+  a true X-Frame-Options) cannot be set on GitHub Pages — they require a CDN
+  such as Cloudflare in front of the site. `frame-ancestors` below covers the
+  clickjacking concern that X-Frame-Options would otherwise address.
+
+  NOTE: 'unsafe-inline' is required for scripts/styles because the site uses
+  inline JSON-LD, an inline MailerLite loader, inline event handlers, and
+  inline style attributes. If those are ever refactored out, tighten this.
+
+  Third-party origins allowed: YouTube (embeds/thumbnails), Google Fonts,
+  Google Forms (contact form target), MailerLite (newsletter widget).
+  If you add a new external resource, update this policy or it will be blocked.
+-->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  base-uri 'self';
+  object-src 'none';
+  img-src 'self' data: https:;
+  font-src 'self' https://fonts.gstatic.com https://fonts.mailerlite.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.mailerlite.com https://assets.mlcdn.com;
+  script-src 'self' 'unsafe-inline' https://www.youtube.com https://s.ytimg.com https://*.mailerlite.com https://assets.mlcdn.com;
+  connect-src 'self' https://*.mailerlite.com;
+  frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com https://*.mailerlite.com;
+  form-action 'self' https://docs.google.com https://*.mailerlite.com;
+">
+<meta name="referrer" content="strict-origin-when-cross-origin">

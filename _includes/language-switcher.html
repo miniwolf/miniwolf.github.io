@@ -3,9 +3,9 @@
     {% if lang == "da" %}
         <span class="lang-current">DA</span>
         <span class="lang-separator">|</span>
-        <a href="{{ page.alt_url_en | default: '/en/' }}" class="lang-link">EN</a>
+        <a aria-label="English" href="{{ page.alt_url_en | default: '/en/' }}" class="lang-link">EN</a>
     {% else %}
-        <a href="{{ page.alt_url_da | default: '/da/' }}" class="lang-link">DA</a>
+        <a aria-label="Dansk" href="{{ page.alt_url_da | default: '/da/' }}" class="lang-link">DA</a>
         <span class="lang-separator">|</span>
         <span class="lang-current">EN</span>
     {% endif %}
