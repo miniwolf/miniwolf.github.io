@@ -92,7 +92,7 @@
     spots_label: 12 spots available
     alt: Self-Defense Weekend
 - id: danish-summer-camp-2026
-  active: true
+  active: false
   featured: true
   type: camp
   categories:
