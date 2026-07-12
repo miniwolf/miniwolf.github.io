@@ -211,9 +211,8 @@ about:
   modern6_text: "Udfordre dig selv fysisk og mentalt mens du forbinder med ældgamle visdomstraditioner."
 
   cta_title: "Klar til at Opdage Praktisk Tai Chi Chuan?"
-  cta_text: "Oplev den komplette kunst - bliv en del af os til en prøvetime på begge lokationer"
-  cta_lyngby: "Prøv Lyngby Klub"
-  cta_aarhus: "Prøv Aarhus Klub"
+  cta_text: "Oplev den komplette kunst - deltag i en prøvetime"
+  cta_try: "Prøv"
 
 # Events page
 events:

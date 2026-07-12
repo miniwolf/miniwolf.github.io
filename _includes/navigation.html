@@ -15,25 +15,25 @@
     {% assign aarhusqi_url = "/en/aarhus-qi/" %}
     {% assign events_url = "/en/events/" %}
 {% endif %}
-<nav class="navbar">
+<nav role="navigation" class="navbar">
     <div class="container">
         <div class="nav-brand">
-            <a href="{{ home_url }}"><h2>Wu Guan Danmark</h2></a>
+            <a href="{{ home_url }}" aria-label="Wu Guan Danmark"><h2>Wu Guan Danmark</h2></a>
         </div>
         <div class="nav-menu" id="nav-menu">
-            <a href="{{ home_url }}" class="nav-link {% if page.active == 'home' %}active{% endif %}">{{ t.nav.home }}</a>
-            <a href="{{ about_url }}" class="nav-link {% if page.active == 'about' %}active{% endif %}">{{ t.nav.about }}</a>
+            <a href="{{ home_url }}" aria-label="{{ t.nav.home }}" class="nav-link {% if page.active == 'home' %}active{% endif %}">{{ t.nav.home }}</a>
+            <a href="{{ about_url }}" aria-label="{{ t.nav.about }} "class="nav-link {% if page.active == 'about' %}active{% endif %}">{{ t.nav.about }}</a>
             <div class="nav-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">{{ t.nav.clubs }} ▼</a>
+                <a href="#" aria-label="{{ t.nav.clubs }}" class="nav-link dropdown-toggle">{{ t.nav.clubs }} ▼</a>
                 <div class="dropdown-menu">
-                    <a href="{{ lyngby_url }}" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
-                    <a href="{{ aarhus_url }}" class="dropdown-link {% if page.club-name == 'Aarhus Tai Chi' %}active{% endif %}">Aarhus Tai Chi</a>
-                    <a href="{{ aarhusqi_url }}" class="dropdown-link {% if page.club-name == 'Aarhus Qigong' %}active{% endif %}">Aarhus Qigong</a>
+                    <a href="{{ lyngby_url }}" aria-label="Lyngby" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
+                    <a href="{{ aarhus_url }}" aria-label="Aarhus Tai Chi" class="dropdown-link {% if page.club-name == 'Aarhus Tai Chi' %}active{% endif %}">Aarhus Tai Chi</a>
+                    <a href="{{ aarhusqi_url }}" aria-label="Aarhus Qigong" class="dropdown-link {% if page.club-name == 'Aarhus Qigong' %}active{% endif %}">Aarhus Qigong</a>
                 </div>
             </div>
-            <a href="{{ events_url }}" class="nav-link {% if page.active == 'events' %}active{% endif %}">{{ t.nav.events }}</a>
+            <a href="{{ events_url }}" aria-label="{{ t.nav.events }}" class="nav-link {% if page.active == 'events' %}active{% endif %}">{{ t.nav.events }}</a>
             {% if page.club-name %}
-            <a href="#contact" class="nav-link">{{ t.nav.contact }}</a>
+            <a href="#contact" aria-label="{{ t.nav.contact }}" class="nav-link">{{ t.nav.contact }}</a>
             {% endif %}
             {% include language-switcher.html %}
         </div>

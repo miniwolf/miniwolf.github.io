@@ -13,8 +13,8 @@ layout: default
                     <h1 class="hero-title">{{ t.home.hero_title }}</h1>
                     <p class="hero-quote">"{{ t.home.hero_quote }}"</p>
                     <div class="hero-buttons">
-                        <a href="#clubs" class="btn btn-primary">{{ t.home.find_club }}</a>
-                        <a href="#techniques" class="btn btn-secondary">{{ t.home.watch_techniques }}</a>
+                        <a href="#clubs" aria-label="{{ t.home.find_club }}" class="btn btn-primary">{{ t.home.find_club }}</a>
+                        <a aria-label="{{ t.home.watch_techniques }}" href="#techniques" class="btn btn-secondary">{{ t.home.watch_techniques }}</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ layout: default
                         <div class="club-schedule-preview">
                             <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
                         </div>
-                        <a href="lyngby" class="btn btn-primary">{{ t.ui.learn_more }}</a>
+                        <a href="/{{ page.lang }}/lyngby/" aria-label="{{ t.ui.learn_more }}" class="btn btn-primary">{{ t.ui.learn_more }}</a>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@ layout: default
                         <div class="club-schedule-preview">
                             <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
                         </div>
-                        <a href="aarhus/" class="btn btn-primary">{{ t.ui.learn_more }}</a>
+                        <a href="/{{ page.lang }}/aarhus/" aria-label="{{ t.ui.learn_more }}" class="btn btn-primary">{{ t.ui.learn_more }}</a>
                     </div>
                 </div>
             </div>
@@ -138,10 +138,10 @@ layout: default
                 {% assign data = loc[1] %}
                 <div class="location-card">
                     <h3>{{ name | capitalize }}</h3>
-                    <p class="address">📍 <a href="{{ data.address-link }}">{{ data.address }}</a></p>
-                    <p class="phone-number">📞 <a href="tel:{{ data.phone }}">{{ data.phone }}</a></p>
-                    <p class="email">✉️ <a href="mailto:{{ data.email }}">{{ data.email }}</a></p>
-                    <a href="{{ name | downcase }}/" class="btn btn-secondary">{{ t.home.visit }}</a>
+                    <p class="address">📍 <a aria-label="{{ data.address }}" href="{{ data.address-link }}">{{ data.address }}</a></p>
+                    <p class="phone-number">📞 <a aria-label="{{ data.phone }}" href="tel:{{ data.phone }}">{{ data.phone }}</a></p>
+                    <p class="email">✉️ <a aria-label="{{ data.email }}" href="mailto:{{ data.email }}">{{ data.email }}</a></p>
+                    <a aria-label="{{ t.home.visit }}" href="/{{ page.lang }}/{{ name | downcase }}/" class="btn btn-secondary">{{ t.home.visit }}</a>
                 </div>
                 {% endfor %}
             </div>
