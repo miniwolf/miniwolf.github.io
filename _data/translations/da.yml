@@ -25,28 +25,28 @@ ui:
 home:
   title: "Wu Guan Danmark - Kampklar Træning"
   hero_title: "Kampklar Træning"
-  hero_quote: "Ældgammel kunst, moderne anvendelse - nu i Lyngby og Aarhus"
+  hero_quote: "Ældgammel kunst, moderne anvendelse"
   find_club: "Find din klub"
   watch_techniques: "Se teknikker"
 
-  why_wu_guan: "Hvorfor Wu Guan?"
+  why_train_with_us: "Hvorfor træne hos os?"
   feature1_title: "Selvforsvars-færdigheder"
-  feature1_text: "Lær effektive kampanvendelser der virker i virkelige situationer"
-  feature2_title: "Pudetræning & Sparring"
+  feature1_text: "Lær effektive kampanvendelser der slår til i virkelige situationer"
+  feature2_title: "Kamptræning & Sparring"
   feature2_text: "Opbyg reel kampsportserfaring gennem kontrolleret kamptræning"
-  feature3_title: "Mental Styrke"
-  feature3_text: "Udvikl krigermindset og situationsbevidsthed"
-  feature4_title: "Fysisk Kondition"
-  feature4_text: "Funktionel styrke, smidighed og kampberedskab"
+  feature3_title: "Kriger-mindset"
+  feature3_text: "Udvikl din mentale styrke. Opnå kriger-mindset og situationsbevidsthed"
+  feature4_title: "Fysisk Styrke"
+  feature4_text: "Træn funktionel styrke, smidighed og kampberedskab"
 
-  our_locations: "Vores Træningssteder"
-  lyngby_club: "Lyngby Klub"
-  lyngby_description: "I hjertet af Lyngby, tilbyder omfattende kamptræning med traditionelle fundamenter."
-  lyngby_highlight1: "✓ 10+ års erfaring"
-  lyngby_highlight2: "✓ Avanceret kamptræning"
-  lyngby_highlight3: "✓ Traditionel linje"
+  our_locations: "Hvor kan du finde os?"
+  lyngby_club: "Lyngby"
+  lyngby_description: "Nær DTU, tilbyder omfattende kamptræning med traditionelle fundamenter."
+  lyngby_highlight1: "✓ Plads til alle"
+  lyngby_highlight2: "✓ Fokus på kamptræning"
+  lyngby_highlight3: "✓ 10+ års erfaring"
 
-  aarhus_club: "Aarhus Klub"
+  aarhus_club: "Aarhus"
   aarhus_description: "Danmarks næststørste by med kampfokuseret tilgang."
   aarhus_highlight1: "✓ Samme dokumenterede metoder"
   aarhus_highlight2: "✓ Moderne faciliteter"
@@ -54,7 +54,7 @@ home:
 
   training_days: "Træningsdage"
   training_highlights: "Hvad træner vi?"
-  training_highlights_intro: "Se hvad der gør vores tilgang til Tai Chi unik - praktiske anvendelser undervist på begge lokationer"
+  training_highlights_intro: "Se hvad der gør vores tilgang til Tai Chi unik"
   technique1_title: "Ledlåse & Kast"
   technique1_text: "Lær praktiske ledmanipulationsteknikker og nedtagninger"
   technique2_title: "Slagteknikker"
@@ -62,18 +62,16 @@ home:
   technique3_title: "Forsvarsstrategier"
   technique3_text: "Udvikl situationsbevidsthed og undvigelseteknikker"
   get_started_today: "Kom i gang i dag"
-  visit_lyngby: "Besøg Lyngby Side"
-  visit_aarhus: "Besøg Aarhus Side"
+  visit: "Læs mere"
 
 # Club layout
 club:
-  club_suffix: "Klub"
-  your_instructors: "Dine Instruktører"
-  brings_training: "bringer autentisk kamptræning til"
+  club_suffix: "Klubben"
+  our_instructors: "Vores Instruktører"
   training_lineage: "Træning & Linje:"
-  started_practicing: "Begyndte at praktisere Tai Chi i"
+  started_practicing: "Begyndte at praktisere Tai Chi Chuan i"
 
-  class_types: "Holdtyper"
+  class_types: "Hold"
   perfect_for: "Perfekt til"
 
   training_schedule: "Træningsplan"
@@ -130,12 +128,6 @@ months:
   november: "November"
   december: "December"
 
-# Classes page
-classes:
-  page_title: "Træningsplan"
-  page_subtitle: "Vælg det rigtige hold for dit færdighedsniveau"
-  weekly_schedule: "Ugentlig Tidsplan"
-  class_types_title: "Holdtyper"
 
 # About page
 about:

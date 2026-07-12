@@ -1,14 +1,15 @@
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang] %}
 {% assign loc = site.data.locations[page.location] %}
-{% assign address = page.address | default: loc.address %}
-{% assign phone = page.phone | default: loc.phone %}
-{% assign email = page.email | default: loc.email %}
-{% assign club_contact = page.club-contact | default: loc.club-contact %}
-{% assign contact_name_id = page.contact-name-id | default: loc.contact-name-id %}
-{% assign contact_email_id = page.contact-email-id | default: loc.contact-email-id %}
-{% assign contact_interest_id = page.contact-interest-id | default: loc.contact-interest-id %}
-{% assign contact_content_id = page.contact-content-id | default: loc.contact-content-id %}
+{% assign address = loc.address %}
+{% assign address-link = loc.address-link %}
+{% assign phone = loc.phone %}
+{% assign email = loc.email %}
+{% assign club_contact = loc.club-contact %}
+{% assign contact_name_id = loc.contact-name-id %}
+{% assign contact_email_id = loc.contact-email-id %}
+{% assign contact_interest_id = loc.contact-interest-id %}
+{% assign contact_content_id = loc.contact-content-id %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -108,7 +109,7 @@
     <!-- Instructor Section -->
     <section class="club-instructor">
         <div class="container">
-            <h2 class="section-title">{{ t.club.your_instructors }}</h2>
+            <h2 class="section-title">{{ t.club.our_instructors }}</h2>
 {% for teacher in page.instructors %}
             <div class="instructor-grid">
                 <div class="instructor-image">
@@ -116,7 +117,6 @@
                 </div>
                 <div class="instructor-content">
                     <h3>{{ teacher.name }}</h3>
-                    <p>{{ teacher.name }} {{ t.club.brings_training }} {{page.club-name}}.</p>
 
                     <div class="instructor-credentials">
                         <h4>{{ t.club.training_lineage }}</h4>
@@ -153,7 +153,7 @@
     <!-- Schedule Section -->
     <section class="schedule">
         <div class="container">
-            <h2 class="section-title">{{ page.club-name }} {{ t.club.training_schedule }}</h2>
+            <h2 class="section-title"> {{ t.club.training_schedule }}</h2>
             <div class="schedule-grid">
                 {% for class in page.classes %}
                 <div class="schedule-day">
@@ -171,7 +171,7 @@
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
-            <h2 class="section-title">{{page.club-name}} {{ t.club.pricing }}</h2>
+            <h2 class="section-title">{{ t.club.pricing }}</h2>
             <div class="pricing-cards">
                 {% for card in page.pricing %}
                 <div class="pricing-card{% if card.featured %} featured{% endif %}">
@@ -213,7 +213,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>{{ t.club.location_label }}</strong>
-                        <p>{{ address }}</p>
+                        <p><a href="{{address-link}}">{{ address }}</a></p>
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.phone_label }}</strong>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="contact-item">
                         <strong>{{ t.club.email_label }}</strong>
-                        <p>{{ email }}</p>
+                        <p><a href="mailto:{{ email }}">{{ email }}</a></p>
                     </div>
                 </div>
                 {% if page.mailerlite-form %}
