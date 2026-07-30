@@ -4,6 +4,7 @@
     {% assign home_url = "/da/" %}
     {% assign about_url = "/da/om/" %}
     {% assign aalborg_url = "/da/aalborg/" %}
+    {% assign esbjerg_url = "/da/esbjerg/" %}
     {% assign lyngby_url = "/da/lyngby/" %}
     {% assign aarhus_url = "/da/aarhus/" %}
     {% assign aarhusqi_url = "/da/aarhus-qi/" %}
@@ -13,6 +14,7 @@
     {% assign home_url = "/en/" %}
     {% assign about_url = "/en/about/" %}
     {% assign aalborg_url = "/en/aalborg/" %}
+    {% assign esbjerg_url = "/en/esbjerg/" %}
     {% assign lyngby_url = "/en/lyngby/" %}
     {% assign aarhus_url = "/en/aarhus/" %}
     {% assign aarhusqi_url = "/en/aarhus-qi/" %}
@@ -31,6 +33,7 @@
                 <a href="#" aria-label="{{ t.nav.clubs }}" class="nav-link dropdown-toggle">{{ t.nav.clubs }} ▼</a>
                 <div class="dropdown-menu">
                     <a href="{{ aalborg_url }}" aria-label="Aalborg" class="dropdown-link {% if page.club-name == 'Aalborg' %}active{% endif %}">Aalborg</a>
+                    <a href="{{ esbjerg_url }}" aria-label="Esbjerg" class="dropdown-link {% if page.club-name == 'Esbjerg' %}active{% endif %}">Esbjerg</a>
                     <a href="{{ lyngby_url }}" aria-label="Lyngby" class="dropdown-link {% if page.club-name == 'Lyngby' %}active{% endif %}">Lyngby</a>
                     <a href="{{ aarhus_url }}" aria-label="Aarhus Tai Chi" class="dropdown-link {% if page.club-name == 'Aarhus Tai Chi' %}active{% endif %}">Aarhus Tai Chi</a>
                     <a href="{{ aarhusqi_url }}" aria-label="Aarhus Qigong" class="dropdown-link {% if page.club-name == 'Aarhus Qigong' %}active{% endif %}">Aarhus Qigong</a>

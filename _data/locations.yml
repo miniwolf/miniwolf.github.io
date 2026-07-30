@@ -31,6 +31,17 @@ odense:
   contact-interest-id: entry.1327311033
   contact-content-id: entry.732101789
 
+esbjerg:
+  address: "Danmarksgade Skole, drengenes gymnastiksal<br>Esbjerg"
+  address-link: https://maps.google.com/?q=Danmarksgade+Skole+Esbjerg
+  phone: "+45 30247538"
+  # email: TODO confirm club email; contact is via SMS 30247538 / Facebook for now
+  # club-contact: TODO add Google Form URL to enable the contact form
+  contact-name-id: entry.1241072293
+  contact-email-id: entry.1629391342
+  contact-interest-id: entry.1327311033
+  contact-content-id: entry.732101789
+
 lyngby:
   address: "Trongårdsskolen Pigernes Gymnastikssal<br>Trongårdsvej 50, 2800 Kgs. Lyngby"
   address-link: https://maps.app.goo.gl/xH18qzqpfKX796LP8
