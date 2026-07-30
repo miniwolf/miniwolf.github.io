@@ -33,7 +33,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - .gitignore
-  - TODO/
   - run.bat
   - scripts/
 

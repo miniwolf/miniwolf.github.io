@@ -40,17 +40,6 @@ home:
   feature4_text: "Functional strength, flexibility, and combat readiness"
 
   our_locations: "Where can you find us?"
-  lyngby_club: "Lyngby"
-  lyngby_description: "Near DTU, offering comprehensive combat training with traditional foundations."
-  lyngby_highlight1: "✓ Room for everyone"
-  lyngby_highlight2: "✓ Focus on combat training"
-  lyngby_highlight3: "✓ +10 years experience"
-
-  aarhus_club: "Aarhus"
-  aarhus_description: "Denmark's second largest city with combat-focused approach."
-  aarhus_highlight1: "✓ Same proven methods"
-  aarhus_highlight2: "✓ Modern facilities"
-  aarhus_highlight3: "✓ Growing community"
 
   training_days: "Training Days"
   training_highlights: "What do we train?"
@@ -75,6 +64,7 @@ club:
   perfect_for: "Perfect for"
 
   training_schedule: "Training Schedule"
+  calendar_title: "Calendar"
   pricing: "Pricing"
 
   faq_title: "Frequently Asked Questions"

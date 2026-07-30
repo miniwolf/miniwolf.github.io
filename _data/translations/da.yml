@@ -40,17 +40,6 @@ home:
   feature4_text: "Træn funktionel styrke, smidighed og kampberedskab"
 
   our_locations: "Hvor kan du finde os?"
-  lyngby_club: "Lyngby"
-  lyngby_description: "Nær DTU, tilbyder omfattende kamptræning med traditionelle fundamenter."
-  lyngby_highlight1: "✓ Plads til alle"
-  lyngby_highlight2: "✓ Fokus på kamptræning"
-  lyngby_highlight3: "✓ 10+ års erfaring"
-
-  aarhus_club: "Aarhus"
-  aarhus_description: "Danmarks næststørste by med kampfokuseret tilgang."
-  aarhus_highlight1: "✓ Samme dokumenterede metoder"
-  aarhus_highlight2: "✓ Moderne faciliteter"
-  aarhus_highlight3: "✓ Voksende fællesskab"
 
   training_days: "Træningsdage"
   training_highlights: "Hvad træner vi?"
@@ -75,6 +64,7 @@ club:
   perfect_for: "Perfekt til"
 
   training_schedule: "Træningsplan"
+  calendar_title: "Kalender"
   pricing: "Priser"
 
   faq_title: "Ofte Stillede Spørgsmål"

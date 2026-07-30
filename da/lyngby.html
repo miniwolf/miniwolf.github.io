@@ -9,6 +9,7 @@ mailerlite-form: "Ln2dS3"
 
 # Klub information
 club-name: Lyngby
+card-image: /images/lyngby/google-maps.png
 description: "Wu Guan Lyngby tilbyder autentisk Tai Chi Chuan træning nær København. Lær kampfokuserede kampsportskunster med erfarne instruktører Casper Clausen og Nicklas Pingel."
 intro: "Wu Guan Lyngby er en kampkunstklub i Kgs. Lyngby nær København, der tilbyder autentisk Tai Chi Chuan træning med fokus på praktiske kampanvendelser. Vores erfarne instruktører underviser i traditionel Tai Chi som en effektiv kampsport — ikke kun som langsom motion. Vi træner slag, kast, ledlåse og sparring, alt sammen forankret i de klassiske Tai Chi principper. Uanset om du er helt nybegynder eller erfaren kampkunstudøver, er du velkommen til at prøve en gratis prøvetime."
 
@@ -41,7 +42,7 @@ instructors:
 
 # Beskrivelser af de forskellige klasser
 classes:
-  - day: Mondag
+  - day: Mandag
     description: Avanceret Sparring
     time: 20:00-21:00
   - day: Onsdag
@@ -55,8 +56,31 @@ classes:
 interests:
   - "Begynderhold"
 
-# Used to gather content from class descriptions in _data/classes.yml
-classtypes: [beginner, advanced, open]
+# Holdbeskrivelser
+classcards:
+  - name: "Grundlæggende kamptræning"
+    descriptions: [
+      "Grundformer med kampanvendelser",
+      "Grundlæggende slag- og forsvarsteknikker",
+      "Introduktion til pudetræning",
+      "Selvforsvarsscenarier",
+      "Spørgsmål og svar med instruktør",
+    ]
+    perfect-for: "Komplette begyndere der ønsker praktiske færdigheder"
+  - name: "Avanceret Sparring"
+    descriptions: [
+      "Anvendelse og kombinationer",
+      "Sparring",
+      "Våben koncepter",
+      "Ledlåse og kast",
+    ]
+    perfect-for: "Elever med 6+ måneders erfaring"
+  - name: "Åben Træning"
+    descriptions: [
+      "Træn med træningspartnere",
+      "Teknikforfining",
+    ]
+    perfect-for: "Alle niveauer der ønsker ekstra træning"
 
 # Priser
 pricing:

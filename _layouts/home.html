@@ -55,43 +55,27 @@ layout: default
         <div class="container">
             <h2 class="section-title">{{ t.home.our_locations }}</h2>
             <div class="clubs-grid">
+                {% assign clubs = site.pages | where: "layout", "club" | where: "lang", page_lang | sort: "club-name" %}
+                {% for club in clubs %}
                 <div class="club-card">
+                    {% if club.card-image %}
                     <div class="club-image">
-                        <img src="/images/lyngby/google-maps.png" alt="Lyngby Træningsstudie" loading="lazy">
+                        <img src="{{ club.card-image }}" alt="{{ club.club-name }}" loading="lazy">
                     </div>
+                    {% endif %}
                     <div class="club-content">
-                        <h3>{{ t.home.lyngby_club }}</h3>
-                        <p>{{ t.home.lyngby_description }}</p>
-                        <div class="club-highlights">
-                            <span class="highlight">{{ t.home.lyngby_highlight1 }}</span>
-                            <span class="highlight">{{ t.home.lyngby_highlight2 }}</span>
-                            <span class="highlight">{{ t.home.lyngby_highlight3 }}</span>
-                        </div>
+                        <h3>{{ club.club-name }}</h3>
+                        <p>{{ club.description }}</p>
+                        {% assign days = club.classes | map: "day" | uniq | join: ", " %}
+                        {% if days != "" %}
                         <div class="club-schedule-preview">
-                            <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
+                            <strong>{{ t.home.training_days }}:</strong> {{ days }}
                         </div>
-                        <a href="/{{ page.lang }}/lyngby/" aria-label="{{ t.ui.learn_more }}" class="btn btn-primary">{{ t.ui.learn_more }}</a>
+                        {% endif %}
+                        <a href="{{ club.url }}" aria-label="{{ t.ui.learn_more }}" class="btn btn-primary">{{ t.ui.learn_more }}</a>
                     </div>
                 </div>
-
-                <div class="club-card">
-                    <div class="club-image">
-                        <img src="/images/aarhus/google-maps.png" alt="Aarhus Træningsstudie" loading="lazy">
-                    </div>
-                    <div class="club-content">
-                        <h3>{{ t.home.aarhus_club }}</h3>
-                        <p>{{ t.home.aarhus_description }}</p>
-                        <div class="club-highlights">
-                            <span class="highlight">{{ t.home.aarhus_highlight1 }}</span>
-                            <span class="highlight">{{ t.home.aarhus_highlight2 }}</span>
-                            <span class="highlight">{{ t.home.aarhus_highlight3 }}</span>
-                        </div>
-                        <div class="club-schedule-preview">
-                            <strong>{{ t.home.training_days }}:</strong> {{ t.days.mon }}, {{ t.days.wed }}
-                        </div>
-                        <a href="/{{ page.lang }}/aarhus/" aria-label="{{ t.ui.learn_more }}" class="btn btn-primary">{{ t.ui.learn_more }}</a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

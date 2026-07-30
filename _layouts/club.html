@@ -115,16 +115,18 @@
             <h2 class="section-title">{{ t.club.our_instructors }}</h2>
 {% for teacher in page.instructors %}
             <div class="instructor-grid">
+                {% if teacher.image %}
                 <div class="instructor-image">
                     <img src="{{teacher.image}}" alt="{{ teacher.name }}" loading="lazy">
                 </div>
+                {% endif %}
                 <div class="instructor-content">
                     <h3>{{ teacher.name }}</h3>
 
                     <div class="instructor-credentials">
                         <h4>{{ t.club.training_lineage }}</h4>
                         <ul>
-                            <li>{{ t.club.started_practicing }} {{ teacher.start }}</li>
+                            {% if teacher.start %}<li>{{ t.club.started_practicing }} {{ teacher.start }}</li>{% endif %}
                             {% for description in teacher.descriptions %} <li>{{description}}</li> {% endfor %}
                         </ul>
                     </div>
@@ -139,14 +141,13 @@
         <div class="container">
             <h2 class="section-title">{{ t.club.class_types }}</h2>
             <div class="class-cards">
-                {% for class_type in page.classtypes %}
-                {% assign class = site.data.classes[class_type][lang] %}
+                {% for class in page.classcards %}
                 <div class="class-card">
                     <h3>{{ class.name }}</h3>
                     <ul>
                         {% for desc in class.descriptions %} <li>{{desc}}</li> {% endfor %}
                     </ul>
-                    <p class="class-perfect">{{ t.club.perfect_for }}: {{ class.perfect-for }}</p>
+                    {% if class.perfect-for %}<p class="class-perfect">{{ t.club.perfect_for }}: {{ class.perfect-for }}</p>{% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -170,6 +171,16 @@
             </div>
         </div>
     </section>
+
+    {% if page.calendar-src %}
+    <!-- Calendar Section -->
+    <section class="club-calendar">
+        <div class="container">
+            <h2 class="section-title">{{ t.club.calendar_title }}</h2>
+            <iframe title="{{ t.club.calendar_title }} {{ page.club-name }}" loading="lazy" style="border:0;width:100%;height:600px" src="https://calendar.google.com/calendar/embed?src={{ page.calendar-src | url_encode }}&ctz=Europe/Copenhagen"></iframe>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- Pricing Section -->
     <section class="pricing">
@@ -218,20 +229,24 @@
                         <strong>{{ t.club.location_label }}</strong>
                         <p><a aria-label="{{ address }}" href="{{address-link}}">{{ address }}</a></p>
                     </div>
+                    {% if phone %}
                     <div class="contact-item">
                         <strong>{{ t.club.phone_label }}</strong>
                         <p><a aria-label="{{ phone }}" href="tel:{{phone}}">{{phone}}</a></p>
                     </div>
+                    {% endif %}
+                    {% if email %}
                     <div class="contact-item">
                         <strong>{{ t.club.email_label }}</strong>
                         <p><a aria-label="{{ email }}" href="mailto:{{ email }}">{{ email }}</a></p>
                     </div>
+                    {% endif %}
                 </div>
                 {% if page.mailerlite-form %}
                 <div class="contact-form mailerlite-form">
                     <div class="ml-embedded" data-form="{{ page.mailerlite-form }}"></div>
                 </div>
-                {% else %}
+                {% elsif club_contact %}
                 <script type="text/javascript"> var submitted = false;</script>
                 <div class="contact-form">
                     <form aria-label="{{ t.club.contact_title }} {{ page.club-name }} {{ t.club.club_suffix }}" name="gform" id="gform" enctype="text/plain" action="{{club_contact}}" target="hidden_iframe" onsubmit="submitted=true;">
