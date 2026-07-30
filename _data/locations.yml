@@ -9,6 +9,17 @@ aarhus:
   contact-interest-id: entry.1327311033
   contact-content-id: entry.732101789
 
+aalborg:
+  address: "Sønderbro Skole, gymnastiksal Nord<br>Sjællandsgade 2, 9000 Aalborg"
+  address-link: https://maps.google.com/?q=Sønderbro+Skole+Sjællandsgade+2+9000+Aalborg
+  phone: "+45 22623461"
+  email: ptcc.aalborg@gmail.com
+  # club-contact: TODO add Google Form URL to enable the contact form
+  contact-name-id: entry.1241072293
+  contact-email-id: entry.1629391342
+  contact-interest-id: entry.1327311033
+  contact-content-id: entry.732101789
+
 lyngby:
   address: "Trongårdsskolen Pigernes Gymnastikssal<br>Trongårdsvej 50, 2800 Kgs. Lyngby"
   address-link: https://maps.app.goo.gl/xH18qzqpfKX796LP8
