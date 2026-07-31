@@ -2,6 +2,52 @@
 # Edit events in the Google Sheet; the "Sync events" GitHub Action regenerates this file.
 # See CLAUDE.md "Events System" for the column schema and workflow.
 
+- id: prague-workshop-2026
+  active: true
+  featured: false
+  type: weekend
+  categories:
+  - upcoming
+  - weekend
+  - seminar
+  - workshop
+  image: https://lh3.googleusercontent.com/d/1Zy0IW0y4i8X5DISy5Tj2uFbKLFwwXkrq
+  location: Prague, Czech Republic
+  price: 185 EUR
+  registration_url: https://wptc.cz/workshop/
+  da:
+    badge: Tjekkiet 2026
+    title: Prag Workshop - 2026
+    date: 25/09/2026
+    description: |-
+      Det tjekkiske hold gjorde et fremragende stykke arbejde med at organisere et nyt sted til årets workshop, samt at få en funktionel informations- og tilmeldingsside op.
+
+      Stedet for dette år er enestående, når det kommer til omgivelser med natur og historie. Prags centrum er tæt på, så hvis du ønsker at tilbringe nogle dage med at besøge den dejlige by Prag, er det nemt at organisere det.
+
+      Hvis du er interesseret - kontakt venligst det tjekkiske team for yderligere information efter at have læst informationerne på hjemmesiden:
+
+      https://wptc.cz/workshop/
+
+      Der har været en støt voksende skare fra Vest-/Nordeuropa, der har været til stede i de seneste år, så vi håber at kunne bringe flere søstre og brødre med til god træning, diskussioner, fremragende drikkevarer og mad, fin kultur og selvfølgelig et fantastisk selskab.
+
+      Håber at se dig der!
+    price_label: 185 EUR
+  en:
+    badge: Czech 2026
+    title: Prague Workshop - 2026
+    date: 25/09/2026
+    description: |-
+      The Czech crew did an an outstanding job in organizing a new venue for this years workshop, as well as getting a functional info & registration site up.
+      The place for this year is outstanding when it comes to surroundings in nature and history. City centre of Prague is near so if you want to spend some days visiting the lovely city of Prague that is easily organized.
+
+      If you are interested - please contact the Czech team for additional info after reading the intel on the website:
+
+      https://wptc.cz/workshop/
+
+      It has been a steadily growing crowd from western/northern Europe coming along during the last years, so we hope to bring along more sisters and brothers gathering together for good training, discussions, excellent drinks & food, fine culture and an awesome company of course.
+
+      Hope to see you there!
+    price_label: 185 EUR
 - id: free-trial-class
   active: true
   featured: false
