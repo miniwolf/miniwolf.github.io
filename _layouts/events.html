@@ -133,7 +133,8 @@ layout: default
                             <span class="event-date">📅 {{ e.date }}</span>
                             <span class="event-location">📍 {{ event.location }}</span>
                         </div>
-                        <p>{{ e.description }}</p>
+                        <p class="event-card-desc">{{ e.description }}</p>
+                        <button type="button" class="read-more-btn" data-more="{{ t.ui.read_more }}" data-less="{{ t.ui.read_less }}" hidden>{{ t.ui.read_more }}</button>
                         <div class="event-details">
                             <div class="event-time">⏰ {{ e.time | default: event.time }}</div>
                             <div class="event-price">{{ e.price_label | default: event.price }}</div>
