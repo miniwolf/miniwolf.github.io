@@ -32,6 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Read more / less for long event descriptions
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        const desc = btn.previousElementSibling;
+        if (!desc || !desc.classList.contains('event-card-desc')) return;
+        // Only offer the toggle when the text is actually clamped/overflowing
+        if (desc.scrollHeight - desc.clientHeight > 1) {
+            btn.hidden = false;
+        }
+        btn.addEventListener('click', function() {
+            const expanded = desc.classList.toggle('expanded');
+            btn.textContent = expanded ? btn.dataset.less : btn.dataset.more;
+        });
+    });
+
     // Newsletter form submission
     const newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {

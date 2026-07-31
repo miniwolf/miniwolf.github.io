@@ -17,6 +17,7 @@ ui:
   send_message: "Send Message"
   subscribe: "Subscribe"
   read_more: "Read More"
+  read_less: "Read Less"
   schedule: "Schedule"
   watch: "Watch"
   join_us: "Join Us"

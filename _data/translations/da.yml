@@ -17,6 +17,7 @@ ui:
   send_message: "Send besked"
   subscribe: "Tilmeld"
   read_more: "Læs mere"
+  read_less: "Vis mindre"
   schedule: "Tidsplan"
   watch: "Se"
   join_us: "Bliv en del"
