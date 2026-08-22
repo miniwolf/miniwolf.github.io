@@ -1217,7 +1217,7 @@ a {
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -1242,7 +1242,7 @@ a {
 
 .class-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -1293,7 +1293,6 @@ a {
 }
 
 .pricing-cards {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-md);
 }
@@ -1308,7 +1307,6 @@ a {
 
 .pricing-card.featured {
     background: var(--primary-color);
-    transform: scale(1.05);
 }
 
 .price {

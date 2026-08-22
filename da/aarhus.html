@@ -35,18 +35,22 @@ instructors:
 
 # Beskrivelser af de forskellige hold
 classes:
-  - day: Mandag
-    description: Sabelform (Xuan Xuan Dao)<br />Sværdform (Jian)<br />Spydform (Qiang)
-    time: 18:00-19:30
-  - day: Mandag
-    description: Undervisning i den korte Håndform (Dao Chua)
-    time: 19:00-20:00
-  - day: Mandag
-    description: Undervisning i Pushing Hands (Tui Shou) og selvforsvar (San Shou)
-    time: 20:00-20:45
-  - day: Torsdag
-    description: Sparring, teknikker og core træning
-    time: 20:00-21:00
+  - title: Sabelform (Xuan Xuan Dao)<br />Sværdform (Jian)<br />Spydform (Qiang)
+    descriptions: [
+      { description: Mandag, time: 18:00-19:00 }
+    ]
+  - title: Korte Håndform (Dao Chuan)
+    descriptions: [
+      { description: Mandag, time: 19:00-20:00 }
+    ]
+  - title: Pushing Hands (Tui Shou) og selvforsvar (San Shou)
+    descriptions: [
+      { description: Mandag, time: 20:00-20:45 }
+    ]
+  - title: Sparring, teknikker og core træning
+    descriptions: [
+      { description: Torsdag, time: 20:00-21:00 }
+    ]
 
 
 # Bruges til at generere interesser til kontaktformularen
@@ -54,12 +58,43 @@ interests:
   - Tai Chi
 
 # Bruges til at hente hold beskrivelser fra _data/classes.yml
-classtypes: [beginner, advanced]
+classtypes:
+  - name: Korte Håndform (Dao Chuan)
+    descriptions:
+    - Lær de fundamnetale Tai Chi stillinger, bevægelser, fodarbejde og overgange.
+    - Øv dig i at bevæge dig flydende uden unødigt at spænde op, koordinere hele kroppen.
+    - Opbyg balance, fleksibilitet og kontrol igennem komplekse bevægelser.
+    - Langsom, kontrolleret øvelse kombinere bevægelse med naturlig, reguleret vejrtrækning og ses som gavnligt for helbredet.
+    - Bevægelserne er ikke bare koreografi; de indeholder teknikkerne og principperne der senere bliver anvendt i selvforsvar.
+    perfect-for: bygger fundamentet af hele Tai Chi systemet, samtidig med at det udvikler helbredet, afslapning, balance og bevægelse.
+  - name: Sabelform (Xuan Xuan Dao)<br />Sværdform (Jian)<br />Spydform (Qiang)
+    descriptions:
+    - Sværd, sable og spyd får dig til at anvende de samme principper med et objekt der giver dig mere rækkevidde.
+    - Våben giver en anden øvelse end Hånd Form, strækker og afslapper muskler og led.
+    - Arbejd med at koordinere hænder, våben, krop og fodarbejde som en bevægelse.
+    - De forskellige våben giver forskellige udfordringer på kvaliteter som opmærksomhed, præcision og kontrol.
+    - Våben formene indeholder praktiske kamp applikationer og bliver undervist sammen med våbenformene.
+    perfect-for: Udivkle præcision, koordination, fokus og bevæge kroppen som en enhed mens du tager Tai Chi principperne videre end hånd-applikationer.
+  - name: Pushing Hands (Tui Shou) og selvforsvar (San Shou)
+    descriptions:
+    - Lær at mærke ændringer i din partners bevægelser og intention gennem fysisk kontakt.
+    - Øv at reagerer naturligt og hurtigt istedet for at regne med forudplanlagte bevægelser.
+    - Lær at undgå at bruge råstyrke, brug blødhed og videreføre din modstanders kraft istedet for at bare at blokere den.
+    - Træn kast, fejninger, fældninger, låse, greb og nærkamps teknikker lige så meget som slag.
+    - Gå fra at lære de individuelle teknikker til at kombinere dem naturligt i forhold til situationen, istedet for at memorisere "angreb X → respons Y."
+    perfect-for: turning the principles and movements of Tai Chi into actual martial ability and practical self-defence.
+  - name: Sparring, teknikker og core træning
+    descriptions:
+    - Brug Tai Chi-principper og teknikker mod en partner, der aktivt gør modstand frem for at samarbejde.
+    - Øv dig i at reagere, når angrebene ikke kommer på den måde, du forventer.
+    - Træn overgangen mellem slag, kast, greb og andre applikationer frem for faste sekvenser.
+    - Lær hvornår og hvordan du går ind, undviger, omdirigerer og svarer igen over for en bevægelig modstander.
+    - Find ud af, hvad der faktisk fungerer, identificér svagheder og opbyg evnen til at bruge Tai Chi under pres.
+    perfect-for: at omdanne Tai Chi fra teknik og teori til praktisk kampfærdighed - og lære at bevare ro og effektivitet, når modstanderen ikke samarbejder.
 
 # Priser
 pricing:
-  - name: "Prøvetime i Januar"
-    price: "0 DKK"
+  - name: "Prøvetime i Januar / September"
     featured: true
     descriptions: ["Ingen forpligtelse"]
     cta: "Tilmeld dig nu"

@@ -20,6 +20,8 @@ faq:
     a: "No, you need no prior experience. Our beginner classes are designed for people who have never tried martial arts before. We start with fundamental techniques and build up gradually. You are welcome to come to a free trial class to see if it is right for you."
   - q: "How much does it cost?"
     a: "Membership is 650 DKK per half year, which gives you access to all classes. Your first trial class is completely free with no commitment. We keep prices low because we are a nonprofit club driven by passion for martial arts."
+  - q: "Can I join all modules?"
+    a: "There is no requirements to participate in any of the themes. For example, you don't need your own weapon to join."
 
 # Information on instructors
 instructors:
@@ -41,27 +43,54 @@ instructors:
 
 # Description of the various classes
 classes:
-  - day: Monday
-    description: Advanced Sparring
-    time: 20:00-21:00
-  - day: Wednesday
-    description: Open Training
-    time: 19:00-19:30
-  - day: Wednesday
-    description: Beginner Combat Basics
-    time: 19:30-21:45
-
-# Used to generate interests in the contact form
-interests:
-  - Beginner Class
+  - title: Hanform & Applications
+    descriptions: [
+      { description: Monday - Odd weeks, time: 20:00-21:45},
+      { description: Wednesday - Even weeks, time: 20:00-21:45}
+    ]
+  - title: Weapon & Pushing Hands
+    descriptions: [
+      { description: Monday - Even weeks, time: 20:00-21:45},
+      { description: Wednesday - Odd weeks, time: 20:00-21:45}
+    ]
 
 # Used to gather content from class descriptions in _data/classes.yml
-classtypes: [beginner, advanced, open]
-
+classtypes:
+  - name: Handform (Dao Chuan)
+    descriptions:
+    - Learn the fundamental Tai Chi postures, movements, footwork and transitions.
+    - Practise moving smoothly without unnecessary tension, coordinating the whole body.
+    - Develop balance, flexibility and control through complex movements.
+    - Slow, controlled practice combines movement with natural, regulated breathing and is regarded as beneficial to health.
+    - The movements are not merely choreography; they contain the techniques and principles that are later applied in self-defence.
+    perfect-for: building the foundation of the entire Tai Chi system, while developing health, relaxation, balance and movement quality.
+  - name: Weapons (Bing Qi)
+    descriptions:
+    - Sword, sabre and spear make you apply the same principles with an object extending your reach.
+    - Weapons provide exercise that differs from the Hand Form, stretching and relaxing muscles and joints.
+    - Practise coordinating hands, weapon, body and footwork as one movement.
+    - The different weapons place particular demands on qualities such as awareness, precision, resolve and control.
+    - Weapon forms contain practical fighting applications, these are taught together with the weapon-forms.
+    perfect-for: developing precision, coordination, focus and whole-body movement while taking Tai Chi principles beyond empty-hand practice.
+  - name: Pushing Hands (Tui Shou)
+    descriptions:
+    - Learn to feel changes in your partner's movement and intention through physical contact.
+    - Practise responding naturally and quickly rather than relying on pre-planned movements.
+    - Maintain soft contact so you can continuously sense what your partner is doing.
+    - Practise redirecting your partner's force, affecting their balance and exploiting openings rather than meeting force with force.
+    - Train the Five Directions and Eight Powers as practical preparation for applying the principles of the Hand Form.
+    perfect-for: developing “listening” sensitivity—learning to perceive an opponent's movement early enough to respond before their attack is fully developed.
+  - name: Self-defense Applications (San Shou)
+    descriptions:
+    - Learn what the movements of the Hand Form actually mean when used against an opponent.
+    - Practise dealing with punches, kicks and attacks coming from different directions.
+    - Learn to avoid strength, use softness and redirect an opponent's force rather than simply blocking it.
+    - Practise throws, sweeps, trips, locks, holds and close-quarter techniques as well as strikes.
+    - Progress from learning individual techniques to combining them naturally according to the situation, rather than memorising “attack X → response Y.”
+    perfect-for: turning the principles and movements of Tai Chi into actual martial ability and practical self-defence.
 # Pricing
 pricing:
   - name: "Trial Class"
-    price: "0 DKK"
     featured: true
     descriptions: ["No commitment"]
     cta: "Join Now"
