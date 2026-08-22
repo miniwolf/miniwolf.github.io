@@ -35,30 +35,64 @@ instructors:
 
 # Description of the various classes
 classes:
-  - day: Monday
-    description: Saber Form (Xuan Xuan Dao)<br />Sword Form (Jian)<br />Spear Form (Qiang)
-    time: 18:00-19:30
-  - day: Monday
-    description: Instruction in the short Hand Form (Dao Chua)
-    time: 19:00-20:00
-  - day: Monday
-    description: Instruction in Pushing Hands (Tui Shou) and self-defense (San Shou)
-    time: 20:00-20:45
-  - day: Thursday
-    description: Sparring, techniques and core training
-    time: 20:00-21:00
+  - title: Saber Form (Xuan Xuan Dao)<br />Sword Form (Jian)<br />Spear Form (Qiang)
+    descriptions: [
+      { description: Monday, time: 18:00-19:00 }
+    ]
+  - title: Short Hand Form (Dao Chuan)
+    descriptions: [
+      { description: Monday, time: 19:00-20:00 }
+    ]
+  - title: Pushing Hands (Tui Shou) and self-defense (San Shou)
+    descriptions: [
+      { description: Monday, time: 20:00-20:45 }
+    ]
+  - title: Sparring, techniques and core training
+    descriptions: [
+      { description: Thursday, time: 20:00-21:00 }
+    ]
 
 # Used to generate interests in the contact form
 interests:
   - Tai Chi
 
 # Used to gather content from class descriptions in _data/classes.yml
-classtypes: [beginner, advanced]
-
+classtypes:
+  - name: Short Hand Form (Dao Chuan)
+    descriptions:
+    - Learn the fundamental Tai Chi postures, movements, footwork and transitions.
+    - Practise moving smoothly without unnecessary tension, coordinating the whole body.
+    - Develop balance, flexibility and control through complex movements.
+    - Slow, controlled practice combines movement with natural, regulated breathing and is regarded as beneficial to health.
+    - The movements are not merely choreography; they contain the techniques and principles that are later applied in self-defence.
+    perfect-for: building the foundation of the entire Tai Chi system, while developing health, relaxation, balance and movement quality.
+  - name: Saber Form (Xuan Xuan Dao)<br />Sword Form (Jian)<br />Spear Form (Qiang)
+    descriptions:
+    - Sword, sabre and spear make you apply the same principles with an object extending your reach.
+    - Weapons provide exercise that differs from the Hand Form, stretching and relaxing muscles and joints.
+    - Practise coordinating hands, weapon, body and footwork as one movement.
+    - The different weapons place particular demands on qualities such as awareness, precision, resolve and control.
+    - Weapon forms contain practical fighting applications, these are taught together with the weapon-forms.
+    perfect-for: developing precision, coordination, focus and whole-body movement while taking Tai Chi principles beyond empty-hand practice.
+  - name: Pushing Hands (Tui Shou) and self-defense (San Shou)
+    descriptions:
+    - Learn to feel changes in your partner's movement and intention through physical contact.
+    - Practise responding naturally and quickly rather than relying on pre-planned movements.
+    - Learn to avoid strength, use softness and redirect an opponent's force rather than simply blocking it.
+    - Practise throws, sweeps, trips, locks, holds and close-quarter techniques as well as strikes.
+    - Progress from learning individual techniques to combining them naturally according to the situation, rather than memorising “attack X → response Y.”
+    perfect-for: turning the principles and movements of Tai Chi into actual martial ability and practical self-defence.
+  - name: Sparring, techniques, and core-training
+    descriptions:
+    - Put Tai Chi principles and techniques into practice against a partner who is actively resisting rather than cooperating.
+    - Learn to respond when attacks do not follow a predictable pattern or give you the response you expected.
+    - Practise moving naturally between strikes, throws, grappling and other applications rather than relying on a single predetermined response.
+    - Learn when and how to enter, evade, redirect and counter while dealing with a moving opponent.
+    - Find out what actually works, identify weaknesses and develop the confidence to apply Tai Chi as a martial art. The PTCCI approach explicitly stresses honest training rather than allowing a partner to simply “play along.”
+    perfect-for: turning Tai Chi from technique and theory into practical fighting ability—learning to remain effective when faced with resistance, pressure and unpredictability.
 # Pricing
 pricing:
   - name: "Trial Class"
-    price: "0 DKK"
     featured: true
     descriptions: ["No commitment"]
     cta: "Join Now"

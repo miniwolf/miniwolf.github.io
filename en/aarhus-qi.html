@@ -25,21 +25,29 @@ instructors:
 
 # Description of the various classes
 classes:
-  - day: Wednesday
-    description: Qigong
-    time: 18:00-20:00
+  - title: Qigong
+    descriptions: [
+      { description: Wednesday, time: 18:00-20:00 }
+    ]
 
 # Used to generate interests in the contact form
 interests:
   - Qigong
 
 # Used to gather content from class descriptions in _data/classes.yml
-classtypes: [qigong]
+classtypes:
+  - name: Qigong
+    descriptions:
+      - "Tai Chi 18 Qigong: inner peace, flexibility, body awareness"
+      - "Tai Chi 9 Qigong: exercises based on the short hand form from tai chi"
+      - "Five Animals Qigong: strong back and balance"
+      - "Shaolin Ba Duan Jin: a series with many good stretching exercises"
+      - "Xing Yi: static Qigong"
+    perfect-for: All levels wanting to strengthen their mind
 
 # Pricing
 pricing:
   - name: "Trial Class"
-    price: "0 DKK"
     featured: true
     descriptions: ["No commitment"]
     cta: "Join Now"

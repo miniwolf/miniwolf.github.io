@@ -122,7 +122,6 @@
                     <h3>{{ teacher.name }}</h3>
 
                     <div class="instructor-credentials">
-                        <h4>{{ t.club.training_lineage }}</h4>
                         <ul>
                             <li>{{ t.club.started_practicing }} {{ teacher.start }}</li>
                             {% for description in teacher.descriptions %} <li>{{description}}</li> {% endfor %}
@@ -139,8 +138,7 @@
         <div class="container">
             <h2 class="section-title">{{ t.club.class_types }}</h2>
             <div class="class-cards">
-                {% for class_type in page.classtypes %}
-                {% assign class = site.data.classes[class_type][lang] %}
+                {% for class in page.classtypes %}
                 <div class="class-card">
                     <h3>{{ class.name }}</h3>
                     <ul>
@@ -160,10 +158,12 @@
             <div class="schedule-grid">
                 {% for class in page.classes %}
                 <div class="schedule-day">
-                    <h3>{{class.day}}</h3>
+                    <h3>{{class.title}}</h3>
                     <div class="class-time">
-                        <h4>{{class.description}}</h4>
-                        <p>{{class.time}}</p>
+                        {% for desc in class.descriptions %}
+                        <h4>{{desc.description}}</h4>
+                        <p>{{desc.time}}</p>
+                        {% endfor %}
                     </div>
                 </div>
                 {% endfor %}
@@ -182,7 +182,7 @@
                     <div class="price">{{ card.price }}{% if card.suffix %}<span>{{ card.suffix }}</span>{% endif %}</div>
                     {% if card.detail %}<small>{{ card.detail }}</small>{% endif %}
                     {% for desc in card.descriptions %}<p>{{ desc }}</p>{% endfor %}
-                    <a href="{{ card.cta_link | default: '#contact' }}" aria-label="{{ card.cta }}" class="btn {% if card.featured %}btn-primary{% else %}btn-secondary{% endif %}">{{ card.cta }}</a>
+                    {% if card.featured %}<a href="{{ card.cta_link | default: '#contact' }}" aria-label="{{ card.cta }}" class="btn btn-primary">{{ card.cta }}</a>{% endif %}
                 </div>
                 {% endfor %}
             </div>
