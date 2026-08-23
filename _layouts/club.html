@@ -189,8 +189,6 @@
         </div>
     </section>
 
-    {{content}}
-
     {% if page.faq %}
     <!-- FAQ Section -->
     <section class="faq-section">
@@ -227,10 +225,11 @@
                         <p><a aria-label="{{ email }}" href="mailto:{{ email }}">{{ email }}</a></p>
                     </div>
                 </div>
-                {% if page.mailerlite-form %}
-                <div class="contact-form mailerlite-form">
+                {% if content != "" %}
+                    {{ content }}
+                <!-- <div class="contact-form mailerlite-form">
                     <div class="ml-embedded" data-form="{{ page.mailerlite-form }}"></div>
-                </div>
+                </div> -->
                 {% else %}
                 <script type="text/javascript"> var submitted = false;</script>
                 <div class="contact-form">
