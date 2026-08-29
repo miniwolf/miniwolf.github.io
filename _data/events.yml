@@ -30,6 +30,40 @@
     description: The Czech crew did an an outstanding job in organizing a new venue for this years workshop, as well as getting a functional info & registration site up.<br><br>The place for this year is outstanding when it comes to surroundings in nature and history. City centre of Prague is near so if you want to spend some days visiting the lovely city of Prague that is easily organized.<br><br>If you are interested - please contact the Czech team for additional info after reading the intel on the website:<br><br>https://wptc.cz/workshop/<br><br>It has been a steadily growing crowd from western/northern Europe coming along during the last years, so we hope to bring along more sisters and brothers gathering together for good training, discussions, excellent drinks & food, fine culture and an awesome company of course.<br><br>Hope to see you there!
     time: Fri 16:00 - Sun 16:00
     price_label: 185 EUR
+- id: 2026-seminar-paul-silverstrle
+  active: true
+  featured: false
+  type: workshop
+  categories:
+  - upcoming
+  - weekend
+  - seminar
+  - workshop
+  image: https://lh3.googleusercontent.com/d/1AVNhPWtR2CIgn6IPYsDAkdaiB8PMe-Lq
+  location: Lyngby, Denmark
+  registration_url: https://fb.me/e/4ed5zEYbF
+  da:
+    badge: Lyngby seminar
+    title: 2026 seminar Paul Silverstråle
+    date: 24. okt. - 25. okt.
+    description: |-
+      Seminarets tema vil være våben teknikker mod flere modstandere. Men som sædvaneligt blandes andre dele af Tai Chi Chuan med i undervisningen.
+
+      Hvis du har sabler, sværd og/eller spyd. Tag dem gerne med. Vi forsøger at have ekstra med, men vi har ikke nok til alle.
+    time: Lør. 10-17 og Søn. 10-16
+    price_label: 650 kr
+    registration_url: https://fb.me/e/4ed5zEYbF
+  en:
+    badge: Lyngby seminar
+    title: 2026 seminar Paul Silverstråle
+    date: 24. Oct. - 25. Oct.
+    description: |-
+      The theme of the workshop will be weapon techniques against multiple opponents. But as usual other parts of Tai Chi Chuan will be mixed into the teaching.
+
+      If you have any sabres, swords and/or spears. Please, bring them. But we will try to bring extra, but we won't have enough for everyone.
+    time: Sat. 10-17 and Sun. 10-16
+    price_label: 650 kr
+    registration_url: https://fb.me/e/4ed5zEYbF
 - id: free-trial-class
   active: true
   featured: false
