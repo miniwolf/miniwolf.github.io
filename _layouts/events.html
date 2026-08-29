@@ -138,7 +138,6 @@ layout: default
                         <div class="event-details">
                             <div class="event-time">⏰ {{ e.time | default: event.time }}</div>
                             <div class="event-price">{{ e.price_label | default: event.price }}</div>
-                            <div class="event-spots">👥 {{ e.spots_label }}</div>
                         </div>
                         {% if event.registration_url %}
                         <form action="{{ event.registration_url }}">
