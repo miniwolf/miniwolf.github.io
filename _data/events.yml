@@ -3,7 +3,7 @@
 # See CLAUDE.md "Events System" for the column schema and workflow.
 
 - id: prague-workshop-2026
-  active: true
+  active: false
   featured: false
   type: weekend
   categories:
@@ -75,12 +75,11 @@
   location: Lyngby
   price: 0 DKK
   spots: 10
-  time: 'Ons: 19:30-21:45'
   registration_url: https://motivu.dk/klubber/10189/practical-tai-chi-chuan-lyngby/traeninger/14660/begynder-kampsport?token=MW-AWCpm6fU&utm_source=begynder-kampsport&utm_medium=integration&utm_campaign=leads
   da:
     badge: Prøvetime
     title: Gratis prøvetime
-    date: Onsdage
+    date: Første Mandage & Onsdage i måneden
     description: "\U0001F44A Gratis Kampsport i September \U0001F44A<br>Lær selvforsvar, forbedr din fitness og bliv stærkere fysisk og mentalt!\U0001F94B\U0001F4AA<br>\U0001F5E1Kickstart din kampsports rejse og sikr din plads nu"
     price_label: Gratis
     spots_label: 10 pladser tilgængelige
@@ -88,13 +87,13 @@
   en:
     badge: Trial class
     title: Free trial class
-    date: Wednesdays
+    date: First Monday & Wednesday in the month
     description: "\U0001F44A Free Martial Arts in September! \U0001F44A<br>Learn self-defense, improve your fitness, and get physically and mentally stronger!\U0001F94B\U0001F4AA<br>\U0001F5E1Kickstart your martial arts journey and secure your spot now"
     price_label: Free
     spots_label: 10 spots available
     alt: Free trial class
 - id: free-trial-class
-  active: true
+  active: false
   featured: false
   type: seminar
   categories:
