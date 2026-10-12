@@ -1,6 +1,6 @@
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang] %}
-{% assign loc = site.data.locations[page.location] %}
+{% assign loc = page.contact | default: site.data.locations[page.location] %}
 {% assign address = loc.address %}
 {% assign address-link = loc.address-link %}
 {% assign phone = loc.phone %}

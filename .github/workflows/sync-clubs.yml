@@ -1,0 +1,48 @@
+name: Sync clubs
+
+on:
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-clubs
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.CLUBS_SYNC_TOKEN || secrets.EVENTS_SYNC_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Test club spreadsheet import
+        run: ruby scripts/test_club_sheets.rb
+
+      - name: Update club content from sheet tabs
+        env:
+          CLUBS_SHEETS_CONFIG: ${{ secrets.CLUBS_SHEETS_CONFIG }}
+        run: ruby scripts/sheet_to_clubs.rb
+
+      - name: Commit if changed
+        run: |
+          git add -- _data/locations.yml da/*.html en/*.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync clubs from Google Sheets"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
